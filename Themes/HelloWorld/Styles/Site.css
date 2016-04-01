@@ -1678,7 +1678,7 @@ div.course-schedule-col3 {
 
 div.course-schedule-col1{
     background: url('leftLine.png') no-repeat 30px bottom;
-    padding: 0px 100px 35px 0px;
+    padding: 0px 65px 35px 0px;
 }
 
 div.course-schedule-col2{
@@ -1688,13 +1688,14 @@ div.course-schedule-col2{
 }
 
 div.course-schedule-col3 {
-    background: url('rightLine.png') no-repeat -10px bottom;
-    padding: 0px 0px 35px 100px;
+    background: url('rightLine.png') no-repeat -40px bottom;
+    padding: 0px 0px 35px 65px;
 }
 
 div.course-important-message{
     padding-left:600px;
     padding-right:100px;
+    min-height: 95px;
 }
 
 div.course-important-message p {
