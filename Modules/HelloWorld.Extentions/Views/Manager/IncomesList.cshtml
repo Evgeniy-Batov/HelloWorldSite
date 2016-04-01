@@ -1,0 +1,94 @@
+﻿@{
+    Layout = null;
+    HtmlHelper.UnobtrusiveJavaScriptEnabled = true;
+}
+
+<style>
+    table{
+        width:100%;
+    }
+
+    table, td, th {
+        border: 1px solid black;
+    }
+
+    th {
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+
+    tr.total{
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+
+</style>
+
+
+@model WebSite.Common.Interfaces.Repositories.IPagedResult<WebSite.Common.Models.ViewModels.EditIncomeVM>
+
+    @{
+        var colSize = 8;
+        var rows = (int)(Model.Data.Count() / colSize);
+    }
+
+    @if(Model.Data.Count() == 0)
+    {
+        <h3>Не найдено ни одной записи</h3>
+    }
+    else
+    { 
+
+    <table>
+        <tr>
+            <th>Дата</th>
+            <th>Сумма</th>
+            <th>Курс</th>
+            <th>Поток</th>
+            <th>Студент</th>
+            <th>Комментарий</th>
+            <th>Операции</th>
+        </tr>
+
+
+        @for (var row = 0; row <= rows; row++)
+        {
+            foreach (WebSite.Common.Models.ViewModels.EditIncomeVM income in Model.Data.Skip(row * colSize).Take(colSize))
+            {
+                <tr>
+                    <td>@income.PaymentDate.ToShortDateString()</td>
+                    <td>@income.AmountDisplay</td>
+                    <td>@income.CourseName</td>
+                    <td>
+                        @if(income.SelectedFlowId.HasValue)
+                        {
+                            @Html.ActionLink(@income.FlowName, "ManageCourse", new { flowId = income.SelectedFlowId.Value})
+                        }
+                    </td>
+                    @if (income.SelectedStudentId.HasValue)
+                    {
+                        <td>@Html.ActionLink(@income.StudentName, "EditStudent", new { studentId = income.SelectedStudentId.Value })</td>
+                    }
+                    else
+                    {
+                        <td></td>
+                    }
+                    <td>@income.Comment</td>
+                    <td>
+                        @using(Ajax.BeginForm("DeleteIncome", "Manager", new AjaxOptions { OnSuccess = "ReloadResults" }))
+                        {
+                            <input type="hidden" id="IncomeId" name="IncomeId" value="@income.PaymentId" />
+                            <button class="deleteIncome" type="submit">Удалить</button>
+                        } 
+                    </td>
+                </tr>
+            }
+        }
+        <tr class="total">
+            <td>Всего:</td>
+            <td>@(Model.Data.Sum(a => a.Amount) / 100 + " грн." )</td>
+        </tr>
+    </table>
+    }

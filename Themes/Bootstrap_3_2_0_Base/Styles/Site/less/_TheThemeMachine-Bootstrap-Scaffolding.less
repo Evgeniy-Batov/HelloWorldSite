@@ -1,0 +1,72 @@
+﻿/*
+    - content must be within columns
+    - columns must be within rows 
+    - avoid nesting containers
+*/
+
+#footer {
+    .make-md-column(12); // because the #layout-footer is a row
+    .group {
+        .make-row();
+    }
+}
+
+#layout-main-container {
+    .clearfix;
+}
+
+//
+// Switches
+// --------------------------------------------------
+
+#layout-wrapper {
+    .container;
+    /*rows*/
+    &,
+    [id$="-container"] {
+        > .group {
+            .make-row();
+        }
+    }
+    /*default columns*/
+    & > .group > div,
+    .zone-footer {
+        .make-md-column(12);
+    }
+    /*switch: layout-main*/
+    & {
+        #layout-content {
+            .make-md-column(12);
+        }
+    }
+
+    &.aside-12 {
+        #layout-content {
+            .make-md-column(6);
+        }
+
+        [id^="aside"] {
+            .make-md-column(3);
+        }
+    }
+
+    &.aside-1,
+    &.aside-2 {
+        #layout-content {
+            .make-md-column(8);
+        }
+
+        [id^="aside"] {
+            .make-md-column(4);
+        }
+    }
+    /*layout-tripel*/
+    .make-n-columns(3, ~'tripel-', ~'#layout-tripel > div');
+    .make-nn-columns(3, 3, ~'tripel-', ~'#layout-tripel > div');
+    .make-nnn-columns(3, 3, ~'tripel-', ~'#layout-tripel > div');
+    /*footer-quad*/
+    .make-n-columns(4, ~'split-', ~'#footer-quad > div');
+    .make-nn-columns(4, 4, ~'split-', ~'#footer-quad > div');
+    .make-nnn-columns(4, 4, ~'split-', ~'#footer-quad > div');
+    .make-nnnn-columns(4, 4, ~'split-', ~'#footer-quad > div');
+}

@@ -1,0 +1,11 @@
+﻿@using Orchard.MediaLibrary.Models
+@using Orchard.Utility.Extensions;
+@{
+    MediaPart mediaPart = Model.ContentItem.MediaPart;
+    Layout.Title = mediaPart.Title;
+    var contentTypeClassName = mediaPart.ContentItem.ContentType.HtmlClassify();
+}
+
+<div class="item">
+    <img class="lazyOwl" data-src="@mediaPart.MediaUrl" alt="..." />
+</div>

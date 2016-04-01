@@ -1,0 +1,93 @@
+﻿  h1 {
+         margin: 10px 0 5px;
+    }
+
+
+    .signupform .field-validation-error{
+        color:red;
+        padding-left:35px;
+    }
+
+ 
+    .signupform .daySelector {
+        display:inline-block;   
+    }
+
+    .signupform [type="text"]{
+         width:200px;
+
+    }
+
+    .signupform label.personal {
+        width:130px;
+        padding-left:20px;
+        display: inline-block;
+    }
+
+    .signupform .inputWrapper {
+         display:inline-block;
+    }
+
+    .signupform input[type="text"] {
+        background-color: #ffffff;
+        border: 1px solid #ffffff;
+        color: #484848;
+        font-size: 11px;
+        padding: 10px 15px;
+        width: 265px;
+    }
+
+    .input-validation-error{
+      background-color: pink !important; 
+      border: 1px dashed red !important; 
+      color: navy !important
+    }
+    
+    .signupform .longSelect {
+        background-color: #ffffff;
+        border: 1px solid #ffffff;
+        color: #484848;
+        padding: 5px 5px;
+        width:300px;
+    }
+
+    .signupform .formRow {
+        margin-top:10px;
+    }
+
+
+    .signupform .submitApp {
+        float:right;
+        background: #0d0f11;
+        color: white;
+        display: block;
+        font: 17px/50px;
+        height: 50px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        width: 200px;
+        margin-right: 13px;
+        margin-top: -60px;
+    }
+
+    fieldset {
+        font-family: sans-serif;
+        border: 2px solid #0d0f11;
+        background: #ddd;
+    }
+
+    fieldset legend {
+        background: #0d0f11;
+        color: #fff;
+        padding: 5px 10px ;
+        font-size: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 0 5px #ddd;
+        margin-left: 20px;
+    }
+
+div.button {
+    display:none;
+}
+    

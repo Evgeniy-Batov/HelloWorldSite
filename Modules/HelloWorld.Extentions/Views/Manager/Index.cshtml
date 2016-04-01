@@ -1,0 +1,486 @@
+﻿@model WebSite.Controllers.ManagerController.AdminPageViewModel
+
+@using WebSite.Helpers
+@using System.Web.Mvc
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/Site.css" />
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/Component.css" />
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/BigButton.css" />
+
+
+    <link type=" text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.core.css" />
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.resizable.css" />
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.selectable.css" />
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.accordion.css" />
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.autocomplete.css" />
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.button.css" />
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.dialog.css" />
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.slider.css" />
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.tabs.css" />
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.datepicker.css" />
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.progressbar.css" />
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.theme.css" />
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.onlinechat.css" />
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/ui.jqgrid.css" />
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/admin.css" />
+
+    <script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery-2.0.3.js"></script>
+    <script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery-ui-1.10.3.js"></script>
+
+    <script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery.jqGrid.min.js"></script>
+    <script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/grid.locale-ru.js"></script>
+    <script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/admin.js"></script>
+    <script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery.validate.js"></script>
+    <script type="text/javascript" src="//tinymce.cachefly.net/4.0/tinymce.min.js"></script>
+    <script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery.validate.unobtrusive.js"></script>
+    <script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery.blockUI.js"></script>
+</head>
+
+<body>
+
+    <h2>
+        Общие настройки
+    </h2>
+    <h5 class="nav">
+        @Html.ActionLink("Общие настройки", "Index")
+        <span>::</span>
+        @Html.ActionLink("Отправка писем", "Emails")
+        <span>::</span>
+        @Html.ActionLink("Управление процессом обучения", "Manage")
+        <span>::</span>
+        @Html.ActionLink("Доходы", "Incomes")
+        <span>::</span>
+        @Html.ActionLink("Расходы", "Expenses")
+        <span>::</span>
+        @Html.ActionLink("План платежей", "PaymentsPlan")
+    </h5>
+
+    <div id="html-edit-dialog-form" title="Редактирование HTML">
+        <textarea class="heditor"></textarea>
+    </div>
+    <img id="spinner" src="../Modules/HelloWorld.Extentions/Styles/images/spinner.gif" style="display: none;">
+    <div id="tabs">
+        <ul>
+            <li><a href="#global-tabs-12">Регистрации</a></li>
+            <li><a href="#global-tabs-13">Потоки</a></li>
+            <li><a href="#global-tabs-4">Оффлайн сообщения</a></li>
+            <li><a href="#global-tabs-3">Курсы</a></li>
+        </ul>
+        <div id="global-tabs-12">
+            <div id="registrationsPanel">
+                <p>
+                    <label for="courseSelector">Курс&nbsp;&nbsp;</label>
+                    @Html.DropDownList("courseSelector", @Model.Courses, new { autocomplete = "off" })
+                </p>
+                <p>
+                    <label for="flowSelector">Набор</label>
+                    <select autocomplete="off" style="min-width:300px;" id="flowSelector"></select>
+
+                    &nbsp;&nbsp;&nbsp;<button class="reloader">Обновить данные</button>
+                </p>
+            </div>
+        </div>
+        <div id="global-tabs-13">
+            <div id="floweditpanel">
+                <p>
+                    <label for="courseSelector">Курс</label>
+                    @Html.DropDownList("courseSelector", @Model.Courses, new { autocomplete = "off", id = "courseSelector2" })
+                </p>
+                <p>
+                    <a class="newFlowTrigger" href="#" style="visibility:hidden">Создать новый поток...</a>
+                </p>
+            </div>
+        </div>
+        <div id="global-tabs-3">
+            <a class="newCourseLink" href="#">Новый курс...</a>
+            <table id="coursetable"></table>
+            <div id="coursepager"></div>
+        </div>
+        <div id="global-tabs-4">
+            <table id="list2"></table>
+            <div id="pager2"></div>
+        </div>
+       
+
+        <div id="course-details-form" title="Редактирование информации о курсе">
+            <form class="editCourseInfoForm" name="editCourseInfoForm" id="editCourseInfoForm" method="post">
+                <input type="hidden" id="CourseId" name="CourseId" value="" />
+                <fieldset>
+                    <legend>Введите детали курса</legend>
+                    <p>
+                        <label for="cLength">Продолжительность</label>
+                        @Html.CheckBoxForJson("RenderLength", "cRenderLength")
+                        <input type="text" autocomplete="off" id="cLength" name="LengthHtml" />
+                        <input type="button" class="htmleditortrigger" id="cLengthHtmlTrigger" data-bound-element="cLength" value="..." />
+                    </p>
+                    <p>
+                        <label for="cSchedule">Расписание</label>
+                        @Html.CheckBoxForJson("RenderSchedule", "cRenderSchedule")
+                        <input type="text" autocomplete="off" id="cSchedule" name="ScheduleHtml" />
+                        <input type="button" class="htmleditortrigger" id="cScheduleHtmlTrigger" data-bound-element="cSchedule" value="..." />
+                    </p>
+                    <p>
+                        <label for="cSyllbus">Программа курса</label>
+                        @Html.CheckBoxForJson("RenderSyllabus", "cRenderSyllabus")
+                        <input type="text" autocomplete="off" id="cSyllbus" name="SyllabusHtml" />
+                        <input type="button" class="htmleditortrigger" id="cSyllbusHtmlTrigger" data-bound-element="cSyllbus" value="..." />
+                    </p>
+                    <p>
+                        <label for="cPrice">Стоимость</label>
+                        @Html.CheckBoxForJson("RenderPrice", "cRenderPrice")
+                        <input type="text" autocomplete="off" id="cPrice" name="PriceHtml" />
+                        <input type="button" class="htmleditortrigger" id="cPriceHtmlTrigger" data-bound-element="cPrice" value="..." />
+                    </p>
+                    <p>
+                        <label for="cActions">Акции</label>
+                        @Html.CheckBoxForJson("RenderAction", "сRenderAction")
+                        <input type="text" autocomplete="off" id="cActions" name="ActionHtml" />
+                        <input type="button" class="htmleditortrigger" id="cActionsHtmlTrigger" data-bound-element="cActions" value="..." />
+                    </p>
+                    <p>
+                        <label for="cNews">Новости курса</label>
+                        @Html.CheckBoxForJson("RenderNews", "cRenderNews")
+                        <input type="text" autocomplete="off" id="cNews" name="NewsHtml" />
+                        <input type="button" class="htmleditortrigger" id="cNewsHtmlTrigger" data-bound-element="cNews" value="..." />
+                    </p>
+                    <p>
+                        <label for="cSignUp">Запись на курс</label>
+                        @Html.CheckBoxForJson("RenderSignUp", "cRenderSignUp")
+                        <input type="text" autocomplete="off" id="cSignUp" name="SignUpHtml" />
+                        <input type="button" class="htmleditortrigger" id="cSignUpHtmlTrigger" data-bound-element="cSignUp" value="..." />
+                    </p>
+                    <p>
+                        <label for="cRenderVk">VK</label>
+                        @Html.CheckBoxForJson("RenderVK", "cRenderVk")
+                        <label for="cRenderOK">OK</label>
+                        @Html.CheckBoxForJson("RenderOK", "cRenderOK")
+                        <label for="cRenderFB">FB</label>
+                        @Html.CheckBoxForJson("RenderFB", "cRenderFB")
+                    </p>
+                    <p>
+                        <label for="cJs">Дополнительный HTML/JS</label>
+                        <input type="text" autocomplete="off" name="ExtraJS" id="cJs" />
+                        <input type="button" class="htmleditortrigger" id="cJsHtmlTrigger" data-bound-element="cJs" value="..." />
+                    </p>
+                    <p>
+                        <input type="submit" value="Сохранить" />
+                    </p>
+                </fieldset>
+            </form>
+        </div>
+
+        <div id="editmainpageitem" title="Редактирование деталей главной страницы">
+            <form class="editmainitem" name="editmainitem" id="editmainitem" method="post">
+                <fieldset>
+                    <legend>Введите свойства раздела</legend>
+                    <p>
+                        <label for="cItemOrder">Порядок</label>
+                        <input autocomplete="off" id="cItemOrder" name="Order" value="" type="number" minlength="1" required />
+                    </p>
+                    <p>
+                        <label for="cDestinationAction">Экшн</label>
+                        <input autocomplete="off" id="cDestinationAction" name="DestinationAction" value="" minlength="3" required />
+                    </p>
+                    <p>
+                        <label for="cDestinationActionParams">Параметры</label>
+                        <input autocomplete="off" id="cDestinationActionParams" name="DestinationActionParams" value="" />
+                    </p>
+                    <p>
+                        <label for="cDestinationController">Контроллер</label>
+                        <input autocomplete="off" id="cDestinationController" name="DestinationController" value="" minlength="3" required />
+                    </p>
+                    <p>
+                        <label for="cImgUrl">Путь к изображению</label>
+                        <input autocomplete="off" id="cImgUrl" name="ImgUrl" value="" />
+                    </p>
+                    <p>
+                        <label for="cItemCss">CSS класс</label>
+                        <input autocomplete="off" id="cItemCss" name="ItemCss" value="" />
+                    </p>
+                    <p>
+                        <label for="cItemText">Описание</label>
+                        <textarea autocomplete="off" id="cItemText" name="ItemText" value=""></textarea>
+                    </p>
+                    <p>
+                        <label for="cItemTitle">Заголовок</label>
+                        <input autocomplete="off" id="cItemTitle" name="ItemTitle" minlength="3" required value="" />
+                    </p>
+                    <p>
+                        <input type="submit" value="Сохранить" />
+                    </p>
+                </fieldset>
+            </form>
+        </div>
+
+        <div id="seo-dialog-form" title="Редактирование хидеров страницы">
+            <form class="edidPageHeadersForm" name="edidPageHeadersForm" id="edidPageHeadersForm" method="post">
+                <input type="hidden" id="GroupId" name="GroupId" value="" />
+                <input type="hidden" id="CourseId" name="CourseId" value="" />
+                <fieldset>
+                    <legend>Введите свойства страницы</legend>
+                    <p>
+                        <label for="ch1">Заголовок H1</label>
+                        <input autocomplete="off" id="ch1" name="TitleH1" type="text" />
+                    </p>
+                    <p>
+                        <label for="ctitle">Заголовок страницы</label>
+                        <input autocomplete="off" id="ctitle" name="PageTitle" type="text" />
+                    </p>
+                    <p>
+                        <label for="cdescription">Meta Description</label>
+                        <textarea autocomplete="off" id="cdescription" class="multiline" name="Description" cols="59" rows="5"></textarea>
+                    </p>
+                    <p>
+                        <label for="ckeywords">Meta Keywords</label>
+                        <textarea autocomplete="off" id="ckeywords" class="multiline" name="KeyWords" cols="59" rows="5"></textarea>
+                    </p>
+                    <p>
+                        <label for="crobots">Meta Robots</label>
+                        <textarea autocomplete="off" id="crobots" class="multiline" name="Robots" cols="59" rows="5"></textarea>
+                    </p>
+                </fieldset>
+                <input type="submit" name="Сохранить" value="Сохранить" />
+            </form>
+        </div>
+
+        <div id="edit-course-form" title="Редактирование информации о курсе">
+            <form class="editCourseForm" name="editCourseForm" id="editCourseForm" method="post">
+                <div id="nestedtabs">
+                    <ul>
+                        <li><a href="#global-tabs-31">Общая инфа</a></li>
+                        <li><a href="#global-tabs-32">HTML</a></li>
+                    </ul>
+                    <fieldset>
+                        <legend>Введите свойства курса</legend>
+                        <div id="global-tabs-31">
+                            <p>
+                                <label for="ccoursename">Название курса</label>
+                                <input autocomplete="off" id="ccoursename" name="CourseName" minlength="3" type="text" required />
+                            </p>
+                            <p>
+                                <label for="ccoursegroup">Группа курсов</label>
+                                <select id="ccoursegroup" name="CourseGroupId" required></select>
+                            </p>
+                            <p>
+                                <label for="cBreadcrumb">Breadcrumb</label>
+                                <input autocomplete="off" id="cBreadcrumb" name="Breadcrumb" minlength="3" type="text" required />
+                            </p>
+                            <p>
+                                <label for="cRoute">Маршрут</label>
+                                <input autocomplete="off" id="cRoute" name="Route" minlength="3" type="text" required />
+                            </p>
+                            <p>
+                                <label for="cPricePerMonth">Количество занятий</label>
+                                <input autocomplete="off" id="cPricePerMonth" name="PricePerMonth" type="number" minlength="1" required />
+                            </p>
+                            <p>
+                                <label for="cNextCourse">Следующий курс</label>
+                                <input autocomplete="off" id="cNextCourse" name="NextCourse" />
+                            </p>
+                            <p>
+                                <label for="cPreviousCourse">Предидущий курс</label>
+                                <input autocomplete="off" id="cPreviousCourse" name="PreviousCourse" />
+                            </p>
+                            <p>
+                                <label for="cCourseImageRef">Путь изображения</label>
+                                <input autocomplete="off" id="cCourseImageRef" name="CourseImageRef" />
+                            </p>
+                        </div>
+                        <div id="global-tabs-32">
+                            <p>
+                                <label for="cCoursePageHtml">HTML страницы</label>
+                                <input autocomplete="off" id="cCoursePageHtml" name="CustomPageHtml">
+                                <input type="button" class="htmleditortrigger" id="chtmleditortrigger" data-bound-element="cCoursePageHtml" value="...">
+                            </p>
+                            <p>
+                                <label for="cWhatIsItHtml">Что это?</label>
+                                <input class="short" autocomplete="off" id="cWhatIsItHtml" name="WhatIsItHtml" type="text" />
+                                <input type="button" class="htmleditortrigger" id="cWhatIsItHtmlTrigger" data-bound-element="cWhatIsItHtml" value="..." />
+                            </p>
+                            <p>
+                                <label for="cWhoRequresIt">Кому это нужно?</label>
+                                <input class="short" autocomplete="off" id="cWhoRequresIt" name="WhoRequresIt" type="text" />
+                                <input type="button" class="htmleditortrigger" id="cWhoRequresItHtmlTrigger" data-bound-element="cWhoRequresIt" value="..." />
+                            </p>
+                            <p>
+                                <label for="cWhatForHtml">Зачем это нужно?</label>
+                                <input class="short" autocomplete="off" id="cWhatForHtml" name="WhatForHtml" type="text" />
+                                <input type="button" class="htmleditortrigger" id="cWhatForHtmlTrigger" data-bound-element="cWhatForHtml" value="..." />
+                            </p>
+                            <p>
+                                <label for="cHowToAchieve">Как достигается? </label>
+                                <input class="short" autocomplete="off" id="cHowToAchieve" name="HowToAchieve" type="text" />
+                                <input type="button" class="htmleditortrigger" id="cHowToAchieveHtmlTrigger" data-bound-element="cHowToAchieve" value="..." />
+                            </p>
+                            <p>
+                                <label for="cWhatIsRequired">Что для этого требуется?</label>
+                                <input class="short" autocomplete="off" id="cWhatIsRequired" name="WhatIsRequired" type="text" />
+                                <input type="button" class="htmleditortrigger" id="cWhatIsRequiredHtmlTrigger" data-bound-element="cWhatIsRequired" value="..." />
+                            </p>
+                            <p class="shortinput">
+                                <label for="cOrder">Порядок</label>
+                                <input autocomplete="off" id="cOrder" name="Order" type="number" required />
+                                <label for="cIsNew">Новый</label>
+                                <input type="checkbox" id="cIsNew" name="IsNew">
+                                <label for="cMenuItemStyle">Меню CSS</label>
+                                <input type="text" id="cMenuItemStyle" name="MenuItemStyle">
+                            </p>
+                        </div>
+                        <input type="submit" value="Создать" />
+                    </fieldset>
+                </div>
+            </form>
+        </div>
+        <div id="feedback-editor" title="Редактирование отзыва">
+            <form class="edirFeedbackForm" name="edirFeedbackForm" id="edirFeedbackForm" method="post">
+                <fieldset>
+                    <legend>Информация об отзыве</legend>
+                    <input type="hidden" id="cFeedbackid" name="Id" />
+                    <p>
+                        <label for="cStudentName">Имя студента</label>
+                        <input id="cStudentName" class="short" autocomplete="off" type="text" name="StudentName" />
+                    </p>
+                    <p>
+                        <label for="cCource">Курс</label>
+                        <select id="cCource" name="CourseId"></select>
+                    <p>
+                    <p>
+                        <label for="cImageRef">URL картинки</label>
+                        <input type="text" class="short" autocomplete="off" id="cImageRef" name="ImageRef" />
+                    </p>
+                    <p>
+                        <label for="cVkRef">URL VK профиля</label>
+                        <input type="text" class="short" autocomplete="off" id="cVkRef" name="VKProfileRef" />
+                    </p>
+                    <p>
+                        <label for="cFeedBack">Отзыв</label><br />
+                        <textarea style="width:400px" id="cFeedBack" name="FeedBack"></textarea>
+                    </p>
+                </fieldset>
+                <input type="button" id="editFeedbackTrigger" name="submit" value="Сохранить" />
+            </form>
+        </div>
+        <div id="flow-dialog-form" title="Редактирование потока">
+             @Html.AntiForgeryToken()
+            <input type="text" style="width: 0; height: 0; top: -100px; position: absolute;" />
+            <form class="editFlowForm" name="editFlowForm" id="editFlowForm" method="post">
+                <fieldset>
+                    <legend>Введите свойства потока</legend>
+                    <input type="hidden" id="cCourseId" name="CourseId" />
+                    <input type="hidden" id="cFlowId" name="FlowId" />
+                    <p>
+                        <label for="сEstimatedStartDate">Предполагаемая дата начала</label>
+                        <input class="dateselector" autocomplete="off" type="text" id="сEstimatedStartDate" name="EstimatedStartDate">
+                    </p>
+                    <p>
+                        <label for="cActualStartDate">Фактическая дата начала</label>
+                        <input class="dateselector" autocomplete="off" type="text" id="cActualStartDate" name="ActualStartDate">
+                    </p>
+                    <p>
+                        <label for="cActualEndDate">Фактическая дата окончания</label>
+                        <input class="dateselector" autocomplete="off" type="text" id="cActualEndDate" name="ActualEndDate">
+                    </p>
+                    <p>
+                        <label for="cCustomName">Название потока</label>
+                        <input autocomplete="off" type="text" id="cCustomName" name="CustomName">
+                    </p>
+                    <p>
+                        <label for="cStartDateStr">Начало курса (строка)</label>
+                        <input autocomplete="off" type="text" id="cStartDateStr" name="StartDateStr">
+                    </p>
+                    <p>
+                        <label for="cStatus">Статус</label>
+                        <select id="cStatus" name="Status">
+                            <option id="0" value="0">Регистрация</option>
+                            <option id="1" value="1">Обучение</option>
+                            <option id="2" value="2">Курс Окончен</option>
+                            <option id="3" value="3">Отменён</option>
+                        </select>
+                    </p>
+                </fieldset>
+                <input type="submit" value="Сохранить">
+            </form>
+        </div>
+
+        <div id="student-flow-form" title="Выберите новый поток">
+            <select id="newstudentflowselector"></select>
+            <input type="hidden" id="newstudentflowappid">
+            <input type="button" class="applicationflowupdatetrigger" value="Сохранить" />
+        </div>
+
+        <div id="group-dialog-form" title="Редактирование группы">
+            <form class="editGroupForm" name="editGroupForm" id="editGroupForm" method="post">
+                <fieldset>
+                    <legend>Введите свойства группы</legend>
+                    <p>
+                        <label for="cname">Название группы</label>
+                        <input autocomplete="off" id="cname" name="GroupName" minlength="3" type="text" required />
+                    </p>
+                    <p class="shortp">
+                        <label for="corder">Порядок</label>
+                        <input autocomplete="off" class="shortinput" id="corder" name="Order" type="number" minlength="1" required number />
+                        <label for="cIsNew">Новый</label>
+                        <input type="checkbox" id="cIsNew" name="IsNew">
+                        <label for="cMenuItemStyle">Меню CSS</label>
+                        <input type="text" id="cMenuItemStyle" name="MenuItemStyle">
+                    </p>
+                    <p>
+                        <label for="cBreadcrumb">Breadcrumb</label>
+                        <input autocomplete="off" id="cBreadcrumb" name="Breadcrumb" minlength="3" type="text" required />
+                    </p>
+                    <p>
+                        <label for="cRouteName">URL путь</label>
+                        <input autocomplete="off" id="cRouteName" name="RouteName" minlength="2" type="text" required />
+                    </p>
+                    <p>
+                        <label for="cImagePath">Картинка группы</label>
+                        <input autocomplete="off" id="cImagePath" name="ImagePath" />
+                    </p>
+                    <p>
+                        <label for="cTargets">Цели</label>
+                        <input autocomplete="off" class="short" id="cTargets" name="GoalsMarkup" />
+                        <input type="button" class="htmleditortrigger" id="cTargetHtmlTrigger" data-bound-element="cTargets" value="..." />
+                    </p>
+                    <p>
+                        <label for="cMethods">Методы</label>
+                        <input autocomplete="off" class="short" id="cMethods" name="MethodMarkup" />
+                        <input type="button" class="htmleditortrigger" id="cMethodHtmlTrigger" data-bound-element="cMethods" value="..." />
+                    </p>
+                    <p>
+                        <label for="cSolutions">Решения</label>
+                        <input autocomplete="off" class="short" id="cSolutions" name="SolutionsMarkup" />
+                        <input type="button" class="htmleditortrigger" id="cSolutionHtmlTrigger" data-bound-element="cSolutions" value="..." />
+                    </p>
+                    <p>
+                        <label for="cGroupPageHtml">HTML страницы</label>
+                        <input autocomplete="off" id="cGroupPageHtml" name="CustomPageHtml">
+                        <input type="button" class="htmleditortrigger" id="chtmleditortrigger" data-bound-element="cGroupPageHtml" value="...">
+                    </p>
+                    <p>
+                        <input type="submit" value="Создать" />
+                    </p>
+                </fieldset>
+            </form>
+        </div>
+
+        <div id="course-prices-form" title="Редактированик информации о ценах">
+            <div style="float:right;" id="buttonsPanel">
+                <input type="BUTTON" id="editPrice" value="Редактировать цену" />
+                <input type="BUTTON" id="addPrice" value="Добавить цену" />
+                <input type="BUTTON" id="removePrice" value="Удалить цену" />
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

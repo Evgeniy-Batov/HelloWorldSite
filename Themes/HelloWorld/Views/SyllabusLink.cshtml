@@ -1,0 +1,11 @@
+﻿@using Orchard.ContentManagement
+@using Orchard.MediaLibrary.Fields
+@using Orchard.Utility.Extensions;
+
+@{
+    var field = (MediaLibraryPickerField)Model.ContentField;
+    string name = field.DisplayName;
+    var contents = field.MediaParts;
+}
+
+<a href="@content.MediaUrl">Download...</a>

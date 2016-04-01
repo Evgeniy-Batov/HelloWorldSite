@@ -1,0 +1,172 @@
+﻿@using WebSite.Common.Models.ViewModels
+@using WebSite.ViewModels
+@using WebSite.Common.Utils
+@using WebSite.Helpers
+@using WebSite.Common.Models.ViewModels
+
+@model ManageCourseVM
+
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/Site.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/Component.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/BigButton.css" />
+    
+<link type=" text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.core.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.resizable.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.selectable.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.accordion.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.autocomplete.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.button.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.dialog.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.slider.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.tabs.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.datepicker.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.progressbar.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.theme.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.onlinechat.css" />
+
+<script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery-2.0.3.js"></script>
+<script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery-ui-1.10.3.js"></script>
+<script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery.timepicker.js"></script>
+
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/admin.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/coursemanager.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquery.timepicker.css" />
+
+
+<h3>Управление потоком курса @Model.Course.CourseName (@Model.Flow.StartDateStr) </h3>
+
+<h5 class="nav">
+    @Html.ActionLink("Общие настройки", "Index")
+    <span>::</span>
+    @Html.ActionLink("Отправка писем", "Emails")
+    <span>::</span>
+    @Html.ActionLink("Управление процессом обучения", "Manage")
+    <span>::</span>
+    @Html.ActionLink("Доходы", "Incomes")
+    <span>::</span>
+    @Html.ActionLink("Расходы", "Expenses")
+    <span>::</span>
+    @Html.ActionLink("План платежей", "PaymentsPlan")
+</h5>
+
+<h3>Информация о потоке</h3>
+
+    @using (Html.BeginForm("ManageCourse", "manager",
+                    new { ReturnUrl = ViewBag.ReturnUrl },
+                    FormMethod.Post, new { @class = "edir-flow-form" }))
+    {
+        @Html.HiddenFor(m=>m.Flow.FlowId)
+
+        @Html.ValidationSummary(true)
+
+        <p>
+            @Html.LabelFor(m => m.Flow.EstimatedStartDate)
+            @Html.TextBoxFor(m => m.Flow.EstimatedStartDate, "{0:dd'/'MM'/'yyyy}",  new { @class = "form-control dateselector" })
+        </p>
+
+        <p>
+            @Html.LabelFor(m => m.Flow.CourseId)
+            <span>
+                @Html.HiddenFor(m => m.Flow.FlowId)
+                @Html.DisplayFor(m => m.Course.CourseName, new { @class = "form-control" })
+            </span>
+        </p>
+
+        <p>
+            @Html.LabelFor(m => m.Flow.CustomName)
+            @Html.TextBoxFor(m => m.Flow.CustomName, new { @class = "form-control-long " })
+        </p>
+
+        <p>
+            @Html.LabelFor(m => m.Flow.ActualStartDate)
+            @Html.TextBoxFor(m => m.Flow.ActualStartDate, "{0:dd'/'MM'/'yyyy}", new { @class = "form-control dateselector" })
+        </p>
+
+        <p>
+            Расписание занятий
+            <div>
+                <label>Понедельник</label> 
+                @Html.TextBoxFor(m => m.Flow.MondayStart, new { @class = "nofloat short timepicker" })
+                @Html.TextBoxFor(m => m.Flow.MondayEnd, new { @class = "nofloat short timepicker" })
+            </div>
+            <div>
+                <label>Вторник</label>
+                @Html.TextBoxFor(m => m.Flow.ThuesdayStart, new { @class = "nofloat short timepicker" })
+                @Html.TextBoxFor(m => m.Flow.ThuesdayEnd, new { @class = "nofloat short timepicker" })
+            </div>
+            <div>
+                <label>Среда</label>
+                @Html.TextBoxFor(m => m.Flow.WednesdayStart, new { @class = "nofloat short timepicker" })
+                @Html.TextBoxFor(m => m.Flow.WednesdayEnd, new { @class = "nofloat short timepicker" })
+            </div>
+            <div>
+                <label>Четверг</label>
+                @Html.TextBoxFor(m => m.Flow.ThursdayStart, new { @class = "nofloat short timepicker" })
+                @Html.TextBoxFor(m => m.Flow.ThursdayEnd, new { @class = "nofloat short timepicker" })
+            </div>
+            <div>
+                <label>Пятница</label>
+                @Html.TextBoxFor(m => m.Flow.FridayStart, new { @class = "nofloat short timepicker" })
+                @Html.TextBoxFor(m => m.Flow.FridayEnd, new { @class = "nofloat short timepicker" })
+            </div>
+            <div>
+                <label>Суббота</label>
+                @Html.TextBoxFor(m => m.Flow.SaturdayStart, new { @class = "nofloat short timepicker" })
+                @Html.TextBoxFor(m => m.Flow.SaturdayEnd, new { @class = "nofloat short timepicker" })
+            </div>
+            <div>
+                <label>Воскресенье</label>
+                @Html.TextBoxFor(m => m.Flow.SundayStart, new { @class = "nofloat short timepicker" })
+                @Html.TextBoxFor(m => m.Flow.SundayEnd, new { @class = "nofloat short timepicker" })
+            </div>
+        </p>
+
+        <p>
+            @Html.LabelFor(m => m.Flow.Status)
+            @Html.EnumDropDownListFor(m => m.Flow.Status, Model.Flow.Status)
+        </p>
+        <p>
+            @Html.LabelFor(m => m.Flow.ActualEndDate)
+            @Html.TextBoxFor(m => m.Flow.ActualEndDate, "{0:dd'/'MM'/'yyyy}", new { @class = "form-control dateselector" })
+        </p>
+        <p>
+            @Html.LabelFor(m => m.Flow.StartDateStr)
+            @Html.EditorFor(m => m.Flow.StartDateStr)
+        </p>
+        <p>
+            <label>&nbsp;</label>
+            <input type="submit" value="Обновить" />
+        </p>
+    }
+
+<h3>Студенты</h3>
+@Html.ActionLink("Зарегистрировать студента", "RegisterStudent", new { flowId = Model.Flow.FlowId })
+<h4>Зарегистрированные студенты</h4>
+<ul>
+    @foreach (var student in Model.RegisteredStudents)
+    {
+        String status = EnumHelper<StudentStatus>.GetDisplayValue(student.Status);
+
+        if (student.Status == StudentStatus.Excluded)
+        {
+            <li><strike>@Html.ActionLink(String.Format("{0} ------- {1}", student.FullName, status), "EditStudent", new { studentId = student.StudentId })</strike></li>
+        }
+        else
+        {
+            <li>@Html.ActionLink(String.Format("{0} ------- {1}", student.FullName, status), "EditStudent", new { studentId = student.StudentId })</li>
+        }
+    }
+</ul>
+
+
+<script type="text/javascript">
+    $(function ()
+    {
+        $(function () {
+            $('.dateselector').datepicker({ dateFormat: 'dd/mm/yy' });
+
+            $('input.timepicker').timepicker({ 'timeFormat': 'H:i' });
+        })
+    });
+</script>
+

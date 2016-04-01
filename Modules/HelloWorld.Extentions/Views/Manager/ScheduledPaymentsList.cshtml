@@ -1,0 +1,133 @@
+﻿@using HelloWorld.Extentions.ViewModels;
+
+@{
+    Layout = null;
+}
+
+<style>
+    table{
+        width:100%;
+    }
+    
+    table, td, th {
+    border: 1px solid black;
+    }
+
+    th {
+        background-color: black;
+        color: white;
+        text-align:center;
+    }
+
+    td.reminders{
+        text-align:center;
+    }
+
+</style>
+
+@model FindScheduledPaymentsVM
+
+@{
+    var colSize = 8;
+    var rows = (int)(Model.Payments.Count() / colSize);
+}
+
+@if (Model.Payments.Count() == 0)
+{ 
+    <h3>Не найдено ни одной записи</h3>
+}
+else
+{
+
+    <table>
+        <tr>
+            <th>Дата</th>
+            <th>Сумма</th>
+            <th>Комметарий</th>
+            <th>Сумма</th>
+            <th>Комментарий</th>
+            <th>Статус</th>
+            <th>Напоминания</th>
+            <th>Действия</th>
+        </tr>
+
+
+        @for (var row = 0; row <= rows; row++)
+        {
+            foreach (WebSite.Common.Models.ViewModels.ScheduledPaymentVM payment in Model.Payments.Skip(row * colSize).Take(colSize))
+            {
+                if (payment.Status == WebSite.Common.Models.ViewModels.ScheduledPaymentStatus.Canceled)
+                {
+                    continue;
+                }
+                <tr>
+                    <td class="date">
+                        @payment.DueDate.ToShortDateString()
+                    </td>
+                    <td class="amount">
+                        @if (payment.IsExpense)
+                        {
+                            @payment.ScheduledAmountInHryvnas
+                        }
+                    </td>
+                    <td class="comment">
+                        @if (payment.IsExpense)
+                        {
+                            @payment.Comment
+                        }
+                    </td>
+                    <td class="amount">
+                        @if (!payment.IsExpense)
+                        {
+                            @payment.ScheduledAmountInHryvnas
+                        }
+                    </td>
+                    <td class="comment">
+                        @if (!payment.IsExpense)
+                        {
+                            @payment.Comment
+                        }
+                    </td>
+                    <td class="status">
+                        @{
+                            String status = WebSite.Common.Utils.EnumHelper<WebSite.Common.Models.ViewModels.ScheduledPaymentStatus>.GetDisplayValue(payment.Status);
+                        }
+                        @status
+                    </td>
+                    <td class="reminders">
+                        @payment.NumberOfSentReminders
+                    </td>
+                    <td class="actions">
+                        @Html.ActionLink("Редактировать", "EditScheduledPayment",new { paymentId = @payment.PaymentId})
+                        @Html.ActionLink("Напомнить",     "SendReminder", new { paymentId = @payment.PaymentId })
+
+                        @if (payment.Status != WebSite.Common.Models.ViewModels.ScheduledPaymentStatus.Paid)
+                        {
+                            using (Html.BeginForm("MakePayment", "Manager", FormMethod.Post, new { @class = "make-payment-form" }))
+                            {
+                                <input type="hidden" name="RequestedMonth" value="@Model.Month" />
+                                <input type="hidden" name="RequestedYear" value="@Model.Year" />
+                                <input type="hidden" name="PaymentId" id="PaymentId" value="@payment.PaymentId" />
+                                <button type="submit">Оплатить</button>
+                            }
+                        }
+                    </td>
+                </tr>
+            }
+        }
+
+    </table>
+}
+
+    <script>
+        $('button', 'form.make-payment-form').click(function (e, a) {
+            var result = confirm("Подтверждаете оплату?");
+            if (result) {
+                return true;
+            }
+
+            if (e.preventDefault) e.preventDefault();
+            return false;
+        });
+
+    </script>

@@ -1,0 +1,20 @@
+﻿У нас зарегестрировался новый студент
+
+Имя:     @firstname
+Фамилия: @lastname
+Телефон: @phone
+Email:   @email
+Курс:    @coursename
+Доп.информация:  @additionalinfo
+
+
+Желаемое расписание:
+Понедельник: @mondaytime
+Вторник:     @tuesdaytime
+Среда:       @wednesdaytime 
+Четверг:     @thursdaytime
+Пятница:     @fridaytime
+Суббота:     @saturdaytime
+Воскресенье: @sundaytime
+
+Ссылка на его анкету: @editLink

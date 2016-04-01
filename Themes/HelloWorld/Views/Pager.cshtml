@@ -1,0 +1,14 @@
+﻿@{
+    // number of page number links to show, 0 means no link, 1 means only the current page, or more accepted.
+    Model.Quantity = 4;
+
+    Model.PreviousText = "";
+    Model.NextText = "";
+    Model.Classes.Add("pagination");
+    Model.Metadata.Alternates.Clear();
+    Model.Metadata.Type = "Pager_Links";
+}
+<div style="clear:both">
+
+</div>
+@Display(Model)

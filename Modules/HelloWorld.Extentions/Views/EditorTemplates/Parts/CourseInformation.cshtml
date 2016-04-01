@@ -1,0 +1,114 @@
+﻿@using System.Web.Mvc.Html
+
+@model HelloWorld.Extentions.Models.CourseInformationPart
+
+<fieldset>
+    <legend>Course Fields</legend>
+
+    <div class="editor-label">@Html.LabelFor(x => x.Length)</div>
+    <div class="editor-field">
+        @Html.EditorFor(x => x.Length)
+        @Html.ValidationMessageFor(x => x.Length)
+    </div>
+    <div class="hint">Enter the course length</div>
+
+    <div class="editor-label">@Html.LabelFor(x => x.LengthPeriod)</div>
+    <div class="editor-field">
+        @Html.EditorFor(x => x.LengthPeriod)
+        @Html.ValidationMessageFor(x => x.LengthPeriod)
+    </div>
+    <div class="hint">Enter the length period</div>
+
+    <div class="editor-label">@Html.LabelFor(x => x.LengthText)</div>
+    <div class="editor-field">
+        @Html.EditorFor(x => x.LengthText)
+        @Html.ValidationMessageFor(x => x.LengthText)
+    </div>
+    <div class="hint">Enter the length text</div>
+
+    <div class="editor-label">@Html.LabelFor(x => x.Intencity)</div>
+    <div class="editor-field">
+        @Html.EditorFor(x => x.Intencity)
+        @Html.ValidationMessageFor(x => x.Intencity)
+    </div>
+    <div class="hint">Enter the course intencity</div>
+
+    <div class="editor-label">@Html.LabelFor(x => x.IntencityPeriod)</div>
+    <div class="editor-field">
+        @Html.EditorFor(x => x.IntencityPeriod)
+        @Html.ValidationMessageFor(x => x.IntencityPeriod)
+    </div>
+    <div class="hint">Enter the intencity period</div>
+
+    <div class="editor-label">@Html.LabelFor(x => x.IntencityText)</div>
+    <div class="editor-field">
+        @Html.EditorFor(x => x.IntencityText)
+        @Html.ValidationMessageFor(x => x.IntencityText)
+    </div>
+    <div class="hint">Enter the intencity text</div>
+
+    <div class="editor-label">@Html.LabelFor(x => x.Duration)</div>
+    <div class="editor-field">
+        @Html.EditorFor(x => x.Duration)
+        @Html.ValidationMessageFor(x => x.Duration)
+    </div>
+    <div class="hint">Enter the course duration</div>
+
+    <div class="editor-label">@Html.LabelFor(x => x.DurationPeriod)</div>
+    <div class="editor-field">
+        @Html.EditorFor(x => x.DurationPeriod)
+        @Html.ValidationMessageFor(x => x.DurationPeriod)
+    </div>
+    <div class="hint">Enter the duration period</div>
+
+    <div class="editor-label">@Html.LabelFor(x => x.DurationText)</div>
+    <div class="editor-field">
+        @Html.EditorFor(x => x.DurationText)
+        @Html.ValidationMessageFor(x => x.DurationText)
+    </div>
+    <div class="hint">Enter the duration text</div>
+
+    <div class="editor-label">@Html.LabelFor(x => x.MinPrice)</div>
+    <div class="editor-field">
+        @Html.EditorFor(x => x.MinPrice)
+        @Html.ValidationMessageFor(x => x.MinPrice)
+    </div>
+    <div class="hint">Enter the course minimum price</div>
+
+    <div class="editor-label">@Html.LabelFor(x => x.MinPricePeriod)</div>
+    <div class="editor-field">
+        @Html.EditorFor(x => x.MinPricePeriod)
+        @Html.ValidationMessageFor(x => x.MinPricePeriod)
+    </div>
+    <div class="hint">Enter the minimum price period</div>
+
+    <div class="editor-label">@Html.LabelFor(x => x.MinPriceText)</div>
+    <div class="editor-field">
+        @Html.EditorFor(x => x.MinPriceText)
+        @Html.ValidationMessageFor(x => x.MinPriceText)
+    </div>
+    <div class="hint">Enter the minimum price text</div>
+
+
+    <div class="editor-label">@Html.LabelFor(x => x.MaxPrice)</div>
+    <div class="editor-field">
+        @Html.EditorFor(x => x.MaxPrice)
+        @Html.ValidationMessageFor(x => x.MaxPrice)
+    </div>
+    <div class="hint">Enter the course minimum price</div>
+
+    <div class="editor-label">@Html.LabelFor(x => x.MaxPricePeriod)</div>
+    <div class="editor-field">
+        @Html.EditorFor(x => x.MaxPricePeriod)
+        @Html.ValidationMessageFor(x => x.MaxPricePeriod)
+    </div>
+    <div class="hint">Enter the maximum price period</div>
+
+    <div class="editor-label">@Html.LabelFor(x => x.MaxPriceText)</div>
+    <div class="editor-field">
+        @Html.EditorFor(x => x.MaxPriceText)
+        @Html.ValidationMessageFor(x => x.MaxPriceText)
+    </div>
+    <div class="hint">Enter the maximum price text</div>
+   
+</fieldset>

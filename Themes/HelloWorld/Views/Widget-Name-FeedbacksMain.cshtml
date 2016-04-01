@@ -1,0 +1,38 @@
+﻿@using Orchard.ContentManagement;
+
+@{
+    Model.Metadata.Wrappers.Remove("Widget_Wrapper");
+
+    IContentManager contentManager = WorkContext.Resolve<IContentManager>();
+}
+
+<div class="review">
+    <div class="title">@Model.ContentItem.WidgetPart.Title</div>
+    <div id="owl-demo">
+        @foreach (var item in Model.Content.Items[0].Items)
+        {
+            String imageUrl = item.ContentItem.Feedback.PhotoImage.MediaParts.Count > 0 ? item.ContentItem.Feedback.PhotoImage.MediaParts[0].MediaUrl : "";
+            String scanUrl  = item.ContentItem.Feedback.ScanImage.MediaParts.Count > 0 ? item.ContentItem.Feedback.ScanImage.MediaParts[0].MediaUrl : "";
+
+            ContentItem courseItem = contentManager.Get(@item.ContentItem.Feedback.FeedbackPart.CourseId);
+
+            String cssClassName  = courseItem != null ? ((dynamic)courseItem).CoursePage.LableCssClass.Value : null;
+          
+            <div class="item">
+                <img src="@imageUrl" alt="">
+                @if (item.ContentItem.Feedback.ShowCourseLable.Value != null && item.ContentItem.Feedback.ShowCourseLable.Value)
+                {
+                    <div class="serv-label @cssClassName"></div>
+                }
+                <a class="review-more" image-url="@scanUrl" href="#dialog" name="modal">
+                    <img src="../Themes/HelloWorld/Content/Images/border.png" class="review-border">
+                </a>
+                <div class="review-name">@item.ContentItem.Feedback.FeedbackPart.AuthorName</div>
+                <p>
+                    @Html.Raw(item.ContentItem.Feedback.MessageText.Value)
+                </p>
+            </div>
+        }
+    </div>
+    <a class="all-review"href="~/feedback">Читать все отзывы</a>
+</div>

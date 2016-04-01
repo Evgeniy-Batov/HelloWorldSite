@@ -1,0 +1,44 @@
+﻿<style>
+    .btn-green {
+        padding: 1em;
+        text-align: center;
+        color: #fff;
+        background-color: #34A853;
+        font-size: 2em;
+        display: block;
+    }
+    
+    .sale-red {
+        background-color: #d44950;
+        color: #fff;
+        float: right;
+        padding: .25em 1em;
+        display: inline;
+    }
+
+    .box-purple {
+      padding: 1em;
+      text-align: center;
+      color: #fff;
+      background-color: #7b4f9d;
+      font-size: 2em;
+      display: block;
+    }
+
+</style>
+
+@if (Model.ContentPart.IsOnSale)
+{
+    <p class="sale-red">ON SALE!</p>
+}
+<p>Today's featured product is the Sprocket 9000.</p>
+@if (!Model.IsOnFeaturedProductPage)
+{
+    <p>
+        <a href="~/sprocket-9000" class="btn-green">Click here to view it.</a>
+    </p>
+}
+else
+{
+    <p class="box-purple">Read more about it on this page.</p>
+}

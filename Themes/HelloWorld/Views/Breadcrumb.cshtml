@@ -1,0 +1,37 @@
+﻿@{
+    // Model is Model.Menu from the layout (Layout.Menu)
+    var tag = Tag(Model, "ul");
+    tag.AddCssClass("breadcrumb");
+
+    var items = (IList<dynamic>)Enumerable.Cast<dynamic>(Model.Items);
+
+    if (items.Any())
+    {
+        items[0].Classes.Add("first");
+        items[items.Count - 1].Classes.Add("last");
+    }
+    int counter = 0;
+}
+
+<div class="breadcrumbs">
+    <div class="block-inner">
+        @foreach (var item in items)
+        {
+            if (counter++ > 0)
+            {
+                <b>→</b>
+                <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <a itemprop="url" href="@item.Item.Href">
+                        <span itemprop="title">@item.Item.Text.Text</span>
+                    </a>
+                </span>
+            }
+            else
+            {
+                <span typeof="v:Breadcrumb">
+                    <a rel="v:url" property="v:title" title="" href="@item.Item.Href" class="home">@item.Item.Text.Text</a>
+                </span>
+            }
+        }
+    </div>
+</div>

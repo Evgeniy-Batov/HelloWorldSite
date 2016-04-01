@@ -1,0 +1,20 @@
+﻿@{
+    var item = (dynamic)Model.ContentItem;
+
+    String imageUrl = item.Feedback.PhotoImage.MediaParts.Count > 0 ? item.Feedback.PhotoImage.MediaParts[0].MediaUrl : "";
+    String scanUrl = item.Feedback.ScanImage.MediaParts.Count > 0 ? item.Feedback.ScanImage.MediaParts[0].MediaUrl : "";
+}
+
+<div class="one-review">
+    <div class="review-photo">
+        <img src="@imageUrl" alt="">
+        <a href="#dialog" name="modal" image-url="@scanUrl" >
+            <img src="../Themes/HelloWorld/Content/Images/border.png" class="review-border">
+        </a>
+    </div>
+    <div class="review-info">
+        <div class="review-name">@item.Feedback.FeedbackPart.AuthorName</div>
+        <div class="review-text">@Html.Raw(item.Feedback.MessageText.Value)</div>
+        <a class="all-review" image-url="@scanUrl" href="#dialog" name="modal">Читать оригинал</a>
+    </div>
+</div>

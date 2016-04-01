@@ -1,0 +1,49 @@
+﻿@{
+    Layout = null;
+}
+
+@model System.Collections.Generic.IEnumerable< WebSite.Common.Models.ViewModels.EmailVM>
+
+    @{
+        var colSize = 6;
+        var rows = (int)(Model.Count() / colSize);
+    }
+    <table style="width:100%">
+        <tr>
+            <th>Дата отправления</th>
+            <th>Тема</th>
+            <th>Получатели</th>
+            <th>СС</th>
+            <th>Сообщение</th>
+            <th>Статус</th>
+        </tr>
+
+        @for (var row = 0; row <= rows; row++)
+        {
+            foreach (WebSite.Common.Models.ViewModels.EmailVM email in Model.Skip(row * colSize).Take(colSize))
+            {
+                <tr>
+                   
+                    
+                    @{
+                        String sentDate = email.SentTime.HasValue ? email.SentTime.Value.ToShortDateString() : "";
+                        String recipients = String.Join(",",email.Recipients.Where(r=>r.To || r.Phone).Select(s => s.Recepient));
+                        String cc         = String.Join(",",email.Recipients.Where(r => r.CC || r.BCC).Select(s => s.Recepient));
+                    }
+                    <td>@sentDate</td>
+                    <td>@email.Subject"</td>
+                    @*<td><a href="#" title="@email.Subject">Тема</a> </td>*@
+                    <td>@recipients</td>
+                    <td>@cc</td>
+                    <td>@email.Body</td>
+                    @*<td><a href="#" title="@email.Body">Сообщение</a> </td>*@
+                    <td>
+                        @{
+                            string status = WebSite.Common.Utils.EnumHelper<WebSite.Common.Models.ViewModels.EmailStatus>.GetDisplayValue(email.Status);
+                        }
+                        @status
+                    </td>
+                </tr>
+            }
+        }
+    </table>

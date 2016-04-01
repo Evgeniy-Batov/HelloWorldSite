@@ -1,0 +1,15 @@
+﻿@{
+    Model.Metadata.Wrappers.Remove("Widget_Wrapper");
+}
+
+<a id="logo" href="/">
+    <div>
+        <img src="@Model.ContentItem.GlobalHeader.SiteLogo.FirstMediaUrl">
+    </div>
+</a>
+<div class="top-info">
+    <a href="tel:@(Model.ContentItem.GlobalHeader.FullPhone1.Value)">@Model.ContentItem.GlobalHeader.Phone1.Value</a>
+    <a href="tel:@(Model.ContentItem.GlobalHeader.FullPhone2.Value)">@Model.ContentItem.GlobalHeader.Phone2.Value</a>/
+    <a href="mailto:@(Model.ContentItem.GlobalHeader.Email.Value)">@Model.ContentItem.GlobalHeader.Email.Value</a>/
+    <a href="skype:@(@Model.ContentItem.GlobalHeader.Skype.Value)?call">@Model.ContentItem.GlobalHeader.Skype.Value</a>
+</div>

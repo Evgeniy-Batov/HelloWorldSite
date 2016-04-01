@@ -1,0 +1,202 @@
+﻿@using WebSite.Common.Models.ViewModels
+@using WebSite.ViewModels
+@using WebSite.Common.Utils
+@using WebSite.Helpers
+
+@model RegisterStudentVM
+
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/Site.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/Component.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/BigButton.css" />
+
+<link type=" text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.core.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.resizable.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.selectable.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.accordion.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.autocomplete.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.button.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.dialog.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.slider.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.tabs.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.datepicker.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.progressbar.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.theme.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.onlinechat.css" />
+
+<script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery-2.0.3.js"></script>
+<script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery-ui-1.10.3.js"></script>
+<script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery.timepicker.js"></script>
+
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/admin.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/coursemanager.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquery.timepicker.css" />
+
+
+
+<h3>Регистрация нового студента на курс @Model.CourseName (@Model.FlowStartDate.ToString("dd.MM.yyyy") - @Model.FlowEndDate.ToString("dd.MM.yyyy")) </h3>
+
+<h5 class="nav">
+    @Html.ActionLink("Общие настройки", "Index")
+    <span>::</span>
+    @Html.ActionLink("Отправка писем", "Emails")
+    <span>::</span>
+    @Html.ActionLink("Управление процессом обучения", "Manage")
+    <span>::</span>
+    @Html.ActionLink("Доходы", "Incomes")
+    <span>::</span>
+    @Html.ActionLink("Расходы", "Expenses")
+    <span>::</span>
+    @Html.ActionLink("План платежей", "PaymentsPlan")
+</h5>
+
+<div>
+    <p>Зарегистрированные анкеты</p>
+    @if (Model.Applications != null && Model.Applications.Count() > 0)
+    {
+        @Html.DropDownListFor(m => m.Applications,
+                new SelectList(Model.Applications,
+                "JsonString", "DisplayText",
+                Model.Applications.First().MessageId), new { @class = "students-list" })
+       <button  class="student-loader"  value="Загрузить форму">Загрузить форму</button>
+    }
+</div>
+
+@using (Html.BeginForm("RegisterStudent", "manager",
+                                            new { ReturnUrl = ViewBag.ReturnUrl },
+                                            FormMethod.Post, new { @class = "edit-student-form" }))
+{
+    @Html.ValidationSummary(true)
+
+    @Html.HiddenFor(m=>m.FlowId)
+    @Html.HiddenFor(m=>m.CourseId)
+
+    <p>
+        @Html.LabelFor(m => m.FirstName)
+        @Html.EditorFor(m => m.FirstName, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.FirstName)
+    </p>
+    <p>
+        @Html.LabelFor(m => m.MiddleName)
+        @Html.EditorFor(m => m.MiddleName, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.MiddleName)
+    </p>
+    <p>
+        @Html.LabelFor(m => m.LastName)
+        @Html.EditorFor(m => m.LastName, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.LastName)
+    </p>
+    <p>
+        @Html.LabelFor(m => m.Email)
+        @Html.EditorFor(m => m.Email, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Email)
+    </p>
+    <p>
+        @Html.LabelFor(m => m.Phone1)
+        @Html.EditorFor(m => m.Phone1, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Phone1)
+    </p>
+    <p>
+        @Html.LabelFor(m => m.Phone2)
+        @Html.EditorFor(m => m.Phone2, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Phone2)
+    </p>
+    <p>
+        @Html.LabelFor(m => m.PaymentModel)
+        @Html.EnumDropDownListFor(m => m.PaymentModel,Model.PaymentModel)
+    </p>
+    <p>
+        @Html.LabelFor(m => m.FriendBonus)
+        @Html.CheckBoxFor(m=>m.FriendBonus)
+    </p>
+    <p>
+        @Html.LabelFor(m => m.SecondCourseBonus)
+        @Html.CheckBoxFor(m => m.SecondCourseBonus)
+        <div class="preliminary-prices">
+            <button  class="calc-prices-button">Рассчитать стоимость</button>
+            <div class="prices-results">
+            </div>
+        </div>
+    </p>
+    <p>
+        @Html.LabelFor(m => m.PassportNo)
+        @Html.EditorFor(m => m.PassportNo, new { @class = "form-control" })
+    </p>
+    <p>
+        @Html.LabelFor(m => m.PasspordIssuedDate)
+        @Html.EditorFor(m => m.PasspordIssuedDate, new { @class = "form-control" })
+    </p>
+    <p>
+        @Html.LabelFor(m => m.PassportIssuedBy)
+        @Html.EditorFor(m => m.PassportIssuedBy, new { @class = "form-control" })
+    </p>
+    <p>
+        @Html.LabelFor(m => m.INN)
+        @Html.EditorFor(m => m.INN, new { @class = "form-control" })
+    </p>
+
+    <p>
+        @Html.LabelFor(m => m.ContractNumber)
+        @Html.EditorFor(m => m.ContractNumber, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.ContractNumber)
+    </p>
+
+    <p>
+        @Html.LabelFor(m => m.Comment)
+        @Html.TextAreaFor(m => m.Comment, new { cols = "45", rows = "5" })
+    </p>
+    <p></p>
+    <p>
+        <label>&nbsp;</label>
+        <input type="submit" value="Зарегистрировать" />
+    </p>
+}
+
+<script type="text/javascript">
+    $(function ()
+    {
+        $(function () {
+            $("input[type='datetime']")
+                        .datepicker({ dateFormat: 'dd/mm/yy' });
+
+            $("input[type='datetime']")
+                        .attr("type", "text");
+        })
+
+
+        $('button.student-loader').click(function (sender, args) {
+            var student = $.parseJSON($('.students-list').val());
+            $('input#FirstName').val(student.Name);
+            $('input#Email').val(student.Email);
+            $('input#LastName').val(student.LastName);
+            $('input#Phone1').val(student.Phone);
+        });
+
+        $('button.calc-prices-button').click(function (sender, args) {
+            var flowId   = $('input#FlowId').val();
+            var courseId = $('input#CourseId').val();
+            var paymentMethod = $('select#PaymentModel').val();
+            var friendBonus = $('input#FriendBonus').is(":checked");
+            var loyalCustomerBonus = $('input#SecondCourseBonus').is(":checked");
+
+            var url = "/manager/CalcPayments";
+
+            data = {
+                courseId: courseId,
+                flowId: flowId,
+                paymentMethod: paymentMethod,
+                firendBonus: friendBonus,
+                loyalBonus: loyalCustomerBonus
+            };
+
+            $('div.prices-results').html('loading...');
+            
+            $.get(url, data, function (data) {
+                $("div.prices-results").html(data);
+            });
+
+            return false;
+
+        });
+    });
+</script>
+

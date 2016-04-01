@@ -1,0 +1,25 @@
+﻿@{
+    // Model is Model.Menu from the layout (Layout.Menu)
+    var menu = Model;
+    var collapseId = Model.Id;
+
+    menu.Classes.Add("nav");
+    menu.Classes.Add("navbar-nav");
+
+    var tag = Tag(menu, "ul");
+    var items = (IList<dynamic>)Enumerable.Cast<dynamic>(menu.Items);
+
+    if (items.Any())
+    {
+        items[0].Classes.Add("first");
+        items[items.Count - 1].Classes.Add("last");
+    }
+}
+<div>
+    <nav id="@collapseId" class="collapse navbar-collapse">
+        @tag.StartElement
+        @* see MenuItem shape template *@
+        @DisplayChildren(menu)
+        @tag.EndElement
+    </nav>
+</div>

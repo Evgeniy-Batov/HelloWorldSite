@@ -1,0 +1,169 @@
+﻿@model WebSite.Common.Models.ViewModels.StudentVM
+
+@using WebSite.Common.Models.ViewModels
+@using WebSite.ViewModels
+@using WebSite.Common.Utils
+@using WebSite.Helpers
+
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/Site.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/Component.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/BigButton.css" />
+
+
+<link type=" text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.core.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.resizable.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.selectable.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.accordion.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.autocomplete.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.button.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.dialog.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.slider.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.tabs.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.datepicker.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.progressbar.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.theme.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.onlinechat.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/ui.jqgrid.css" />
+
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/admin.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/coursemanager.css" />
+
+<script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery-2.0.3.js"></script>
+<script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery-ui-1.10.3.js"></script>
+
+<script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery.jqGrid.min.js"></script>
+<script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/grid.locale-ru.js"></script>
+<script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/admin.js"></script>
+<script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery.validate.js"></script>
+<script type="text/javascript" src="//tinymce.cachefly.net/4.0/tinymce.min.js"></script>
+<script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+<script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery.validate.unobtrusive.js"></script>
+<script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery.blockUI.js"></script>
+
+
+
+<h2>Редактирование студента</h2>
+<h5 class="nav">
+    @Html.ActionLink("Общие настройки", "Index")
+    <span>::</span>
+    @Html.ActionLink("Отправка писем", "Emails")
+    <span>::</span>
+    @Html.ActionLink("Управление процессом обучения", "Manage")
+    <span>::</span>
+    @Html.ActionLink("Доходы", "Incomes")
+    <span>::</span>
+    @Html.ActionLink("Расходы", "Expenses")
+</h5>
+
+<label>Поток</label>&nbsp;&nbsp;&nbsp;&nbsp;@Html.ActionLink("Редактор потока", "ManageCourse",new { flowId = Model.FlowId})
+
+@using (Html.BeginForm("EditStudent", "manager",
+                                                        new { ReturnUrl = ViewBag.ReturnUrl },
+                                                        FormMethod.Post, new { @class = "edit-student-form" }))
+{
+    @Html.ValidationSummary(true)
+
+    @Html.HiddenFor(m => m.FlowId)
+    @Html.HiddenFor(m => m.StudentId)
+    @Html.HiddenFor(m => m.StudentSince)
+    @Html.HiddenFor(m => m.StudentTill)
+    <p>
+        @Html.LabelFor(m => m.FirstName)
+        @Html.EditorFor(m => m.FirstName, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.FirstName)
+    </p>
+    <p>
+        @Html.LabelFor(m => m.MiddleName)
+        @Html.EditorFor(m => m.MiddleName, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.MiddleName)
+    </p>
+    <p>
+        @Html.LabelFor(m => m.LastName)
+        @Html.EditorFor(m => m.LastName, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.LastName)
+    </p>
+    <p>
+        @Html.LabelFor(m => m.Email)
+        @Html.EditorFor(m => m.Email, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Email)
+    </p>
+    <p>
+        @Html.LabelFor(m => m.Phone1)
+        @Html.EditorFor(m => m.Phone1, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Phone1)
+    </p>
+    <p>
+        @Html.LabelFor(m => m.Phone2)
+        @Html.EditorFor(m => m.Phone2, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Phone2)
+    </p>
+    <p>
+        @Html.LabelFor(m => m.PaymentModel)
+        @Html.EnumDropDownListFor(m => m.PaymentModel, Model.PaymentModel)
+    </p>
+    <p>
+        @Html.LabelFor(m => m.PassportNo)
+        @Html.EditorFor(m => m.PassportNo, new { @class = "form-control" })
+    </p>
+    <p>
+        @Html.LabelFor(m => m.PasspordIssuedDate)
+        @Html.EditorFor(m => m.PasspordIssuedDate, new { @class = "form-control" })
+    </p>
+    <p>
+        @Html.LabelFor(m => m.PassportIssuedBy)
+        @Html.EditorFor(m => m.PassportIssuedBy, new { @class = "form-control" })
+    </p>
+    <p>
+        @Html.LabelFor(m => m.INN)
+        @Html.EditorFor(m => m.INN, new { @class = "form-control" })
+    </p>
+
+    <p>
+        @Html.LabelFor(m => m.ContractNumber)
+        @Html.EditorFor(m => m.ContractNumber, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.ContractNumber)
+    </p>
+
+    <p>
+        @Html.LabelFor(m => m.Comment)
+        @Html.TextAreaFor(m => m.Comment, new { cols = "45", rows = "5" })
+    </p>
+    <p></p>
+    <p>
+        <label>&nbsp;</label>
+        <input type="submit" value="Обновить" />
+    </p>
+}
+
+@using (Html.BeginForm("ExcludeStudent", "manager", FormMethod.Post, new { @class = "delete-student-form" }))
+{
+    @Html.HiddenFor(m => m.StudentId)
+    <button type="submit">Удалить студента</button>
+}
+
+
+<hr />
+<h3>Платежи</h3> 
+@using (Html.BeginForm("AddPayment", "manager", FormMethod.Post, new { @class = "edit-student-form" }))
+{
+    @Html.HiddenFor(m => m.StudentId)
+    @Html.HiddenFor(m => m.FlowId)
+    <input class="no-margin" type="submit" value="Добавить платёж" />
+}
+
+
+@Html.Partial("Payments", @Model.Payments)
+
+<script type="text/javascript">
+    $(function () {
+        $('button', 'form.delete-student-form').click(function (e, a) {
+            var result = confirm("Подтверждаете удаление?");
+            if (result) {
+                return true;
+            }
+
+            if (e.preventDefault) e.preventDefault();
+            return false;
+        });
+    });
+</script>

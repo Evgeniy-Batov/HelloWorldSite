@@ -1,0 +1,16 @@
+﻿@using Orchard.Utility.Extensions;
+@{
+    if (Model.Title != null)
+    {
+        Layout.Title = Model.Title.Items[0].Title;
+    }
+}
+<div class="block-inner">
+    @Display(Model.Content)
+</div>
+@if (Model.Footer != null)
+{
+    <footer>
+        @Display(Model.Footer)
+    </footer>
+}

@@ -1,0 +1,14 @@
+﻿@{
+    String syllabus = Model.Value.ToString();
+
+    String[] items = syllabus.Split(new string[] { "<br />" },StringSplitOptions.RemoveEmptyEntries);
+}
+
+<ul class="program">
+    <li class="start">Start</li>
+    @foreach (string item in items)
+    {
+        <li>@item</li>
+    }
+    <li class="finish">Finish</li>
+</ul>

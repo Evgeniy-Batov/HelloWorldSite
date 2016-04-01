@@ -1,0 +1,741 @@
+2016-03-22 10:54:59,190 [9] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/Vya4eslav.jpg storagePath:Style Images\FeedbackScans\25-02-2016\Vya4eslav.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\Vya4eslav.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-22 10:55:10,056 [9] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/Victor.jpg storagePath:Style Images\FeedbackScans\25-02-2016\Victor.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\Victor.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-22 10:55:10,071 [9] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/PDmitrii.jpg storagePath:Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-22 10:55:11,169 [9] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/olha.jpg storagePath:Style Images\FeedbackScans\25-02-2016\olha.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\olha.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-22 10:55:11,420 [9] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/PDmitrii.jpg storagePath:Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-22 12:51:43,217 [7] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/Vya4eslav.jpg storagePath:Style Images\FeedbackScans\25-02-2016\Vya4eslav.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\Vya4eslav.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-22 12:51:43,508 [7] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/Victor.jpg storagePath:Style Images\FeedbackScans\25-02-2016\Victor.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\Victor.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-22 12:51:43,528 [7] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/PDmitrii.jpg storagePath:Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-22 12:51:43,604 [7] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/olha.jpg storagePath:Style Images\FeedbackScans\25-02-2016\olha.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\olha.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-22 12:51:43,649 [7] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/PDmitrii.jpg storagePath:Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String2016-03-22 13:48:14,038 [62] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/Vya4eslav.jpg storagePath:Style Images\FeedbackScans\25-02-2016\Vya4eslav.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\Vya4eslav.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-22 13:48:14,105 [62] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/Victor.jpg storagePath:Style Images\FeedbackScans\25-02-2016\Victor.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\Victor.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-22 13:48:14,120 [62] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/PDmitrii.jpg storagePath:Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-22 13:48:14,152 [62] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/olha.jpg storagePath:Style Images\FeedbackScans\25-02-2016\olha.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\olha.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-22 13:48:14,182 [62] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/PDmitrii.jpg storagePath:Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-22 13:59:20,609 [43] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/Vya4eslav.jpg storagePath:Style Images\FeedbackScans\25-02-2016\Vya4eslav.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\Vya4eslav.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-22 13:59:20,621 [47] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/Vya4eslav.jpg storagePath:Style Images\FeedbackScans\25-02-2016\Vya4eslav.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\Vya4eslav.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-22 13:59:20,638 [43] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/Victor.jpg storagePath:Style Images\FeedbackScans\25-02-2016\Victor.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\Victor.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-22 13:59:20,652 [47] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/Victor.jpg storagePath:Style Images\FeedbackScans\25-02-2016\Victor.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\Victor.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-22 13:59:20,664 [43] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/PDmitrii.jpg storagePath:Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-22 13:59:20,678 [47] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/PDmitrii.jpg storagePath:Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-22 13:59:20,689 [43] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/olha.jpg storagePath:Style Images\FeedbackScans\25-02-2016\olha.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\olha.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-22 13:59:20,703 [47] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/olha.jpg storagePath:Style Images\FeedbackScans\25-02-2016\olha.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\olha.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-22 13:59:20,711 [43] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/PDmitrii.jpg storagePath:Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-22 13:59:20,778 [47] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/PDmitrii.jpg storagePath:Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-22 14:01:23,522 [71] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/Vya4eslav.jpg storagePath:Style Images\FeedbackScans\25-02-2016\Vya4eslav.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\Vya4eslav.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-22 14:01:23,543 [71] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/Victor.jpg storagePath:Style Images\FeedbackScans\25-02-2016\Victor.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\Victor.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-22 14:01:23,559 [71] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/PDmitrii.jpg storagePath:Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-22 14:01:23,574 [71] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/olha.jpg storagePath:Style Images\FeedbackScans\25-02-2016\olha.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\olha.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-22 14:01:23,593 [71] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/PDmitrii.jpg storagePath:Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-22 14:15:12,347 [48] Orchard.Exceptions.DefaultExceptionPolicy - Default - An unexpected exception was caught
+ http://local.orchard/courses/webdesign
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.Web.HttpCompileException: c:\inetpub\wwwroot\Orchard\Themes\HelloWorld\Views\CourseScheduleBlock.cshtml(27): error CS1012: Too many characters in character literal
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.Render(ShapeDescriptor shapeDescriptor, DisplayContext displayContext, HarvestShapeInfo harvestShapeInfo, HarvestShapeHit harvestShapeHit) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 151
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.<>c__DisplayClass20_7.<Discover>b__14(DisplayContext displayContext) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 133
+   at Orchard.DisplayManagement.Descriptors.ShapeAlterationBuilder.<>c__DisplayClass7_1.<BoundAs>b__1(DisplayContext displayContext) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeAlterationBuilder.cs:line 56
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Process(ShapeBinding shapeBinding, IShape shape, DisplayContext context) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 203
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Execute(DisplayContext context) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 99
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.ShapeExecute(Object shape) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 86
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.Invoke(String name, INamedEnumerable`1 parameters) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 44
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.TryInvoke(InvokeBinder binder, Object[] args, Object& result) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 29
+   at CallSite.Target(Closure , CallSite , Object , Object )
+   at ASP._Page_Modules_Orchard_Layouts_Views_Elements_Shape_cshtml.Execute() in c:\inetpub\wwwroot\Orchard\Modules\Orchard.Layouts\Views\Elements\Shape.cshtml:line 5
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.Render(ShapeDescriptor shapeDescriptor, DisplayContext displayContext, HarvestShapeInfo harvestShapeInfo, HarvestShapeHit harvestShapeHit) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 151
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.<>c__DisplayClass20_7.<Discover>b__14(DisplayContext displayContext) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 133
+   at Orchard.DisplayManagement.Descriptors.ShapeAlterationBuilder.<>c__DisplayClass7_1.<BoundAs>b__1(DisplayContext displayContext) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeAlterationBuilder.cs:line 56
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Process(ShapeBinding shapeBinding, IShape shape, DisplayContext context) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 203
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Execute(DisplayContext context) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 99
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.ShapeExecute(Object shape) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 86
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.Invoke(String name, INamedEnumerable`1 parameters) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 44
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.TryInvoke(InvokeBinder binder, Object[] args, Object& result) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 29
+   at CallSite.Target(Closure , CallSite , Object , Object )
+   at Orchard.Mvc.ViewEngines.Razor.WebViewPage`1.DisplayChildren(Object shape) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\Mvc\ViewEngines\Razor\WebViewPage.cs:line 191
+   at ASP._Page_Modules_Orchard_Layouts_Views_Elements_Canvas_cshtml.Execute() in c:\inetpub\wwwroot\Orchard\Modules\Orchard.Layouts\Views\Elements\Canvas.cshtml:line 13
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.Render(ShapeDescriptor shapeDescriptor, DisplayContext displayContext, HarvestShapeInfo harvestShapeInfo, HarvestShapeHit harvestShapeHit) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 151
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.<>c__DisplayClass20_7.<Discover>b__14(DisplayContext displayContext) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 133
+   at Orchard.DisplayManagement.Descriptors.ShapeAlterationBuilder.<>c__DisplayClass7_1.<BoundAs>b__1(DisplayContext displayContext) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeAlterationBuilder.cs:line 56
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Process(ShapeBinding shapeBinding, IShape shape, DisplayContext context) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 203
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Execute(DisplayContext context) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 99
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.ShapeExecute(Object shape) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 86
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.Invoke(String name, INamedEnumerable`1 parameters) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 44
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.TryInvoke(InvokeBinder binder, Object[] args, Object& result) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 29
+   at CallSite.Target(Closure , CallSite , Object , Object )
+   at Orchard.Mvc.ViewEngines.Razor.WebViewPage`1.DisplayChildren(Object shape) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\Mvc\ViewEngines\Razor\WebViewPage.cs:line 191
+   at ASP._Page_Modules_Orchard_Layouts_Views_LayoutRoot_cshtml.Execute() in c:\inetpub\wwwroot\Orchard\Modules\Orchard.Layouts\Views\LayoutRoot.cshtml:line 1
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.Render(ShapeDescriptor shapeDescriptor, DisplayContext displayContext, HarvestShapeInfo harvestShapeInfo, HarvestShapeHit harvestShapeHit) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 151
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.<>c__DisplayClass20_7.<Discover>b__14(DisplayContext displayContext) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 133
+   at Orchard.DisplayManagement.Descriptors.ShapeAlterationBuilder.<>c__DisplayClass7_1.<BoundAs>b__1(DisplayContext displayContext) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeAlterationBuilder.cs:line 56
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Process(ShapeBinding shapeBinding, IShape shape, DisplayContext context) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 203
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Execute(DisplayContext context) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 99
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.ShapeExecute(Object shape) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 86
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.Invoke(String name, INamedEnumerable`1 parameters) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 44
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.TryInvoke(InvokeBinder binder, Object[] args, Object& result) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 29
+   at CallSite.Target(Closure , CallSite , Object , Object )
+   at ASP._Page_Themes_HelloWorld_Views_Parts_Layout_cshtml.Execute() in c:\inetpub\wwwroot\Orchard\Themes\HelloWorld\Views\Parts.Layout.cshtml:line 9
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.Render(ShapeDescriptor shapeDescriptor, DisplayContext displayContext, HarvestShapeInfo harvestShapeInfo, HarvestShapeHit harvestShapeHit) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 151
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.<>c__DisplayClass20_7.<Discover>b__14(DisplayContext displayContext) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 133
+   at Orchard.DisplayManagement.Descriptors.ShapeAlterationBuilder.<>c__DisplayClass7_1.<BoundAs>b__1(DisplayContext displayContext) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeAlterationBuilder.cs:line 56
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Process(ShapeBinding shapeBinding, IShape shape, DisplayContext context) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 203
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Execute(DisplayContext context) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 99
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.ShapeExecute(Object shape) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 86
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.Invoke(String name, INamedEnumerable`1 parameters) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 44
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.TryInvoke(InvokeBinder binder, Object[] args, Object& result) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 29
+   at CallSite.Target(Closure , CallSite , Object , Object )
+   at Orchard.Core.Shapes.CoreShapes.ContentZone(Object Display, Object Shape, TextWriter Output) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard.Web\Core\Shapes\CoreShapes.cs:line 286
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at Orchard.DisplayManagement.Descriptors.ShapeAttributeStrategy.ShapeAttributeBindingStrategy.PerformInvoke(DisplayContext displayContext, MethodInfo methodInfo, Object serviceInstance) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeAttributeStrategy\ShapeAttributeBindingStrategy.cs:line 64
+   at Orchard.DisplayManagement.Descriptors.ShapeAttributeStrategy.ShapeAttributeBindingStrategy.<>c__DisplayClass5_0.<CreateDelegate>b__0(DisplayContext context) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeAttributeStrategy\ShapeAttributeBindingStrategy.cs:line 55
+   at Orchard.DisplayManagement.Descriptors.ShapeAlterationBuilder.<>c__DisplayClass7_1.<BoundAs>b__1(DisplayContext displayContext) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeAlterationBuilder.cs:line 56
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Process(ShapeBinding shapeBinding, IShape shape, DisplayContext context) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 203
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Execute(DisplayContext context) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 99
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.ShapeExecute(Object shape) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 86
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.Invoke(String name, INamedEnumerable`1 parameters) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 44
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.TryInvoke(InvokeBinder binder, Object[] args, Object& result) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 29
+   at CallSite.Target(Closure , CallSite , Object , Object )
+   at ASP._Page_Themes_HelloWorld_Views_Content_CoursePage_Detail_cshtml.Execute() in c:\inetpub\wwwroot\Orchard\Themes\HelloWorld\Views\Content-CoursePage.Detail.cshtml:line 11
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.Render(ShapeDescriptor shapeDescriptor, DisplayContext displayContext, HarvestShapeInfo harvestShapeInfo, HarvestShapeHit harvestShapeHit) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 151
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.<>c__DisplayClass20_7.<Discover>b__14(DisplayContext displayContext) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 133
+   at Orchard.DisplayManagement.Descriptors.ShapeAlterationBuilder.<>c__DisplayClass7_1.<BoundAs>b__1(DisplayContext displayContext) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeAlterationBuilder.cs:line 56
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Process(ShapeBinding shapeBinding, IShape shape, DisplayContext context) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 203
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Execute(DisplayContext context) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 99
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.ShapeExecute(Object shape) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 86
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.Invoke(String name, INamedEnumerable`1 parameters) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 44
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.TryInvoke(InvokeBinder binder, Object[] args, Object& result) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 29
+   at CallSite.Target(Closure , CallSite , Object , Object )
+   at ASP._Page_Core_Contents_Views_Item_Display_cshtml.Execute() in c:\inetpub\wwwroot\Orchard\Core\Contents\Views\Item\Display.cshtml:line 6
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at Orchard.Mvc.ViewEngines.ThemeAwareness.LayoutAwareViewEngine.<>c__DisplayClass9_0.<FindView>b__0(ViewContext viewContext, TextWriter writer, IViewDataContainer viewDataContainer) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\Mvc\ViewEngines\ThemeAwareness\LayoutAwareViewEngine.cs:line 59
+   at Orchard.Mvc.ViewEngines.ThemeAwareness.LayoutAwareViewEngine.LayoutView.Render(ViewContext viewContext, TextWriter writer) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\Mvc\ViewEngines\ThemeAwareness\LayoutAwareViewEngine.cs:line 90
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+2016-03-22 14:15:28,041 [61] Orchard.Exceptions.DefaultExceptionPolicy - Default - An unexpected exception was caught
+ http://local.orchard/courses/webdesign
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: The best overloaded method match for 'string.Split(params char[])' has some invalid arguments
+   at CallSite.Target(Closure , CallSite , Object , String )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute2[T0,T1,TRet](CallSite site, T0 arg0, T1 arg1)
+   at ASP._Page_Themes_HelloWorld_Views_CourseScheduleBlock_cshtml.Execute() in c:\inetpub\wwwroot\Orchard\Themes\HelloWorld\Views\CourseScheduleBlock.cshtml:line 27
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.Render(ShapeDescriptor shapeDescriptor, DisplayContext displayContext, HarvestShapeInfo harvestShapeInfo, HarvestShapeHit harvestShapeHit) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 151
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.<>c__DisplayClass20_7.<Discover>b__14(DisplayContext displayContext) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 133
+   at Orchard.DisplayManagement.Descriptors.ShapeAlterationBuilder.<>c__DisplayClass7_1.<BoundAs>b__1(DisplayContext displayContext) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeAlterationBuilder.cs:line 56
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Process(ShapeBinding shapeBinding, IShape shape, DisplayContext context) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 203
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Execute(DisplayContext context) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 99
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.ShapeExecute(Object shape) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 86
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.Invoke(String name, INamedEnumerable`1 parameters) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 44
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.TryInvoke(InvokeBinder binder, Object[] args, Object& result) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 29
+   at CallSite.Target(Closure , CallSite , Object , Object )
+   at ASP._Page_Modules_Orchard_Layouts_Views_Elements_Shape_cshtml.Execute() in c:\inetpub\wwwroot\Orchard\Modules\Orchard.Layouts\Views\Elements\Shape.cshtml:line 5
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.Render(ShapeDescriptor shapeDescriptor, DisplayContext displayContext, HarvestShapeInfo harvestShapeInfo, HarvestShapeHit harvestShapeHit) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 151
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.<>c__DisplayClass20_7.<Discover>b__14(DisplayContext displayContext) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 133
+   at Orchard.DisplayManagement.Descriptors.ShapeAlterationBuilder.<>c__DisplayClass7_1.<BoundAs>b__1(DisplayContext displayContext) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeAlterationBuilder.cs:line 56
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Process(ShapeBinding shapeBinding, IShape shape, DisplayContext context) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 203
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Execute(DisplayContext context) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 99
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.ShapeExecute(Object shape) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 86
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.Invoke(String name, INamedEnumerable`1 parameters) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 44
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.TryInvoke(InvokeBinder binder, Object[] args, Object& result) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 29
+   at CallSite.Target(Closure , CallSite , Object , Object )
+   at Orchard.Mvc.ViewEngines.Razor.WebViewPage`1.DisplayChildren(Object shape) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\Mvc\ViewEngines\Razor\WebViewPage.cs:line 191
+   at ASP._Page_Modules_Orchard_Layouts_Views_Elements_Canvas_cshtml.Execute() in c:\inetpub\wwwroot\Orchard\Modules\Orchard.Layouts\Views\Elements\Canvas.cshtml:line 13
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.Render(ShapeDescriptor shapeDescriptor, DisplayContext displayContext, HarvestShapeInfo harvestShapeInfo, HarvestShapeHit harvestShapeHit) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 151
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.<>c__DisplayClass20_7.<Discover>b__14(DisplayContext displayContext) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 133
+   at Orchard.DisplayManagement.Descriptors.ShapeAlterationBuilder.<>c__DisplayClass7_1.<BoundAs>b__1(DisplayContext displayContext) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeAlterationBuilder.cs:line 56
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Process(ShapeBinding shapeBinding, IShape shape, DisplayContext context) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 203
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Execute(DisplayContext context) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 99
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.ShapeExecute(Object shape) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 86
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.Invoke(String name, INamedEnumerable`1 parameters) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 44
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.TryInvoke(InvokeBinder binder, Object[] args, Object& result) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 29
+   at CallSite.Target(Closure , CallSite , Object , Object )
+   at Orchard.Mvc.ViewEngines.Razor.WebViewPage`1.DisplayChildren(Object shape) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\Mvc\ViewEngines\Razor\WebViewPage.cs:line 191
+   at ASP._Page_Modules_Orchard_Layouts_Views_LayoutRoot_cshtml.Execute() in c:\inetpub\wwwroot\Orchard\Modules\Orchard.Layouts\Views\LayoutRoot.cshtml:line 1
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.Render(ShapeDescriptor shapeDescriptor, DisplayContext displayContext, HarvestShapeInfo harvestShapeInfo, HarvestShapeHit harvestShapeHit) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 151
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.<>c__DisplayClass20_7.<Discover>b__14(DisplayContext displayContext) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 133
+   at Orchard.DisplayManagement.Descriptors.ShapeAlterationBuilder.<>c__DisplayClass7_1.<BoundAs>b__1(DisplayContext displayContext) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeAlterationBuilder.cs:line 56
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Process(ShapeBinding shapeBinding, IShape shape, DisplayContext context) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 203
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Execute(DisplayContext context) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 99
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.ShapeExecute(Object shape) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 86
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.Invoke(String name, INamedEnumerable`1 parameters) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 44
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.TryInvoke(InvokeBinder binder, Object[] args, Object& result) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 29
+   at CallSite.Target(Closure , CallSite , Object , Object )
+   at ASP._Page_Themes_HelloWorld_Views_Parts_Layout_cshtml.Execute() in c:\inetpub\wwwroot\Orchard\Themes\HelloWorld\Views\Parts.Layout.cshtml:line 9
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.Render(ShapeDescriptor shapeDescriptor, DisplayContext displayContext, HarvestShapeInfo harvestShapeInfo, HarvestShapeHit harvestShapeHit) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 151
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.<>c__DisplayClass20_7.<Discover>b__14(DisplayContext displayContext) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 133
+   at Orchard.DisplayManagement.Descriptors.ShapeAlterationBuilder.<>c__DisplayClass7_1.<BoundAs>b__1(DisplayContext displayContext) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeAlterationBuilder.cs:line 56
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Process(ShapeBinding shapeBinding, IShape shape, DisplayContext context) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 203
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Execute(DisplayContext context) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 99
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.ShapeExecute(Object shape) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 86
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.Invoke(String name, INamedEnumerable`1 parameters) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 44
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.TryInvoke(InvokeBinder binder, Object[] args, Object& result) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 29
+   at CallSite.Target(Closure , CallSite , Object , Object )
+   at Orchard.Core.Shapes.CoreShapes.ContentZone(Object Display, Object Shape, TextWriter Output) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard.Web\Core\Shapes\CoreShapes.cs:line 286
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at Orchard.DisplayManagement.Descriptors.ShapeAttributeStrategy.ShapeAttributeBindingStrategy.PerformInvoke(DisplayContext displayContext, MethodInfo methodInfo, Object serviceInstance) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeAttributeStrategy\ShapeAttributeBindingStrategy.cs:line 64
+   at Orchard.DisplayManagement.Descriptors.ShapeAttributeStrategy.ShapeAttributeBindingStrategy.<>c__DisplayClass5_0.<CreateDelegate>b__0(DisplayContext context) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeAttributeStrategy\ShapeAttributeBindingStrategy.cs:line 55
+   at Orchard.DisplayManagement.Descriptors.ShapeAlterationBuilder.<>c__DisplayClass7_1.<BoundAs>b__1(DisplayContext displayContext) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeAlterationBuilder.cs:line 56
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Process(ShapeBinding shapeBinding, IShape shape, DisplayContext context) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 203
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Execute(DisplayContext context) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 99
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.ShapeExecute(Object shape) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 86
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.Invoke(String name, INamedEnumerable`1 parameters) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 44
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.TryInvoke(InvokeBinder binder, Object[] args, Object& result) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 29
+   at CallSite.Target(Closure , CallSite , Object , Object )
+   at ASP._Page_Themes_HelloWorld_Views_Content_CoursePage_Detail_cshtml.Execute() in c:\inetpub\wwwroot\Orchard\Themes\HelloWorld\Views\Content-CoursePage.Detail.cshtml:line 11
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.Render(ShapeDescriptor shapeDescriptor, DisplayContext displayContext, HarvestShapeInfo harvestShapeInfo, HarvestShapeHit harvestShapeHit) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 151
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.<>c__DisplayClass20_7.<Discover>b__14(DisplayContext displayContext) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 133
+   at Orchard.DisplayManagement.Descriptors.ShapeAlterationBuilder.<>c__DisplayClass7_1.<BoundAs>b__1(DisplayContext displayContext) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeAlterationBuilder.cs:line 56
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Process(ShapeBinding shapeBinding, IShape shape, DisplayContext context) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 203
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Execute(DisplayContext context) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 99
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.ShapeExecute(Object shape) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 86
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.Invoke(String name, INamedEnumerable`1 parameters) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 44
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.TryInvoke(InvokeBinder binder, Object[] args, Object& result) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 29
+   at CallSite.Target(Closure , CallSite , Object , Object )
+   at ASP._Page_Core_Contents_Views_Item_Display_cshtml.Execute() in c:\inetpub\wwwroot\Orchard\Core\Contents\Views\Item\Display.cshtml:line 6
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at Orchard.Mvc.ViewEngines.ThemeAwareness.LayoutAwareViewEngine.<>c__DisplayClass9_0.<FindView>b__0(ViewContext viewContext, TextWriter writer, IViewDataContainer viewDataContainer) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\Mvc\ViewEngines\ThemeAwareness\LayoutAwareViewEngine.cs:line 59
+   at Orchard.Mvc.ViewEngines.ThemeAwareness.LayoutAwareViewEngine.LayoutView.Render(ViewContext viewContext, TextWriter writer) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\Mvc\ViewEngines\ThemeAwareness\LayoutAwareViewEngine.cs:line 90
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+2016-03-22 14:24:54,146 [55] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/Vya4eslav.jpg storagePath:Style Images\FeedbackScans\25-02-2016\Vya4eslav.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\Vya4eslav.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-22 14:24:54,171 [55] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/Victor.jpg storagePath:Style Images\FeedbackScans\25-02-2016\Victor.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\Victor.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-22 14:24:54,189 [55] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/PDmitrii.jpg storagePath:Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-22 14:24:54,208 [55] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/olha.jpg storagePath:Style Images\FeedbackScans\25-02-2016\olha.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\olha.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-22 14:24:54,235 [55] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/PDmitrii.jpg storagePath:Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-22 14:25:28,774 [70] Orchard.Exceptions.DefaultExceptionPolicy - Default - An unexpected exception was caught
+ http://local.orchard/courses/qa
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot perform runtime binding on a null reference
+   at CallSite.Target(Closure , CallSite , Object , Char )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute2[T0,T1,TRet](CallSite site, T0 arg0, T1 arg1)
+   at ASP._Page_Themes_HelloWorld_Views_CourseScheduleBlock_cshtml.Execute() in c:\inetpub\wwwroot\Orchard\Themes\HelloWorld\Views\CourseScheduleBlock.cshtml:line 27
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.Render(ShapeDescriptor shapeDescriptor, DisplayContext displayContext, HarvestShapeInfo harvestShapeInfo, HarvestShapeHit harvestShapeHit) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 151
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.<>c__DisplayClass20_7.<Discover>b__14(DisplayContext displayContext) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 133
+   at Orchard.DisplayManagement.Descriptors.ShapeAlterationBuilder.<>c__DisplayClass7_1.<BoundAs>b__1(DisplayContext displayContext) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeAlterationBuilder.cs:line 56
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Process(ShapeBinding shapeBinding, IShape shape, DisplayContext context) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 203
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Execute(DisplayContext context) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 99
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.ShapeExecute(Object shape) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 86
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.Invoke(String name, INamedEnumerable`1 parameters) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 44
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.TryInvoke(InvokeBinder binder, Object[] args, Object& result) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 29
+   at CallSite.Target(Closure , CallSite , Object , Object )
+   at ASP._Page_Modules_Orchard_Layouts_Views_Elements_Shape_cshtml.Execute() in c:\inetpub\wwwroot\Orchard\Modules\Orchard.Layouts\Views\Elements\Shape.cshtml:line 5
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.Render(ShapeDescriptor shapeDescriptor, DisplayContext displayContext, HarvestShapeInfo harvestShapeInfo, HarvestShapeHit harvestShapeHit) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 151
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.<>c__DisplayClass20_7.<Discover>b__14(DisplayContext displayContext) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 133
+   at Orchard.DisplayManagement.Descriptors.ShapeAlterationBuilder.<>c__DisplayClass7_1.<BoundAs>b__1(DisplayContext displayContext) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeAlterationBuilder.cs:line 56
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Process(ShapeBinding shapeBinding, IShape shape, DisplayContext context) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 203
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Execute(DisplayContext context) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 99
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.ShapeExecute(Object shape) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 86
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.Invoke(String name, INamedEnumerable`1 parameters) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 44
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.TryInvoke(InvokeBinder binder, Object[] args, Object& result) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 29
+   at CallSite.Target(Closure , CallSite , Object , Object )
+   at Orchard.Mvc.ViewEngines.Razor.WebViewPage`1.DisplayChildren(Object shape) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\Mvc\ViewEngines\Razor\WebViewPage.cs:line 191
+   at ASP._Page_Modules_Orchard_Layouts_Views_Elements_Canvas_cshtml.Execute() in c:\inetpub\wwwroot\Orchard\Modules\Orchard.Layouts\Views\Elements\Canvas.cshtml:line 13
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.Render(ShapeDescriptor shapeDescriptor, DisplayContext displayContext, HarvestShapeInfo harvestShapeInfo, HarvestShapeHit harvestShapeHit) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 151
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.<>c__DisplayClass20_7.<Discover>b__14(DisplayContext displayContext) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 133
+   at Orchard.DisplayManagement.Descriptors.ShapeAlterationBuilder.<>c__DisplayClass7_1.<BoundAs>b__1(DisplayContext displayContext) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeAlterationBuilder.cs:line 56
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Process(ShapeBinding shapeBinding, IShape shape, DisplayContext context) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 203
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Execute(DisplayContext context) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 99
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.ShapeExecute(Object shape) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 86
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.Invoke(String name, INamedEnumerable`1 parameters) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 44
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.TryInvoke(InvokeBinder binder, Object[] args, Object& result) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 29
+   at CallSite.Target(Closure , CallSite , Object , Object )
+   at Orchard.Mvc.ViewEngines.Razor.WebViewPage`1.DisplayChildren(Object shape) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\Mvc\ViewEngines\Razor\WebViewPage.cs:line 191
+   at ASP._Page_Modules_Orchard_Layouts_Views_LayoutRoot_cshtml.Execute() in c:\inetpub\wwwroot\Orchard\Modules\Orchard.Layouts\Views\LayoutRoot.cshtml:line 1
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.Render(ShapeDescriptor shapeDescriptor, DisplayContext displayContext, HarvestShapeInfo harvestShapeInfo, HarvestShapeHit harvestShapeHit) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 151
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.<>c__DisplayClass20_7.<Discover>b__14(DisplayContext displayContext) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 133
+   at Orchard.DisplayManagement.Descriptors.ShapeAlterationBuilder.<>c__DisplayClass7_1.<BoundAs>b__1(DisplayContext displayContext) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeAlterationBuilder.cs:line 56
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Process(ShapeBinding shapeBinding, IShape shape, DisplayContext context) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 203
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Execute(DisplayContext context) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 99
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.ShapeExecute(Object shape) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 86
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.Invoke(String name, INamedEnumerable`1 parameters) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 44
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.TryInvoke(InvokeBinder binder, Object[] args, Object& result) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 29
+   at CallSite.Target(Closure , CallSite , Object , Object )
+   at ASP._Page_Themes_HelloWorld_Views_Parts_Layout_cshtml.Execute() in c:\inetpub\wwwroot\Orchard\Themes\HelloWorld\Views\Parts.Layout.cshtml:line 9
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.Render(ShapeDescriptor shapeDescriptor, DisplayContext displayContext, HarvestShapeInfo harvestShapeInfo, HarvestShapeHit harvestShapeHit) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 151
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.<>c__DisplayClass20_7.<Discover>b__14(DisplayContext displayContext) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 133
+   at Orchard.DisplayManagement.Descriptors.ShapeAlterationBuilder.<>c__DisplayClass7_1.<BoundAs>b__1(DisplayContext displayContext) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeAlterationBuilder.cs:line 56
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Process(ShapeBinding shapeBinding, IShape shape, DisplayContext context) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 203
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Execute(DisplayContext context) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 99
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.ShapeExecute(Object shape) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 86
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.Invoke(String name, INamedEnumerable`1 parameters) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 44
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.TryInvoke(InvokeBinder binder, Object[] args, Object& result) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 29
+   at CallSite.Target(Closure , CallSite , Object , Object )
+   at Orchard.Core.Shapes.CoreShapes.ContentZone(Object Display, Object Shape, TextWriter Output) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard.Web\Core\Shapes\CoreShapes.cs:line 286
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at Orchard.DisplayManagement.Descriptors.ShapeAttributeStrategy.ShapeAttributeBindingStrategy.PerformInvoke(DisplayContext displayContext, MethodInfo methodInfo, Object serviceInstance) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeAttributeStrategy\ShapeAttributeBindingStrategy.cs:line 64
+   at Orchard.DisplayManagement.Descriptors.ShapeAttributeStrategy.ShapeAttributeBindingStrategy.<>c__DisplayClass5_0.<CreateDelegate>b__0(DisplayContext context) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeAttributeStrategy\ShapeAttributeBindingStrategy.cs:line 55
+   at Orchard.DisplayManagement.Descriptors.ShapeAlterationBuilder.<>c__DisplayClass7_1.<BoundAs>b__1(DisplayContext displayContext) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeAlterationBuilder.cs:line 56
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Process(ShapeBinding shapeBinding, IShape shape, DisplayContext context) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 203
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Execute(DisplayContext context) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 99
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.ShapeExecute(Object shape) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 86
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.Invoke(String name, INamedEnumerable`1 parameters) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 44
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.TryInvoke(InvokeBinder binder, Object[] args, Object& result) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 29
+   at CallSite.Target(Closure , CallSite , Object , Object )
+   at ASP._Page_Themes_HelloWorld_Views_Content_CoursePage_Detail_cshtml.Execute() in c:\inetpub\wwwroot\Orchard\Themes\HelloWorld\Views\Content-CoursePage.Detail.cshtml:line 11
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.Render(ShapeDescriptor shapeDescriptor, DisplayContext displayContext, HarvestShapeInfo harvestShapeInfo, HarvestShapeHit harvestShapeHit) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 151
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.<>c__DisplayClass20_7.<Discover>b__14(DisplayContext displayContext) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 133
+   at Orchard.DisplayManagement.Descriptors.ShapeAlterationBuilder.<>c__DisplayClass7_1.<BoundAs>b__1(DisplayContext displayContext) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Descriptors\ShapeAlterationBuilder.cs:line 56
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Process(ShapeBinding shapeBinding, IShape shape, DisplayContext context) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 203
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Execute(DisplayContext context) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 99
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.ShapeExecute(Object shape) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 86
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.Invoke(String name, INamedEnumerable`1 parameters) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 44
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.TryInvoke(InvokeBinder binder, Object[] args, Object& result) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 29
+   at CallSite.Target(Closure , CallSite , Object , Object )
+   at ASP._Page_Core_Contents_Views_Item_Display_cshtml.Execute() in c:\inetpub\wwwroot\Orchard\Core\Contents\Views\Item\Display.cshtml:line 6
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at Orchard.Mvc.ViewEngines.ThemeAwareness.LayoutAwareViewEngine.<>c__DisplayClass9_0.<FindView>b__0(ViewContext viewContext, TextWriter writer, IViewDataContainer viewDataContainer) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\Mvc\ViewEngines\ThemeAwareness\LayoutAwareViewEngine.cs:line 59
+   at Orchard.Mvc.ViewEngines.ThemeAwareness.LayoutAwareViewEngine.LayoutView.Render(ViewContext viewContext, TextWriter writer) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\Mvc\ViewEngines\ThemeAwareness\LayoutAwareViewEngine.cs:line 90
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+2016-03-22 14:44:07,779 [64] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/Vya4eslav.jpg storagePath:Style Images\FeedbackScans\25-02-2016\Vya4eslav.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\Vya4eslav.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-22 14:44:07,796 [64] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/Victor.jpg storagePath:Style Images\FeedbackScans\25-02-2016\Victor.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\Victor.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-22 14:44:07,812 [64] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/PDmitrii.jpg storagePath:Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-22 14:44:07,828 [64] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/olha.jpg storagePath:Style Images\FeedbackScans\25-02-2016\olha.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\olha.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-22 14:44:07,843 [64] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/PDmitrii.jpg storagePath:Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-22 14:46:06,857 [59] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/Vya4eslav.jpg storagePath:Style Images\FeedbackScans\25-02-2016\Vya4eslav.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\Vya4eslav.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-22 14:46:06,878 [59] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/Victor.jpg storagePath:Style Images\FeedbackScans\25-02-2016\Victor.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\Victor.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-22 14:46:07,014 [59] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/PDmitrii.jpg storagePath:Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-22 14:46:07,032 [59] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/olha.jpg storagePath:Style Images\FeedbackScans\25-02-2016\olha.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\olha.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-22 14:46:07,050 [59] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/PDmitrii.jpg storagePath:Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-22 18:02:11,713 [23] Orchard.Exceptions.DefaultExceptionPolicy - Default - An unexpected exception was caught
+ http://local.orchard/Contact/SignUp
+System.Data.Entity.Core.EntityException: The underlying provider failed on Open. ---> System.Data.SqlClient.SqlException: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) ---> System.ComponentModel.Win32Exception: Не найден сетевой путь
+   --- End of inner exception stack trace ---
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover, SqlAuthenticationMethod authType)
+   at System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext](TTarget target, Action`2 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.Open(DbConnection connection, DbInterceptionContext interceptionContext)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<>c__DisplayClass1.<Execute>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+   at System.Data.Entity.Core.Objects.ObjectContext.EnsureConnection(Boolean shouldMonitorTransactions)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   at System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at WebSite.DAL.Db.Repositories.DbCourseRepository.LoadCourseFlows(Int32 courseId, Nullable`1 status)
+   at WebSite.Controllers.ContactController.SignUp(SignupApplication application)
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+2016-03-22 18:02:35,714 [8] Orchard.Exceptions.DefaultExceptionPolicy - Default - An unexpected exception was caught
+ http://local.orchard/Contact/SignUp
+System.Data.Entity.Core.EntityException: The underlying provider failed on Open. ---> System.Data.SqlClient.SqlException: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) ---> System.ComponentModel.Win32Exception: Не найден сетевой путь
+   --- End of inner exception stack trace ---
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover, SqlAuthenticationMethod authType)
+   at System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext](TTarget target, Action`2 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.Open(DbConnection connection, DbInterceptionContext interceptionContext)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<>c__DisplayClass1.<Execute>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+   at System.Data.Entity.Core.Objects.ObjectContext.EnsureConnection(Boolean shouldMonitorTransactions)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   at System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at WebSite.DAL.Db.Repositories.DbCourseRepository.LoadCourseFlows(Int32 courseId, Nullable`1 status)
+   at WebSite.Controllers.ContactController.SignUp(SignupApplication application)
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+2016-03-22 18:08:52,989 [67] Orchard.Exceptions.DefaultExceptionPolicy - Default - An unexpected exception was caught
+ http://local.orchard/Contact/SignUp
+System.Data.Entity.Core.EntityException: The underlying provider failed on Open. ---> System.Data.SqlClient.SqlException: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) ---> System.ComponentModel.Win32Exception: Не найден сетевой путь
+   --- End of inner exception stack trace ---
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover, SqlAuthenticationMethod authType)
+   at System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext](TTarget target, Action`2 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.Open(DbConnection connection, DbInterceptionContext interceptionContext)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<>c__DisplayClass1.<Execute>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+   at System.Data.Entity.Core.Objects.ObjectContext.EnsureConnection(Boolean shouldMonitorTransactions)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   at System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at WebSite.DAL.Db.Repositories.DbCourseRepository.LoadCourseFlows(Int32 courseId, Nullable`1 status)
+   at WebSite.Controllers.ContactController.SignUp(SignupApplication application)
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()

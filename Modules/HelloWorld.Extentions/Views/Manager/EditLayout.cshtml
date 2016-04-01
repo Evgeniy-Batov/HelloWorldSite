@@ -1,0 +1,52 @@
+﻿@model WebSite.Common.Models.ViewModels.PageLayoutVM 
+
+<script>
+    function dynamicValidator() {
+        $("form", "#editPageLayoutForm").removeData("validator");
+        $("form", "#editPageLayoutForm").removeData("unobtrusiveValidation");
+        $.validator.unobtrusive.parse("form", "#editPageLayoutForm");
+    }
+</script>
+
+<div id="editPageLayoutForm">
+      @using (Ajax.BeginForm("UpdateContent", new AjaxOptions {LoadingElementId = "spinner", OnSuccess = "dynamicValidator", UpdateTargetId = ViewData["updateElement"] as String }))
+      {
+            @Html.ValidationSummary(true)
+            @Html.HiddenFor(m => m.Id)
+            @Html.HiddenFor(m => m.PageName)
+            <p>
+                @Html.LabelFor(m => m.PageTitle)
+                @Html.TextBoxFor(m => m.PageTitle, new { autocomplete = "off" })
+                <br />@Html.ValidationMessageFor(m => m.PageTitle)
+            </p>
+            <p>
+                @Html.LabelFor(m => m.TitleH1)
+                @Html.TextBoxFor(m => m.TitleH1, new { autocomplete = "off" })
+                <br />@Html.ValidationMessageFor(m => m.TitleH1)
+            </p>
+            <p>
+                @Html.LabelFor(m => m.Description)
+                @Html.TextAreaFor(m => m.Description, new { autocomplete = "off" })
+                <br />@Html.ValidationMessageFor(m => m.Description)
+            </p>
+            <p>
+                @Html.LabelFor(m => m.KeyWords)
+                @Html.TextAreaFor(m => m.KeyWords, new { autocomplete = "off" })
+                <br />@Html.ValidationMessageFor(m => m.KeyWords)
+            </p>
+            <p>
+                @Html.LabelFor(m => m.Robots)
+                @Html.TextAreaFor(m => m.Robots, new { autocomplete = "off" })
+                <br />@Html.ValidationMessageFor(m => m.Robots)
+            </p>
+            <p>
+                @Html.LabelFor(m => m.Markup)
+                @Html.TextAreaFor(m => m.Markup, new { autocomplete = "off" })
+                <input type="button" class="localhtmleditortrigger" data-bound-element="Markup" value="..."/>
+                <br />@Html.ValidationMessageFor(m => m.Markup)
+            </p>
+            <p>
+                <input type="submit" value="Сохранить" />
+            </p>
+      }
+ </div>

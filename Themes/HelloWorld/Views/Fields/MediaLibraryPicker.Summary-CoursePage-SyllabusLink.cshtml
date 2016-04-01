@@ -1,0 +1,16 @@
+﻿@using Orchard.ContentManagement
+@using Orchard.MediaLibrary.Fields
+@using Orchard.Utility.Extensions;
+
+@{
+    var field = (MediaLibraryPickerField)Model.ContentField;
+    string name = field.DisplayName;
+    var contents = field.MediaParts;
+}
+
+@if (contents.Count() > 0 && contents.First().MediaUrl != null)
+{
+    <a href="@contents.First().MediaUrl" download>
+        <img height="32" width="32" src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Content/Images/download-icon.png"))" />
+    </a>
+}

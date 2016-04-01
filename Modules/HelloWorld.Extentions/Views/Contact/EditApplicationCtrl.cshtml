@@ -1,0 +1,86 @@
+﻿@model WebSite.Common.Models.ViewModels.SignupApplicationData
+
+@Html.HiddenFor(m=>m.Application.Status)
+@Html.HiddenFor(m=>m.Application.Ip)
+@Html.HiddenFor(m=>m.Application.PostedOn)
+@Html.HiddenFor(m=>m.Application.AccessToken)
+@Html.HiddenFor(m=>m.Application.MessageId)
+
+<fieldset>
+    <legend>Анкета абитуриента</legend>
+    @Html.HiddenFor(m=>m.Application.FlowId)
+    <p>
+        <label class="personal" for="name">Имя</label>
+        @Html.TextBoxFor(m=>m.Application.Name)
+        @Html.ValidationMessageFor(m=>m.Application.Name)
+    </p>
+    <p>
+        <label class="personal" for="name">Фамилия</label>
+        @Html.TextBoxFor(m=>m.Application.LastName)
+        @Html.ValidationMessageFor(m=>m.Application.LastName)
+    </p>
+    <p>
+        <label class="personal" for="e-mail">E-Mail</label>
+        @Html.TextBoxFor(m=>m.Application.Email)
+        @Html.ValidationMessageFor(m=>m.Application.Email)
+    </p>
+    <p>
+        <label class="personal" for="phone">Телефон</label>
+        @Html.TextBoxFor(m=>m.Application.Phone)
+        @Html.ValidationMessageFor(m=>m.Application.Phone)
+    </p>
+    <p>
+        <label class="personal" for="courseSelector">Курс</label>
+        @Html.DropDownListFor(m=>m.Application.SelectedCourseId , Model.Courses, new { @class = "longSelect" })
+        @Html.ValidationMessageFor(m=>m.Application.SelectedCourseId)
+    </p>
+    <p>
+        <label class="personal" for="groupSelector">Начало занятий</label>
+        @Html.DropDownListFor(m=>m.Application.SelectedGroupId,Model.Groups, new { @class = "longSelect" })
+        @Html.ValidationMessageFor(m=>m.Application.SelectedGroupId)
+    </p>
+    <p>
+        <label class="personal" for="info">Откуда о нас узнали</label>
+        @Html.DropDownListFor(m=>m.Application.SelectedReferral,Model.Refferals,new {@class="longSelect"})
+        @Html.ValidationMessageFor(m=>m.Application.SelectedReferral)
+    </p>
+
+    <fieldset>
+        <legend>Предпочтительное время посещения занятий</legend>
+        <div class="timeSelector">
+                @Html.CheckBoxFor(m=>m.Schedule.AnyTime,new {@class="anyTimeCheck"})
+                @Html.LabelFor(m=>m.Schedule.AnyTime)
+                @Html.ValidationMessageFor(m=>m.Schedule.AnyTime)
+            <br />
+            <div class="days">
+                @foreach(KeyValuePair<DayOfWeek,WebSite.Common.Models.ViewModels.LessonsTime> day in Model.Schedule)
+                    {
+                    <div class="daySelector">
+                        <div>
+                            <label>
+                                <input name="@("Schedule." + @day.Key.ToString())" type="checkbox" @(day.Value != WebSite.Common.Models.ViewModels.LessonsTime.Unavailable ? "checked=\"checked\"" : String.Empty ) id="@day.Key.ToString()"/>@Model.Schedule.GetDayInfoText(day.Key)</label>
+                        </div>
+                        <div>
+                            <select name="@("Schedule.Select" + @day.Key.ToString())"  id="@("select"+ @day.Key.ToString())">
+                                @{IEnumerable<SelectListItem> items = Model.Schedule.AvailableTimeOptions(day.Key);}
+                                @foreach (SelectListItem item in items)
+                                {
+                                    <option value="@item.Value" @(item.Selected ? "selected=\"selected\"" : String.Empty)>@item.Text</option>
+                                }
+                            </select>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Дополнительная информация</legend>
+        @Html.TextAreaFor(m=>m.Application.Message,new {placeholder="Добрый день, меня интересует...",rows="13",cols="95",id="messageTxt"})
+    </fieldset>
+    @*<div class="captcha">
+        <p>Контрольные слова:@Html.ValidationMessage("recaptcha_response_field")</p>
+        @Html.Raw(Html.GenerateCaptcha("captcha", "blackglass"))
+    </div>*@
+    
+</fieldset>

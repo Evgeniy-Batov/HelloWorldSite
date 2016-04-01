@@ -1,0 +1,75 @@
+﻿form label{
+    float: left;
+    width: 210px;
+}
+
+form input{
+    float:left;
+    margin-left:210px;
+}
+
+form textarea{
+    float:left;
+    margin-left:210px;
+}
+
+form select{
+    float:left;
+    margin-left:210px;
+}
+
+select.nomargin{
+    float:left;
+    margin-left:0px;
+}
+
+    form input{
+    float:left;
+    margin-left:210px;
+}
+
+    form span{
+    float:left;
+    margin-left:210px;
+}
+
+form p{
+    clear:both;
+    padding-bottom:20px;
+}
+
+form input.nofloat{
+    float:none;
+    padding-bottom:0px;
+    margin-left:0px;
+}
+
+input.short{
+    width:100px;
+}
+
+.form-control-long
+{
+    width:300px;
+}
+
+.form-control-long-xl
+{
+    width:600px;
+}
+
+
+input.no-margin{
+    float:none;
+    margin-left:0px;
+}
+
+.validation-summary-errors{
+    background-color:black;
+    color:white;
+}
+
+.field-validation-error {
+    background-color:black;
+    color:white;
+}

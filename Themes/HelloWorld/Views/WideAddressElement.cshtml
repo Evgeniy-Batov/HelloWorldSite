@@ -1,0 +1,29 @@
+﻿@using Orchard.ContentManagement;
+
+@{
+    IContentManager contentManager = WorkContext.Resolve<IContentManager>();
+
+    var headerWidget = contentManager.List<ContentPart>(new string[] { "GlobalHeader" }).First();
+    var footerWidget = contentManager.List<ContentPart>(new string[] { "GlobalFooterWidget" }).First();
+}
+
+<div class="contacts-left">
+    <div class="contacts-left-address">@Html.Raw(((dynamic)footerWidget.ContentItem).GlobalFooterWidget.FullAddress.Value)</div>
+    <div class="contacts-left-phones">
+        <a href="tel:@(((dynamic)headerWidget.ContentItem).GlobalHeader.FullPhone1.Value)">@(((dynamic)headerWidget.ContentItem).GlobalHeader.Phone1.Value)</a><br>
+        <a href="tel:@(((dynamic)headerWidget.ContentItem).GlobalHeader.FullPhone2.Value)">@(((dynamic)headerWidget.ContentItem).GlobalHeader.Phone2.Value)</a>
+    </div>
+    <div class="contacts-left-mail">
+        <a href="mailto:@(((dynamic)headerWidget.ContentItem).GlobalHeader.Email.Value)">@(((dynamic)headerWidget.ContentItem).GlobalHeader.Email.Value)</a>
+    </div>
+    <div class="contacts-left-skype">
+        <a href="skype:@(((dynamic)headerWidget.ContentItem).GlobalHeader.Skype.Value)?call">@(((dynamic)headerWidget.ContentItem).GlobalHeader.Skype.Value)</a>
+    </div>
+    <div class="social">
+        <a target="_blank" href="@((dynamic)footerWidget.ContentItem).GlobalFooterWidget.VKLink.Value" rel="nofollow" class="vk"></a>
+        <a target="_blank" href="@((dynamic)footerWidget.ContentItem).GlobalFooterWidget.FacebookLink.Value" rel="nofollow" class="fb"></a>
+        <a target="_blank" href="@((dynamic)footerWidget.ContentItem).GlobalFooterWidget.GooglePlusLink.Value" rel="nofollow" class="g"></a>
+        <a target="_blank" href="@((dynamic)footerWidget.ContentItem).GlobalFooterWidget.TwitterLink.Value" rel="nofollow" class="tw"></a>
+        <a target="_blank" href="@((dynamic)footerWidget.ContentItem).GlobalFooterWidget.OKLink.Value" rel="nofollow" class="od"></a>
+    </div>
+</div>

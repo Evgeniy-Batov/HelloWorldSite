@@ -1,0 +1,75 @@
+﻿@using Orchard.ContentManagement
+
+@{ 
+    object id;
+    int currentContextId = 0;
+
+    if (Request.RequestContext.RouteData.Values.TryGetValue("id", out id))
+    {
+        int contentId;
+        if (int.TryParse(id as string, out contentId))
+        {
+            currentContextId = contentId;
+        }
+    }
+
+    IContentManager contentManager  = WorkContext.Resolve<IContentManager>();
+
+    ContentItem currentContent = contentManager.Get(currentContextId);
+
+    dynamic coursePage = ((dynamic)currentContent).CoursePage;
+
+    var startDate    = coursePage.StartDate;
+    var endDate      = coursePage.EndDate;
+    var scheduleText = coursePage.ScheduleText;
+    var message      = coursePage.HeaderMessage;
+
+    string[] scheduleItems = scheduleText.Value == null ? new string[0] : scheduleText.Value.Split('\n');
+}
+
+
+<div class="course-news">
+    <div class="course-schedule">
+            <div class="course-schedule-col1">
+                <h4>Start</h4>
+                @startDate.DateTime.ToString("dd.MM.yyyy")
+            </div>
+            <div class="course-schedule-col2">
+                <div class="time-table">
+                    @for (int i = 0; i < scheduleItems.Length; i++)
+                    {
+                        String item = scheduleItems[i];
+                        int lastSpace = item.LastIndexOf(' ');
+                        String text = item.Substring(0, lastSpace);
+                        String time = item.Substring(lastSpace);
+
+                        <div class= " @(i==0 ? "schedule-item" : "schedule-item not-first") ">
+                            @text<span class="span-text-right">@time</span>
+                        </div>
+                    }
+                  
+                    @*<div class="schedule-item not-first">
+                        Суббота<span class="span-text-right">10:00</span>
+                    </div>
+                    <div class="schedule-item not-first">
+                        Суббота<span class="span-text-right">10:00</span>
+                    </div>*@
+                </div>
+            </div>
+            <div class="course-schedule-col3">
+                <h4>Finish</h4>
+                @endDate.DateTime.ToString("dd.MM.yyyy")
+            </div>
+        </div>
+    <div class="course-important-message">
+        @if (string.IsNullOrEmpty(message.Value))
+        {
+            <h4>Важных новостей пока что нет</h4>
+        }
+        else
+        {
+            <h4>Важно!</h4>
+        }
+        @Html.Raw(message.Value)
+    </div>
+</div>

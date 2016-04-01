@@ -1,0 +1,64 @@
+﻿<div id="boxes">
+    <div id="dialog" class="window">
+        <span class="spinner-container">
+            <em><span></span></em>
+        </span>
+        <a href="#" class="close"></a>
+        <img class="feedback-scan" src= "">
+    </div>
+</div>
+<div id="boxes-order">
+    <div id="dialog-order" class="window">
+        <a href="#" class="close"></a>
+        <form class="signupFormGlobal" method="post" action="/Contact/SignUp">
+            <h3>Записаться на курс</h3>
+            <input type="text" data-msg-required="Введите Фамилию" name="application.LastName" data-val="true" required="" value="" placeholder="Фамилия">
+            <input type="text" data-msg-required="Введите Имя" name="application.Name" data-val="true" required="" value="" placeholder="Имя">
+            <input type="text" data-msg-required="Введите Отчество" name="application.MiddleName" data-val="true" required="" value="" placeholder="Отчество">
+            <input type="tel" data-msg-required="Введите Телефон" name="application.Phone" data-val="true" required="" value="" placeholder="Телефон">
+            <input type="email" data-msg-required="Введите Email" data-msg-email="Неверный формат Email" name="application.Email" data-val="true" required="" value="" placeholder="Email">
+            <input type="text" readonly="readonly" name="course-name" id="course-name" value="" placeholder="">
+            <input type="hidden" id="course-id" name="application.CourseId" value="" />
+            <textarea placeholder="Комментарий"></textarea>
+            <input type="submit" name="submit" value="Записаться">
+        </form>
+    </div>
+</div>
+<div id="mask"></div>
+<div class="wrapper">
+    <header class="header">
+        <div class="block-inner">
+            @Display(Model.HeaderInBody)
+            @Display(Model.Navigation)
+        </div>
+    </header><!-- .header-->
+    @Display(Model.BeforeMain)
+    <div class="content">
+        @Display(Model.Content)
+     </div>
+</div>
+<p id="back-top">
+    <a href="#top"></a>
+</p>
+@Display(Model.RightBoxes)
+
+<footer class="footer">
+    @Display(Model.Footer)
+</footer><!-- .footer -->
+
+@{
+    Script.Require("ShapesBase");
+    Script.Require("jQuery");
+    Style.Include("site.css");
+    Style.Include("tooltipster.css");
+    Style.Include("LoadSpinner.css");
+    Style.Include("owl.carousel.css");
+    Style.Include("owl.theme.css");
+
+    Script.Include("jquery.formstyler.min.js");
+    Script.Include("owl.carousel.min.js");
+    Script.Include("main.js");
+    Script.Include("jquery.tooltipster.js");
+    Script.Include("jquery.validate.js");
+    Script.Include("jquery.blockUI.js");
+}

@@ -1,0 +1,20 @@
+﻿@using Orchard.Utility.Extensions;
+@{
+    if (Model.Title != null)
+    {
+        Layout.Title = Model.Title;
+    }
+}
+<div class="block-inner">
+    <div class="title page-title">@Model.ContentItem.CoursePart.Name</div>
+    <div class="text">
+        @Display(Model.Content)
+    </div>
+    <a href="#dialog-order" course-id="@Model.ContentItem.Id" course-name="@Model.ContentItem.CoursePart.Name" class="send-order transition" name="modal">Отправить заявку</a>
+</div>
+@if (Model.Footer != null)
+{
+    <footer>
+        @Display(Model.Footer)
+    </footer>
+}

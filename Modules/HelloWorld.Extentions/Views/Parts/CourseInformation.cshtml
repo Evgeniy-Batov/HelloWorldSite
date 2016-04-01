@@ -1,0 +1,30 @@
+﻿
+<div class="course-circles">
+    <div class="course-circle">
+        <strong>@Model.GetPartInfo.Length</strong>
+        <span>@Model.GetPartInfo.LengthPeriod</span>
+        <p>@Model.GetPartInfo.LengthText</p>
+    </div>
+    <div class="course-circle">
+        <strong>@Model.GetPartInfo.Intencity</strong>
+        <span>@Model.GetPartInfo.IntencityPeriod</span>
+        <p>@Model.GetPartInfo.IntencityText</p>
+    </div>
+    <div class="course-circle">
+        <strong>@Model.GetPartInfo.Duration</strong>
+        <span>@Model.GetPartInfo.DurationPeriod</span>
+        <p>@Model.GetPartInfo.DurationText</p>
+    </div>
+    <div class="course-circle course-circle-orange">
+        <div class="course-circle-inner">
+            <strong>@Model.GetPartInfo.MinPrice</strong>
+            <span>@Model.GetPartInfo.MinPricePeriod</span>
+        </div>
+        <p>@Model.GetPartInfo.MinPriceText</p>
+        <div class="course-circle-inner">
+            <strong>@Model.GetPartInfo.MaxPrice</strong>
+            <span>@Model.GetPartInfo.MaxPricePeriod</span>
+        </div>
+        <p>@Model.GetPartInfo.MaxPriceText</p>
+    </div>
+</div>

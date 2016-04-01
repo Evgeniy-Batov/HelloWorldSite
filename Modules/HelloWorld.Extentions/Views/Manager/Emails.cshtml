@@ -1,0 +1,108 @@
+﻿@model WebSite.Controllers.ManagerController.AdminPageViewModel
+
+@{
+    ViewBag.Title = "Emails";
+}
+
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/Site.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/Component.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/BigButton.css" />
+
+<link type=" text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/emails.css" />
+
+<link type=" text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.core.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.resizable.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.selectable.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.accordion.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.autocomplete.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.button.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.dialog.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.slider.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.tabs.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.datepicker.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.progressbar.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.theme.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.onlinechat.css" />
+
+
+<script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery-2.0.3.js"></script>
+<script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery-ui-1.10.3.js"></script>
+<script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/emails.js"></script>
+
+<script type="text/javascript" src="//tinymce.cachefly.net/4.0/tinymce.min.js"></script>
+
+<h2>Отправка писем</h2>
+
+<h5 class="nav">
+    @Html.ActionLink("Общие настройки", "Index")
+    <span>::</span>
+    @Html.ActionLink("Отправка писем", "Emails")
+    <span>::</span>
+    @Html.ActionLink("Управление процессом обучения", "Manage")
+    <span>::</span>
+    @Html.ActionLink("Доходы", "Incomes")
+    <span>::</span>
+    @Html.ActionLink("Расходы", "Expenses")
+    <span>::</span>
+    @Html.ActionLink("План платежей", "PaymentsPlan")
+</h5>
+
+<div id="tabs">
+    <ul>
+        <li><a href="#tabs-1">Новая рассылка</a></li>
+        <li><a href="#tabs-2">История отправки</a></li>
+    </ul>
+    <div id="tabs-1">
+        <div class="leftpanel">
+            <b><label for="courseSelector">Выберите курс</label><br /></b>
+            @Html.DropDownList("courseSelector", @Model.Courses, new { autocomplete = "off" })<br />
+            <b><label for="cFlowSelector">Выберите поток</label><br /></b>
+            <select id="cFlowSelector" name="FlowSelector"></select><br />
+            <b>Регистрации:</b>
+            <br />
+            <select size=15 multiple id="contactlist"></select>
+            <br />
+            <input type="button" id="btnAllEmails" value="Все >>" />
+            <input type="button" id="btnSelEmails" value="Выбранныe >>" />
+            <br />
+            <b>Студенты:</b>
+            <br />
+            <select size=15 multiple id="studentslist"></select>
+            <br />
+            <input type="button" id="btnAllStudents" value="Все >>" />
+            <input type="button" id="btnSelStudents" value="Выбранныe >>" />
+        </div>
+        <div class="mainpanel">
+            <form id="emailSender" name="email" method="post">
+                <fieldset>
+                    <legend>Новая рассылка</legend>
+                    <p>
+                        <label for="cTo">Кому</label>
+                        <textarea id="cTo" name="To"></textarea>
+                    </p>
+                    <p>
+                        <label for="cCC">Копии</label>
+                        <textarea type="text" id="cCC" name="CC"></textarea>
+                    </p>
+                    <p>
+                        <label for="cSubj">Тема</label>
+                        <textarea type="text" id="cSubj" name="Subj"></textarea>
+                    </p>
+                    <p>
+                        <b>Плейсхолдеры:</b> @@lastname @@firstname @@email @@phone @@flowname @@flowstartdate @@coursename @@starttime @@cancelLink @@paymentdate @@paymentamount
+                    </p>
+                    <p>
+                        <label for="cBody">Текст письма</label>
+                        <textarea class="high" id="cBody" name="Body"></textarea>
+                    </p>
+                    <input type="submit" id="emailsendtrigger" value="Отправить рассылку" />
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="tabs-2">
+        <div class="sentEmailsContainer">
+        </div>
+        @Html.Action("LoadSentEmails")
+    </div>
+</div>

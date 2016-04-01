@@ -1,0 +1,68 @@
+<Placement>
+    <Place Fields_MediaLibraryPicker="ContentOuter:1"/>
+    <Place Fields_Common_Text-MainHeaderText = "MainBadgeText:1"/>
+    <Place Fields_Common_Text-CommonText     = "MainBadgeText:2"/>
+    <Place Fields_Common_Text-CoursesListHeaderText  = "-"/>    
+    
+    <Match ContentType="FeedbacksListPage">
+      <Place Parts_Common_Metadata = "-"/>
+      <Place Parts_ProjectionPart_List="-"/>
+      <Place Fields_Common_Metadata = "-"/>
+      <Place Fields_Common_Text = "-"/>
+      <Place Fields_Common_Text-MessageText = "-"/>
+      <Place Parts_Title            = "Title:1"/>
+    </Match>
+    
+    <Match ContentType="CoursePage">
+      <Place Parts_Common_Metadata = "-"/>
+      <Place Parts_Title_Summary="-"/>
+      <Place Parts_Layout_Summary="-"/>
+      <Place Fields_Common_Metadata = "-"/>
+      <Place Parts_Common_Metadata_Summary = "-"/>
+      <Place Fields_Common_Text="-"/>
+      <Place Parts_Course = "-"/>
+      <Place Fields_Common_Boolean ="-"/>
+      <Place Fields_Boolean ="-"/>  
+      <Place Fields_Numeric="-"/>
+      <Place Fields_DateTime="-"/>
+      <Place Parts_Title = "Title:1"/>
+    </Match>
+  
+    <Match ContentType="InformationPage">
+      <Place Parts_Common_Projection="-"/>
+      <Place Parts_Layout_Summary="-"/>
+      <Place Parts_Common_Metadata = "-"/>
+      <Place Fields_Boolean ="-"/>  
+      <Place Fields_Common_Boolean ="-"/>
+      <Place Fields_Common_Text ="-"/>
+      <Place Parts_ProjectionPart_List="-"/>
+      <Place Parts_Title            = "Title:1"/>
+    </Match>
+
+    <Match DisplayType="Layout">
+       <Place Fields_Common_Text       ="Content:1"/>
+       <Place Parts_ProjectionPart_List="Content:2"/>
+    </Match>
+
+    <Match DisplayType="OwlCarouselGallery">
+        <Place Fields_MediaLibraryPicker="Content:1"/>
+    </Match>
+    
+  
+    <Match ContentType="MainPage">
+      <Place Parts_Title = "Title:1"/>
+    </Match>
+    
+    <Match ContentType="Page">
+      <Place Parts_Common_Metadata = "-"/>
+      <Place Parts_Title="Title:-"/>
+    </Match>
+
+    <Match ContentType="CoursesListPage">
+      <Place Parts_Common_Metadata  = "-"/>
+      <Place Fields_Common_Text     = "-"/>
+      <Place Fields_Common_Metadata = "-"/>
+      <Place Parts_Title            = "Title:1"/>
+    </Match>
+    
+</Placement>

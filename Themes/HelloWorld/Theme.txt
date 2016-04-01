@@ -1,0 +1,7 @@
+Name: HelloWorld
+Author: The Orchard Team
+Website: http://www.orchardproject.net
+Description: Description for the theme
+Version: 1.0
+Tags: Awesome
+Zones: Header,Head,HeadScripts,BeforeMain,HeaderInBody,Navigation,Content,Footer,MainPageWidgets,CoursesListWidgets,RightBoxes

@@ -1,0 +1,62 @@
+﻿@keyframes progress-spinner-animation {
+	to { transform: rotate(1turn); }
+}
+.spinner-container {
+		animation: progress-spinner-animation 1s infinite steps(12);
+		position: relative;
+		display: inline-block;
+    font-size: 40px;
+		width: 5em;
+		height: 5em;
+		text-indent: 999em;
+}
+.spinner-container	span,
+.spinner-container	em {
+			display: block;
+}
+		
+.spinner-container:before,
+.spinner-container:after,
+.spinner-container em:before,
+.spinner-container em:after,
+.spinner-container span:before,
+.spinner-container span:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 2.3em; /* (container width - part width)/2  */
+			width: .4em;
+			height: 1.4em;
+			border-radius: 45%;
+			background: #00ffff;
+			box-shadow: 0 3.6em #00b2ff; /* container height - part height */
+			transform-origin: 50% 2.5em; /* container height / 2 */
+}
+.spinner-container:before {
+		background: rgba(0, 178, 255, 1.0);
+}
+
+.spinner-container:after {
+  transform: rotate(-30deg);
+  background: rgba(0, 178, 255, .84);
+}
+
+.spinner-container em:before {
+  transform: rotate(-60deg);
+  background: rgba(0, 178, 255, .68);
+}
+
+.spinner-container em:after {
+  transform: rotate(-90deg);
+  background: rgba(0, 178, 255, .52);
+}
+
+.spinner-container span:before {
+  transform: rotate(-120deg);
+  background: rgba(0, 178, 255, .36);
+}
+
+.spinner-container span:after {
+  transform: rotate(-150deg);
+  background: rgba(0, 178, 255, .2);
+}

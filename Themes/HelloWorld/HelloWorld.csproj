@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FB42F152-A6BA-4464-8CA6-5F1FE0047E80}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HelloWorld</RootNamespace>
+    <AssemblyName>HelloWorld</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>..\..\..\OrchardBasicCorrectness.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Orchard.Widgets">
+      <HintPath>..\..\Modules\Orchard.Widgets\bin\Orchard.Widgets.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\amaran\jquery.amaran.css" />
+    <Content Include="Content\amaran\themes\all-themes.css" />
+    <Content Include="Content\amaran\themes\awesome.css" />
+    <Content Include="Content\amaran\themes\blur.css" />
+    <Content Include="Content\amaran\themes\default.css" />
+    <Content Include="Content\amaran\themes\readmore.css" />
+    <Content Include="Content\amaran\themes\rounded.css" />
+    <Content Include="Content\amaran\themes\user.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\8.png" />
+    <Content Include="Content\Images\404.jpg" />
+    <Content Include="Content\Images\404title.jpg" />
+    <Content Include="Content\Images\arrow.png" />
+    <Content Include="Content\Images\banner.jpg" />
+    <Content Include="Content\Images\border.png" />
+    <Content Include="Content\Images\circle.png" />
+    <Content Include="Content\Images\close.png" />
+    <Content Include="Content\Images\download-icon.png" />
+    <Content Include="Content\Images\drop.jpg" />
+    <Content Include="Content\Images\favicon.png" />
+    <Content Include="Content\Images\footer.png" />
+    <Content Include="Content\Images\form.png" />
+    <Content Include="Content\Images\hurt.jpg" />
+    <Content Include="Content\Images\i1.jpg" />
+    <Content Include="Content\Images\i2.jpg" />
+    <Content Include="Content\Images\i3.jpg" />
+    <Content Include="Content\Images\i4.jpg" />
+    <Content Include="Content\Images\i5.jpg" />
+    <Content Include="Content\Images\i6.jpg" />
+    <Content Include="Content\Images\icons.png" />
+    <Content Include="Content\Images\icons2.jpg" />
+    <Content Include="Content\Images\label.png" />
+    <Content Include="Content\Images\li.jpg" />
+    <Content Include="Content\Images\loading.gif" />
+    <Content Include="Content\Images\logo-wrap.jpg" />
+    <Content Include="Content\Images\logo.png" />
+    <Content Include="Content\Images\map.jpg" />
+    <Content Include="Content\Images\maper.png" />
+    <Content Include="Content\Images\money.jpg" />
+    <Content Include="Content\Images\more.png" />
+    <Content Include="Content\Images\note.jpg" />
+    <Content Include="Content\Images\office.jpg" />
+    <Content Include="Content\Images\order-close.png" />
+    <Content Include="Content\Images\order.png" />
+    <Content Include="Content\Images\otziv.jpg" />
+    <Content Include="Content\Images\p1.jpg" />
+    <Content Include="Content\Images\p2.jpg" />
+    <Content Include="Content\Images\p3.jpg" />
+    <Content Include="Content\Images\p4.jpg" />
+    <Content Include="Content\Images\p5.jpg" />
+    <Content Include="Content\Images\page.jpg" />
+    <Content Include="Content\Images\photo1.jpg" />
+    <Content Include="Content\Images\photo2.jpg" />
+    <Content Include="Content\Images\photo3.jpg" />
+    <Content Include="Content\Images\r1.jpg" />
+    <Content Include="Content\Images\r2.jpg" />
+    <Content Include="Content\Images\r3.jpg" />
+    <Content Include="Content\Images\r4.jpg" />
+    <Content Include="Content\Images\r5.jpg" />
+    <Content Include="Content\Images\review-more.png" />
+    <Content Include="Content\Images\review1.jpg" />
+    <Content Include="Content\Images\rotate-hover.png" />
+    <Content Include="Content\Images\s1.png" />
+    <Content Include="Content\Images\s2.png" />
+    <Content Include="Content\Images\s3.png" />
+    <Content Include="Content\Images\s4.png" />
+    <Content Include="Content\Images\s5.png" />
+    <Content Include="Content\Images\s6.png" />
+    <Content Include="Content\Images\social.png" />
+    <Content Include="Content\Images\social2.png" />
+    <Content Include="Content\Images\stock1.jpg" />
+    <Content Include="Content\Images\stock2.jpg" />
+    <Content Include="Content\Images\time.jpg" />
+    <Content Include="Content\Images\up.png" />
+    <Content Include="Content\Images\vk.jpg" />
+    <Content Include="Content\Images\wish.jpg" />
+    <Content Include="Content\maper.png" />
+    <Content Include="Content\Site.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\proximanovacond-regular.svg" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery.amaran.js" />
+    <Content Include="Scripts\jquery.blockUI.js" />
+    <Content Include="Scripts\jquery.tooltipster.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Styles\grabbing.png" />
+    <Content Include="Styles\AjaxLoader.gif" />
+    <Content Include="Styles\leftLine.png" />
+    <Content Include="Styles\LoadSpinner.css" />
+    <Content Include="Styles\owl.carousel.css" />
+    <Content Include="Styles\owl.theme.css" />
+    <Content Include="Styles\rightLine.png" />
+    <Content Include="Styles\schedule.png" />
+    <Content Include="Styles\tooltipster.css" />
+    <Content Include="Views\Content-CoursesList.cshtml" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\jquery-1.11.3.min.js" />
+    <Content Include="Scripts\jquery.formstyler.js" />
+    <Content Include="Scripts\jquery.formstyler.min.js" />
+    <Content Include="Scripts\main.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\owl.carousel.min.js" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Scripts\Web.config" />
+    <Content Include="Styles\Web.config" />
+    <Content Include="Content\Web.config" />
+    <Content Include="Theme.txt" />
+    <Content Include="Theme.png" />
+    <Content Include="Placement.info">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Menu.cshtml" />
+    <Content Include="Views\Widget-MenuWidget.cshtml" />
+    <Content Include="Views\Zone.cshtml" />
+    <Content Include="Views\Content-MainPage.cshtml" />
+    <Content Include="Views\Fields.MediaLibraryPicker-MainBanner.cshtml" />
+    <Content Include="Views\Fields.Common.Text-MainHeaderText.cshtml" />
+    <Content Include="Views\Fields.Common.Text-CommonText.cshtml" />
+    <Content Include="Views\Widget-Name-CoursesCircleList.cshtml" />
+    <Content Include="Views\Content-CoursesListPage.cshtml" />
+    <Content Include="Views\Widget-Name-CoursesListWide.cshtml" />
+    <Content Include="Views\Widget-Name-FeedbacksMain.cshtml" />
+    <Content Include="Views\Widget-Name-GlobalHeaderWidget.cshtml" />
+    <Content Include="Views\Widget-Name-GlobalFooterWidget.cshtml" />
+    <Content Include="Views\Breadcrumb.cshtml" />
+    <Content Include="Views\Content-FeedbacksList.cshtml" />
+    <Content Include="Views\Parts.Layout.cshtml" />
+    <Content Include="Views\Elements\ContentField.cshtml" />
+    <Content Include="Views\Elements\ContentItem.cshtml" />
+    <Content Include="Views\Content-CoursePage.Detail.cshtml" />
+    <Content Include="Views\Fields.Common.Text-CoursePage.cshtml" />
+    <Content Include="Views\Fields\Common.Text-CoursePage-SyllabusHeader.cshtml" />
+    <Content Include="Views\Fields\Common.Text-CoursePage-Syllabus.cshtml" />
+    <Content Include="Views\Fields\Common.Text-CoursePage-WhoHeader.cshtml" />
+    <Content Include="Views\Fields\Common.Text-CoursePage-WhatForHeader.cshtml" />
+    <Content Include="Views\Fields.Common.Text-CoursesListPage-MainHeaderText.cshtml" />
+    <Content Include="Views\MenuItem.cshtml" />
+    <Content Include="Views\Content-CoursePage.ShortSummary.cshtml" />
+    <Content Include="Views\Fields\Common.Text-CoursePage-WhatIsNeededText.cshtml" />
+    <Content Include="Views\Fields\Common.Text-CoursePage-WhatIsNeededHeader.cshtml" />
+    <Content Include="Views\FeedbackFiltersElement.cshtml" />
+    <Content Include="Views\Content-Feedback.Summary.cshtml" />
+    <None Include="Views\Content-Feedback.FullDescription.cshtml" />
+    <Content Include="Views\Pager.cshtml" />
+    <Content Include="Views\Pager.CurrentPage.cshtml" />
+    <Content Include="Views\Pager.First.cshtml" />
+    <Content Include="Views\Pager.Last.cshtml" />
+    <Content Include="Views\Pager.Next.cshtml" />
+    <Content Include="Views\Pager.Previous.cshtml" />
+    <Content Include="Views\WideAddressElement.cshtml" />
+    <Content Include="Views\Widget-Name-StudentRegistrationBlock.cshtml" />
+    <Content Include="Views\TempDataMessage.cshtml" />
+    <Content Include="Views\NotFound.cshtml" />
+    <Content Include="Views\Media.OwlItem.cshtml" />
+    <Content Include="Views\SyllabusLink.cshtml" />
+    <Content Include="Views\Fields\MediaLibraryPicker.Summary-CoursePage-SyllabusLink.cshtml" />
+    <Content Include="Views\CourseScheduleBlock.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Orchard.Core">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\Orchard.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Orchard.Framework">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\Orchard.Framework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="Views\Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Document.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\proximanovacond-regular.eot" />
+    <Content Include="fonts\proximanovacond-regular.ttf" />
+    <Content Include="fonts\proximanovacond-regular.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" DependsOnTargets="AfterBuildCompiler">
+    <PropertyGroup>
+      <AreasManifestDir>$(ProjectDir)\..\Manifests</AreasManifestDir>
+    </PropertyGroup>
+    <!-- If this is an area child project, uncomment the following line:
+    <CreateAreaManifest AreaName="$(AssemblyName)" AreaType="Child" AreaPath="$(ProjectDir)" ManifestPath="$(AreasManifestDir)" ContentFiles="@(Content)" />
+    -->
+    <!-- If this is an area parent project, uncomment the following lines:
+    <CreateAreaManifest AreaName="$(AssemblyName)" AreaType="Parent" AreaPath="$(ProjectDir)" ManifestPath="$(AreasManifestDir)" ContentFiles="@(Content)" />
+    <CopyAreaManifests ManifestPath="$(AreasManifestDir)" CrossCopy="false" RenameViews="true" />
+    -->
+  </Target>
+  <Target Name="AfterBuildCompiler" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)\..\$(ProjectName)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>45979</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://orchard.codeplex.com</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

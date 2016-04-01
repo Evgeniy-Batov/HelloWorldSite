@@ -1,0 +1,73 @@
+﻿@model HelloWorld.Extentions.Models.StudentRegistrationPart
+@{ 
+    var m = Model;
+
+}
+<fieldset>
+    <legend>Student Registration Fields</legend>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.HeaderText)
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.HeaderText)
+        @Html.ValidationMessageFor(model => model.HeaderText)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.FirstNameLabel)
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.FirstNameLabel)
+        @Html.ValidationMessageFor(model => model.FirstNameLabel)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.MiddleNameLabel)
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.MiddleNameLabel)
+        @Html.ValidationMessageFor(model => model.MiddleNameLabel)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.LastNameLabel)
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.LastNameLabel)
+        @Html.ValidationMessageFor(model => model.LastNameLabel)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.EmailLabel)
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.EmailLabel)
+        @Html.ValidationMessageFor(model => model.EmailLabel)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.PhoneLabel)
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.PhoneLabel)
+        @Html.ValidationMessageFor(model => model.PhoneLabel)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.CommentLabel)
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.CommentLabel)
+        @Html.ValidationMessageFor(model => model.CommentLabel)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.RegisterLable)
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.RegisterLable)
+        @Html.ValidationMessageFor(model => model.RegisterLable)
+    </div>
+
+</fieldset>

@@ -1,0 +1,100 @@
+2016-03-20 10:02:00,079 [35] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/Vya4eslav.jpg storagePath:Style Images\FeedbackScans\25-02-2016\Vya4eslav.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\Vya4eslav.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-20 10:02:04,046 [35] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/Victor.jpg storagePath:Style Images\FeedbackScans\25-02-2016\Victor.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\Victor.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-20 10:02:04,063 [35] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/PDmitrii.jpg storagePath:Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-20 10:02:04,126 [35] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/olha.jpg storagePath:Style Images\FeedbackScans\25-02-2016\olha.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\olha.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-20 10:02:04,235 [35] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/PDmitrii.jpg storagePath:Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-20 10:02:24,129 [26] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/Vya4eslav.jpg storagePath:Style Images\FeedbackScans\25-02-2016\Vya4eslav.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\Vya4eslav.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-20 10:02:24,145 [26] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/Victor.jpg storagePath:Style Images\FeedbackScans\25-02-2016\Victor.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\Victor.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-20 10:02:24,162 [26] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/PDmitrii.jpg storagePath:Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-20 10:02:24,178 [26] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/olha.jpg storagePath:Style Images\FeedbackScans\25-02-2016\olha.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\olha.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-20 10:02:24,194 [26] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/PDmitrii.jpg storagePath:Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-20 10:02:52,511 [32] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/Vya4eslav.jpg storagePath:Style Images\FeedbackScans\25-02-2016\Vya4eslav.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\Vya4eslav.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-20 10:02:52,533 [32] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/Victor.jpg storagePath:Style Images\FeedbackScans\25-02-2016\Victor.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\Victor.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-20 10:02:52,551 [32] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/PDmitrii.jpg storagePath:Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-20 10:02:52,570 [32] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/olha.jpg storagePath:Style Images\FeedbackScans\25-02-2016\olha.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\olha.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-20 10:02:52,589 [32] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/PDmitrii.jpg storagePath:Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-20 10:13:34,493 [11] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/Vya4eslav.jpg storagePath:Style Images\FeedbackScans\25-02-2016\Vya4eslav.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\Vya4eslav.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-20 10:13:34,589 [11] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/Victor.jpg storagePath:Style Images\FeedbackScans\25-02-2016\Victor.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\Victor.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-20 10:13:34,622 [11] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/PDmitrii.jpg storagePath:Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-20 10:13:34,679 [11] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/olha.jpg storagePath:Style Images\FeedbackScans\25-02-2016\olha.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\olha.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)
+2016-03-20 10:13:34,727 [11] Orchard.MediaProcessing.Services.ImageProfileManager - Default - path:/Media/Default/Style%20Images/FeedbackScans/25-02-2016/PDmitrii.jpg storagePath:Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg
+ http://local.orchard/Admin/Contents/List
+System.ArgumentException: File Style Images\FeedbackScans\25-02-2016\PDmitrii.jpg does not exist
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.GetFile(String path) in C:\Users\IevgeniiB\Downloads\Orchard-1.9.1\Orchard-1.9.1\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 116
+   at Orchard.MediaProcessing.Services.ImageProfileManager.GetImage(String path)

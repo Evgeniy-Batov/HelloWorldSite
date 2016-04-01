@@ -1,0 +1,47 @@
+﻿@model CustomFields.ViewModels.DateTimeFieldViewModel
+
+@{
+    Style.Include("datetime.css");
+    Style.Require("jQueryUI_DatePicker");
+    Style.Require("jQueryUtils_TimePicker");
+    Style.Require("jQueryUI_Orchard");
+
+    Script.Require("jQuery");
+    Script.Require("jQueryUtils");
+    Script.Require("jQueryUI_Core");
+    Script.Require("jQueryUI_Widget");
+    Script.Require("jQueryUI_DatePicker");
+    Script.Require("jQueryUtils_TimePicker");
+}
+
+<fieldset>
+    <label for="@Html.FieldIdFor(m => Model.Date)">@Model.Name</label>
+
+    @if (Model.ShowDate)
+    {
+        <label class="forpicker"
+               for="@Html.FieldIdFor(m => Model.Date)">@T("Date")</label>
+            <span class="date">@Html.EditorFor(m => m.Date)</span>
+    }
+
+    @if (Model.ShowTime)
+    {
+        <label class="forpicker"
+               for="@Html.FieldIdFor(m => Model.Time)">@T("Time")</label>
+            <span class="time">@Html.EditorFor(m => m.Time)</span>
+    }
+    @if (Model.ShowDate)
+    { <text>@Html.ValidationMessageFor(m => m.Date)</text> }
+    @if (Model.ShowTime)
+    { <text>@Html.ValidationMessageFor(m => m.Time)</text> }
+</fieldset>
+
+@using (Script.Foot())
+{
+    <script type="text/javascript">
+$(function () {
+  $("#@Html.FieldIdFor(m => Model.Date)").datepicker();
+  $("#@Html.FieldIdFor(m => Model.Time)").timepickr();
+});
+    </script>
+}

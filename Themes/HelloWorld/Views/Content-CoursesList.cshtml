@@ -1,0 +1,38 @@
+﻿@using Orchard.DisplayManagement.Descriptors;
+@using Orchard.Environment.Extensions;
+@using HelloWorld.Extentions.Models;
+@using System.Linq;
+
+@{
+    int counter = 1;
+}
+<div class="title page-title">Наши курсы</div>
+<div class="services all-services">
+    <div class="services-wrap">
+        @foreach (var item in Model.Content.Items[0].Items)
+        {
+            String imageUrl = item.ContentItem.CoursePage.CourseImage.MediaParts[0].MediaUrl;
+
+            String className = "service-card service-card" + counter++.ToString();
+            <div class="@className">
+                <div class="service-rotate">
+                    <div class="back">
+                        <a class="rotate-a" href="/@item.ContentItem.AutoroutePart.Path">
+                            <img src="@imageUrl" alt="..." />
+                        </a>
+                    </div>
+                    <div class="front">
+                        <input type="hidden" class="courseId" value="@item.ContentItem.Id" />
+                        <a class="order transition" name="modal" href="#dialog-order">@item.ContentItem.CoursePage.SignInlabel.Value</a>
+                        <a class="more transition" href="/@item.ContentItem.AutoroutePart.Path">@item.ContentItem.CoursePage.DetailsLabel.Value</a>
+                    </div>
+                </div>
+
+                <div class="service-info">
+                    <div class="service-info-title"><a class="service-name" href="/@item.ContentItem.AutoroutePart.Path">@item.ContentItem.CoursePart.Name</a></div>
+                    @Html.Raw(item.ContentItem.CoursePage.CourseShortDescription.Value)
+                </div>
+            </div>
+        }
+    </div>
+</div>

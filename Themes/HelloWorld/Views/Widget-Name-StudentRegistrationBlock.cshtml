@@ -1,0 +1,7 @@
+﻿@using Orchard.DisplayManagement.Descriptors;
+@using Orchard.Environment.Extensions;
+@{
+    Model.Metadata.Wrappers.Remove("Widget_Wrapper");
+}
+
+@Display(Model.Content)

@@ -1,0 +1,60 @@
+﻿@{
+    Layout = null;
+}
+
+@model System.Collections.Generic.IEnumerable<WebSite.Common.Models.ViewModels.ScheduledPaymentVM>
+
+@{
+    var colSize = 6;
+    var rows = (int)(Model.Count() / colSize);
+}
+
+    <style>
+        table {
+            width:100%;
+        }
+
+        table, th, td {
+           border: 1px solid black;
+        }
+    </style>
+
+<table>
+    <tr>
+        <th>Номер платежа</th>
+        <th>Дата оплаты</th>
+        <th>Сумма</th>
+        <th>Статус</th>
+        <th>Комментарий</th>
+        <th>Операции</th>
+    </tr>
+
+    @for (var row = 0; row <= rows; row++)
+    {
+        int i = 0;
+        foreach (WebSite.Common.Models.ViewModels.ScheduledPaymentVM payment in Model.Skip(row * colSize).Take(colSize))
+        {
+            i++;
+            <tr>
+                <td>@i</td>
+                <td>@payment.DueDate.ToShortDateString()</td>
+                <td>@String.Format("{0:0.00}", @payment.ScheduledAmount / 100.0) грн.</td>
+                <td>
+                    @{
+                        string status = WebSite.Common.Utils.EnumHelper<WebSite.Common.Models.ViewModels.ScheduledPaymentStatus>.GetDisplayValue(payment.Status);
+                    }
+                    @status
+                </td>   
+                <td>
+                    @payment.Comment
+                </td>
+                <td>
+                    @if(payment.PaymentId > 0)
+                    {
+                        @Html.ActionLink("Редактировать", "EditScheduledPayment",new { paymentId = payment.PaymentId })
+                    }
+                </td>
+            </tr>
+        }
+    }
+</table>

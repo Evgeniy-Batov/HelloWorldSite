@@ -1,0 +1,104 @@
+﻿@using WebSite.Helpers
+@using System.Web.Mvc
+
+<html>
+<head title="Payments plan">
+</head>
+<body>
+
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/Site.css" />
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/Component.css" />
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/BigButton.css" />
+
+
+    <link type=" text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.core.css" />
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.resizable.css" />
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.selectable.css" />
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.accordion.css" />
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.autocomplete.css" />
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.button.css" />
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.dialog.css" />
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.slider.css" />
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.tabs.css" />
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.datepicker.css" />
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.progressbar.css" />
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.theme.css" />
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.onlinechat.css" />
+
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/ui.jqgrid.css" />
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/admin.css" />
+
+    <script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery-2.0.3.js"></script>
+    <script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery-ui-1.10.3.js"></script>
+    <script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery.validate.js"></script>
+    <script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery.validate.unobtrusive.js"></script>
+    <h2>
+        План платежей
+    </h2>
+    <h5 class="nav">
+        @Html.ActionLink("Общие настройки", "Index")
+        <span>::</span>
+        @Html.ActionLink("Отправка писем", "Emails")
+        <span>::</span>
+        @Html.ActionLink("Управление процессом обучения", "Manage")
+        <span>::</span>
+        @Html.ActionLink("Доходы", "Incomes")
+        <span>::</span>
+        @Html.ActionLink("Расходы", "Expenses")
+        <span>::</span>
+        @Html.ActionLink("План платежей", "PaymentsPlan")
+    </h5>
+
+    <p>
+        @using (Html.BeginForm("AddPayment", "manager",
+                                                                        new { ReturnUrl = ViewBag.ReturnUrl },
+                                                                        FormMethod.Post, new { @class = "add-payyment-form" }))
+        {
+            <button type="submit">Запланировать новый платёж</button>
+        }
+    </p>
+    <p>
+        @{
+            String requestMonth = HttpContext.Current.Request["ReportMonth"];
+            String requestYear  = HttpContext.Current.Request["ReportYear"];
+
+            DateTime requestedMonth = DateTime.Today;
+
+            if (!String.IsNullOrWhiteSpace(requestMonth) && !String.IsNullOrWhiteSpace(requestYear) )
+            {
+                requestedMonth = new DateTime(Convert.ToInt32(requestYear), Convert.ToInt32(requestMonth), 1);
+            }
+        }
+
+        <form id="search-paymens-form" method="get" action="\manager\PaymentsPlan">
+            <label for="ReportYear">Выберите год</label>
+            <select class="year-selector" id="ReportYear" name="ReportYear">
+                <option value="2015" @(requestedMonth.Year == 2015 ? "selected='selected'" : "")>2015</option>
+                <option value="2016" @(requestedMonth.Year == 2016 ? "selected='selected'" : "")>2016</option>
+                <option value="2017" @(requestedMonth.Year == 2017 ? "selected='selected'" : "")>2017</option>
+                <option value="2018" @(requestedMonth.Year == 2018 ? "selected='selected'" : "")>2018</option>
+            </select>
+            <label for="ReportYear">Выберите месяц</label>
+            <select class="month-selector" id="ReportMonth" name="ReportMonth">
+                <option value="1" @(requestedMonth.Month == 1 ? "selected='selected'" : "")>Январь</option>
+                <option value="2" @(requestedMonth.Month == 2 ? "selected='selected'" : "")>Февраль</option>
+                <option value="3" @(requestedMonth.Month == 3 ? "selected='selected'" : "")>Март</option>
+                <option value="4" @(requestedMonth.Month == 4 ? "selected='selected'" : "")>Апрель</option>
+                <option value="5" @(requestedMonth.Month == 5 ? "selected='selected'" : "")>Май</option>
+                <option value="6" @(requestedMonth.Month == 6 ? "selected='selected'" : "")>Июнь</option>
+                <option value="7" @(requestedMonth.Month == 7 ? "selected='selected'" : "")>Июль</option>
+                <option value="8" @(requestedMonth.Month == 8 ? "selected='selected'" : "")>Август</option>
+                <option value="9" @(requestedMonth.Month == 9 ? "selected='selected'" : "")>Сентябрь</option>
+                <option value="10" @(requestedMonth.Month == 10 ? "selected='selected'" : "")>Октябрь</option>
+                <option value="11" @(requestedMonth.Month == 11 ? "selected='selected'" : "")>Ноябрь</option>
+                <option value="12" @(requestedMonth.Month == 12 ? "selected='selected'" : "")>Декабрь</option>
+            </select>
+            <button type="submit" value="Найти">Найти</button>
+        </form>
+    </p>
+    <p>
+        @Html.Action("FindScheduledPayments", "manager", new { year = requestedMonth.Year, month = requestedMonth.Month });
+    </p>
+</body>
+</html>

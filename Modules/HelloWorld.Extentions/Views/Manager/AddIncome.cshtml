@@ -1,0 +1,201 @@
+﻿@using WebSite.Common.Models.ViewModels
+@using WebSite.ViewModels
+@using WebSite.Common.Utils
+@using WebSite.Helpers
+
+@model WebSite.Common.Models.ViewModels.EditIncomeVM
+
+
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/Site.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/Component.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/BigButton.css" />
+
+
+<link type=" text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.core.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.resizable.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.selectable.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.accordion.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.autocomplete.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.button.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.dialog.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.slider.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.tabs.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.datepicker.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.progressbar.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.theme.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.onlinechat.css" />
+
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/ui.jqgrid.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/admin.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/coursemanager.css" />
+
+<script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery-2.0.3.js"></script>
+<script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery-ui-1.10.3.js"></script>
+<script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+<script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery.validate.js"></script>
+<script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery.validate.unobtrusive.js"></script>
+
+<h2>
+    Добавить платеж
+</h2>
+<h5 class="nav">
+    @Html.ActionLink("Общие настройки", "Index")
+    <span>::</span>
+    @Html.ActionLink("Отправка писем", "Emails")
+    <span>::</span>
+    @Html.ActionLink("Управление процессом обучения", "Manage")
+    <span>::</span>
+    @Html.ActionLink("Доходы", "Incomes")
+    <span>::</span>
+    @Html.ActionLink("Расходы", "Expenses")
+</h5>
+
+<p>
+    
+</p>
+
+@using (Html.BeginForm("AddIncome", "manager",
+                new { ReturnUrl = ViewBag.ReturnUrl },
+                FormMethod.Post, new { @class = "add-payment-form" }))
+{
+    @Html.ValidationSummary(true)
+
+ 
+    <p>
+        @Html.LabelFor(m => m.PaymentDate)
+        @Html.EditorFor(m => m.PaymentDate, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.PaymentDate)
+    </p>
+    <p>
+        @Html.LabelFor(m=>m.PaymentType)
+        @Html.EnumDropDownListFor(m => m.PaymentType, Model.PaymentType)
+    </p>
+
+    <div id="paymentsGroupId" style="display:none">
+        <p>
+            @Html.LabelFor(m => m.Courses)
+            @Html.DropDownListFor(m => m.SelectedCourseId,
+                new SelectList(Model.Courses,
+                "CourseId", "CourseName",
+                Model.Courses.First().CourseId), new { @class = "courseSelector", @id = "courseSelector" })
+        </p>
+        <p>
+            <label for="flowSelector">Потоки</label>
+            <select id="flowSelector" name="SelectedFlowId">
+                <option value="-1">Выберите курс</option>
+            </select>
+        </p>
+        <p>
+            <label for="studentsSelector">Студенты</label>
+            <select id="studentsSelector" name="SelectedStudentId">
+                <option value="-1">Выберите поток</option>
+            </select>
+        </p>
+        <p>
+            <label for="paymentSelector">Платежи</label>
+            <select id="paymentSelector" name="ScheduledPaymentId">
+                <option value="-1">Выберите студента</option>
+            </select>
+        </p>
+    </div>
+    <p>
+        @Html.LabelFor(m => m.Amount)
+        @Html.EditorFor(m => m.Amount, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Amount)
+    </p>
+    <p>
+        @Html.LabelFor(m => m.Comment)
+        @Html.TextAreaFor(m => m.Comment, new { cols = "45", rows = "5" })
+        @Html.ValidationMessageFor(m => m.Comment)
+
+    </p>
+    <p>
+
+    </p>
+    <br />
+    <button type="submit">Сохранить</button>
+}
+
+<script type="text/javascript">
+    $(function ()
+    {
+        window.students = [];
+        window.payments = [];
+
+        $("input[type='date']").datepicker({ dateFormat: 'dd/mm/yy' });
+
+        $("input[type='date']").attr("type", "text");
+
+
+        $('select#PaymentType').change(function () {
+            $('div#paymentsGroupId').toggle();
+
+        });
+
+        $('select#courseSelector').change(function () {
+
+            $.get('/Contact/FlowsByCourse?withHistory=true', { courseId: $(this).val() }, function (response) {
+                var sel$ = $('select#flowSelector');
+                sel$.empty()
+                .append('<option selected="selected" value="-1">Выберите группу</option>')
+                $.each(response, function (i, obj) {
+                    sel$.append('<option value="' + obj.FlowId + '">' + obj.CustomName + '</option>');
+                });
+            });
+        });
+
+
+        $('select#paymentSelector').change(function () {
+
+            var selectedPaymentId = $(this).val();
+
+            $.each(window.payments, function (i, val) {
+                if (val.PaymentId == selectedPaymentId)
+                {
+                    $('textarea#Comment').val(val.Comment);
+                    $('input#Amount').val(val.ScheduledAmountInHryvnas);
+                }
+            });
+        });
+        
+
+        $('select#studentsSelector').change(function () {
+            var objId = $(this).val();
+
+            $.each(window.students, function (i, val) {
+                if (val.StudentId == objId)
+                {
+                    window.payments = val.Payments;
+
+                    var sel$ = $('select#paymentSelector');
+                    sel$.empty().append('<option selected="selected" value="-1">Выберите платёж</option>');
+                    
+                    $.each(val.Payments, function (i, val) {
+
+                        if (val.Status != 2)
+                        {
+                            var paymentString = "(" + val.DueDateStr + ") " + '----' + val.ScheduledAmountInHryvnas + 'грн.';
+                            sel$.append('<option value= ' + val.PaymentId + '>' + paymentString + '</option>');
+                        }
+                    });
+                }
+            });
+        });
+
+        $('select#flowSelector').change(function () {
+            $.get('/manager/StudentsByFlow', { flowId: $(this).val() }, function (response) {
+                window.students = response;
+                var sel$ = $('select#studentsSelector');
+                sel$.empty()
+                .append('<option selected="selected" value="-1">Выберите студента</option>')
+                $.each(response, function (i, obj) {
+                    if (obj.Status == 0)
+                        sel$.append('<option value= ' + obj.StudentId + '>' + obj.LastName + ' ' + obj.FirstName + '</option>');
+                    else
+                        sel$.append('<option disabled="disabled" value= ' + obj.StudentId + '>' + obj.LastName + ' ' + obj.FirstName + '</option>');
+                });
+            });
+        });
+
+    });
+</script>

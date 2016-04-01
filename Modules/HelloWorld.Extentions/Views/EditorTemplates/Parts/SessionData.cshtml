@@ -1,0 +1,22 @@
+﻿@using System.Web.Mvc.Html
+@model HelloWorld.Extentions.Models.SessionDataPart
+<fieldset>
+    <legend>Session Data Fields</legend>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.ProperyName)
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.ProperyName)
+        @Html.ValidationMessageFor(model => model.ProperyName)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.TempData)
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.TempData)
+        @Html.ValidationMessageFor(model => model.TempData)
+    </div>
+
+</fieldset>

@@ -1,0 +1,35 @@
+﻿@using Orchard.Localization
+@using Orchard.Mvc.Html;
+@using Orchard.UI.Resources;
+@{
+    //RegisterLink(new LinkEntry { Type = "image/x-icon", Rel = "shortcut icon", Href = Url.Content("~/modules/orchard.themes/Content/orchard.ico") });
+    Script.Require("Html5Shiv").UseCondition("lt IE 9").AtHead();
+
+    string title = Convert.ToString(!(Model.Title is String) && Model.Title.Items.Count > 0 ? Model.Title.Items[0].Title : Model.Title);
+    string siteName = Convert.ToString(WorkContext.CurrentSite.SiteName);
+    bool isRtl = WorkContext.CurrentCultureInfo().TextInfo.IsRightToLeft;
+    Html.AddPageClassNames("dir-" + (isRtl ? "rtl" : "ltr"));
+    string favIconPath = Html.ThemePath(WorkContext.CurrentTheme, "/Content/Images/favicon.png");
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>@Html.Title(title, siteName)</title>
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link rel="icon" href="@Url.Content(favIconPath)" type="image/x-icon" />
+    <link rel="shortcut icon" href="@Url.Content(favIconPath)" type="image/x-icon" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    @Display(Model.HeadScripts)
+    @Display(Model.Head)
+</head>
+<body>
+    @* Layout (template) is in the Body zone @ the default position (nothing, zero, zilch) *@
+    @Display(Model.Body)
+    @Display(Model.Tail)
+</body>
+</html>

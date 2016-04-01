@@ -1,0 +1,27 @@
+﻿@{
+    Model.Metadata.Wrappers.Remove("Widget_Wrapper");
+}
+
+<div id="call-back" class="call-back_visible">
+    <div class="button_call-back">
+        <span></span>
+    </div>
+    <form class="rightRegistrationForm" method="post" action="/Contact/SignUp">
+        <h3>@Model.Model.BlockData.HeaderText</h3>
+        <input type="text" data-msg-required="Введите Фамилию" name="application.LastName" data-val=true required value="" placeholder="@Model.Model.BlockData.LastNameLabel">
+        <input type="text" data-msg-required="Введите Имя" name="application.Name" data-val=true required value="" placeholder="@Model.Model.BlockData.FirstNameLabel">
+        <input type="text" data-msg-required="Введите Отчество" name="application.MiddleName" data-val=true required value="" placeholder="@Model.Model.BlockData.MiddleNameLabel">
+        <input type="tel"  data-msg-required="Введите Телефон" name="application.Phone" data-val=true required value="" placeholder="@Model.Model.BlockData.PhoneLabel">
+        <input type="email" data-msg-required="Введите Email" data-msg-email="Неверный формат Email"  name="application.Email" data-val=true required value="" placeholder="@Model.Model.BlockData.EmailLabel">
+        <input type="hidden" name="application.FlowId" value="-2" />
+        <select  data-msg-required="Выберите курс" required name="application.CourseId">
+            <option value="">Выберите курс</option>
+            @foreach (HelloWorld.Extentions.Models.CoursePartRecord c in @Model.Model.Courses)
+            {
+                <option value="@c.Id">@c.Name</option>}
+            }
+        </select>
+        <textarea name="Message" placeholder="@Model.Model.BlockData.CommentLabel"></textarea>
+        <input type="submit"  value="@Model.Model.BlockData.RegisterLable">
+    </form>
+</div>

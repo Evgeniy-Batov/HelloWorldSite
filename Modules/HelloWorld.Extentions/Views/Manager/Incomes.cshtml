@@ -1,0 +1,199 @@
+﻿@model WebSite.Common.Interfaces.Repositories.IPagedResult<WebSite.Common.Models.ViewModels.EditIncomeVM>
+
+@using WebSite.Helpers
+@using System.Web.Mvc
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/Site.css" />
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/Component.css" />
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/BigButton.css" />
+
+
+    <link type=" text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.core.css" />
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.resizable.css" />
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.selectable.css" />
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.accordion.css" />
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.autocomplete.css" />
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.button.css" />
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.dialog.css" />
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.slider.css" />
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.tabs.css" />
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.datepicker.css" />
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.progressbar.css" />
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.theme.css" />
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.onlinechat.css" />
+
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/ui.jqgrid.css" />
+    <link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/admin.css" />
+
+    <script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery-2.0.3.js"></script>
+    <script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery-ui-1.10.3.js"></script>
+    <script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery.validate.js"></script>
+    <script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery.validate.unobtrusive.js"></script>
+    
+</head>
+
+<body>
+    <h2>
+        Список доходных платежей
+    </h2>
+    <h5 class="nav">
+        @Html.ActionLink("Общие настройки", "Index")
+        <span>::</span>
+        @Html.ActionLink("Отправка писем", "Emails")
+        <span>::</span>
+        @Html.ActionLink("Управление процессом обучения", "Manage")
+        <span>::</span>
+        @Html.ActionLink("Доходы", "Incomes")
+        <span>::</span>
+        @Html.ActionLink("Расходы", "Expenses")
+        <span>::</span>
+        @Html.ActionLink("План платежей", "PaymentsPlan")
+    </h5>
+
+    <p>
+        @Html.ActionLink("Добавить платёж", "AddIncome")
+    </p>
+    @{HtmlHelper.UnobtrusiveJavaScriptEnabled = true;}
+    @using (Ajax.BeginForm("Incomes", "manager", new AjaxOptions { HttpMethod = "Get", LoadingElementId = "spinner", UpdateTargetId = "searchResult" }, new { @class = "incomes-search-form" }))
+    {
+        @Html.ValidationSummary(true)
+
+        <p>
+            <label>С даты:</label>
+            <input type="date" name="FromDateFilter" id="FromDateFilter" />
+
+            <label>По дату</label>
+            <input type="date" name="ToDateFilter" id="ToDateFilter" />
+
+            <select id="quickDateFilter">
+                <option value="reset">Быстрый фильтр</option>
+                <option value="thisweek">Последняя неделя</option>
+                <option value="thismonth" selected="selected">Последний месяц</option>
+                <option value="2month">2 последних месяца</option>
+                <option value="3month">3 последних месяца</option>
+                <option value="halfanyear">пол года</option>
+            </select>
+        </p>
+        <p>
+            <label>По курсу</label>
+            <select id="selectCourseSelector" name="CourseId">
+                <option value="-1">Выберите курс</option>
+            </select>
+            <label>По потоку</label>
+            <select id="flowSelector" name="FlowId">
+                <option value="-1">Выберите поток</option>
+            </select>
+            <label>По студенту</label>
+            <select id="studentsSelector" name="StudentId">
+                <option value="-1">Выберите студента</option>
+            </select>
+
+            <button type="submit">Искать</button>
+        </p>
+    }
+    <p>
+        <div class="searchResult" id="searchResult">
+            @Html.Partial("IncomesList", Model)
+        </div>
+    </p>
+    <script type="text/javascript">
+
+        ReloadResults = function () {
+            $('form.incomes-search-form').submit();
+        };
+
+        $(function () {
+            $('div#searchResult').on('click', 'button.deleteIncome', function (e) {
+                var result = confirm("Подтверждаете удаление?");
+                if (result) {
+                    return true;
+                }
+
+                if (e.preventDefault) e.preventDefault();
+                return false;
+            });
+
+
+            $(function () {
+                $("input[type='date']").datepicker({ dateFormat: 'dd/mm/yy' });
+                $("input[type='date']").attr("type", "text");
+
+                var today = new Date();
+                var monthAgo = new Date();
+                monthAgo.setMonth(monthAgo.getMonth() - 1);
+
+                $('input#FromDateFilter').datepicker('setDate', monthAgo);
+                $('input#ToDateFilter').datepicker('setDate', today);
+
+                $.get('/manager/GetCourses', '', function (data, textStatus, xhr) {
+                    var sel$ = $('select#selectCourseSelector');
+                    if (data && data.Data) {
+                        $.each(data.Data, function (i, val) {
+                            sel$.append('<option value="' + val.CourseId + '">' + val.CourseName + '</option>');
+                        });
+                    }
+                });
+
+                $('select#quickDateFilter').change(function () {
+                    var val = $(this).val();
+
+                    var today = new Date();
+                    var monthAgo = new Date();
+
+
+                    $('input#ToDateFilter').datepicker('setDate', today);
+
+                    if (val == "thisweek") {
+                        monthAgo.setDate(monthAgo.getDate() - 7);
+                    }
+                    else if (val == "thismonth") {
+                        monthAgo.setMonth(monthAgo.getMonth() - 1);
+                    }
+                    else if (val == "2month") {
+                        monthAgo.setMonth(monthAgo.getMonth() - 2);
+                    }
+                    else if (val == "3month") {
+                        monthAgo.setMonth(monthAgo.getMonth() - 3);
+                    }
+                    else if (val == "halfanyear") {
+                        monthAgo.setMonth(monthAgo.getMonth() - 6);
+                    }
+
+                    $('input#FromDateFilter').datepicker('setDate', monthAgo);
+
+                });
+
+
+                $('select#selectCourseSelector').change(function () {
+                    $.get('/Contact/FlowsByCourse?withHistory=true', { courseId: $(this).val() }, function (response) {
+                        var sel$ = $('select#flowSelector');
+                        sel$.empty()
+                        .append('<option selected="selected" value="-1">Выберите группу</option>')
+                        $.each(response, function (i, obj) {
+                            sel$.append('<option value="' + obj.FlowId + '">' + obj.CustomName + '</option>');
+                        });
+                    });
+                });
+
+                $('select#flowSelector').change(function () {
+                    $.get('/manager/StudentsByFlow', { flowId: $(this).val() }, function (response) {
+                        window.students = response;
+                        var sel$ = $('select#studentsSelector');
+                        sel$.empty()
+                        .append('<option selected="selected" value="-1">Выберите студента</option>')
+                        $.each(response, function (i, obj) {
+                            sel$.append('<option value= ' + obj.StudentId + '>' + obj.LastName + ' ' + obj.FirstName + '</option>');
+                        });
+                    });
+                });
+
+            })
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+﻿@using Orchard.ContentManagement;
+
+@{
+    Model.Metadata.Wrappers.Remove("Widget_Wrapper");
+
+    IContentManager contentManager = WorkContext.Resolve<IContentManager>();
+
+    var infoPage = contentManager.List<ContentPart>(new string[] { "InformationPage" }).FirstOrDefault();
+}
+
+<div class="course-soon">
+    <a href="@Model.ContentItem.AutoroutePart.Path"><img src="@Model.ContentItem.CoursePage.CourseImage.MediaParts[0].MediaUrl" alt="@Model.ContentItem.CoursePart.Name"></a>
+    <div class="schedule">
+        <h2>@Model.ContentItem.CoursePart.Name</h2>
+        @(((dynamic)infoPage.ContentItem).InformationPage.StartTimeLable.Value)<span>@Model.ContentItem.CoursePage.StartTime.Value</span><br>
+        @(((dynamic)infoPage.ContentItem).InformationPage.CostLable.Value)<span>@Model.ContentItem.CourseInformationPart.MinPrice - @Model.ContentItem.CourseInformationPart.MaxPrice  грн.</span><br>
+        @(((dynamic)infoPage.ContentItem).InformationPage.DurationLable.Value)<span>@Model.ContentItem.CourseInformationPart.Length @Model.ContentItem.CourseInformationPart.LengthPeriod</span>
+        <div class="schedule-link">
+            <a class="order transition" name="modal" course-id="@Model.ContentItem.Id" course-name="@Model.ContentItem.CoursePart.Name" href="#dialog-order">@Model.ContentItem.CoursePage.SignInlabel.Value</a>
+            <a class="more transition" href="@Model.ContentItem.AutoroutePart.Path">@Model.ContentItem.CoursePage.DetailsLabel.Value</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,70 @@
+﻿@using WebSite.ViewModels
+@using WebSite.Common.Utils
+@using WebSite.Helpers
+
+@model ReminderBindingModel
+
+@section Scripts {
+    @Styles.Render("~/Content/themes/base/css")
+
+    
+    <link type="text/css" rel="stylesheet" href="~/Content/admin.css" />
+    <link type="text/css" rel="stylesheet" href="~/Content/coursemanager.css" />
+}
+<h2>
+    Отправка напоминания
+</h2>
+<h5 class="nav">
+    @Html.ActionLink("Общие настройки", "Index")
+    <span>::</span>
+    @Html.ActionLink("Отправка писем", "Emails")
+    <span>::</span>
+    @Html.ActionLink("Управление процессом обучения", "Manage")
+    <span>::</span>
+    @Html.ActionLink("Доходы", "Incomes")
+    <span>::</span>
+    @Html.ActionLink("Расходы", "Expenses")
+    <span>::</span>
+    @Html.ActionLink("План платежей", "PaymentsPlan")
+</h5>
+
+@using (Html.BeginForm("SendReminder", "manager",
+                            new { ReturnUrl = ViewBag.ReturnUrl },
+                            FormMethod.Post, new { @class = "send-reminder-form" }))
+{
+    @Html.ValidationSummary(false)
+
+    <input type="hidden" name="PaymentId" id="PaymentId" value="@Model.PaymentId" />
+
+    <p>
+        <label for="toId">Получатели</label>
+        <input id="Emails" name="Emails" autocomplete="off" class="form-control-long-xl" type="text" value=@Model.Emails />
+        @Html.ValidationMessageFor(m=>m.Emails)
+    </p>
+    <p>
+        <label for="toId">Телефоны получателей</label>
+        <input id="Phones" name="Phones" autocomplete="off" class="form-control-long-xl" type="text" value="@Model.Phones" />
+        @Html.ValidationMessageFor(m => m.Phones)
+    </p>
+    <p>
+        <label for="toId">Скрытые копии</label>
+        <input id="BCCs" name="BCCs" autocomplete="off" class="form-control-long-xl" type="text" value=@Model.BCCs />
+        @Html.ValidationMessageFor(m => m.BCCs)
+    </p>
+    <p>
+        <label for="subjId">Тема</label>
+        <input id="Subject" name="Subject" autocomplete="off" class="form-control-long-xl" type="text" value="@Model.Subject" />
+        @Html.ValidationMessageFor(m => m.Subject)
+    </p>
+    <p>
+        <label for="messageId">Сообщение</label>
+        <textarea id="Body" name="Body" autocomplete="off" class="form-control-long-xl" id="messageId" cols="80" rows="25">@Model.Body</textarea>
+        @Html.ValidationMessageFor(m => m.Body)
+    </p>
+    <p>
+        <label for="reminderTypId">Тип уведомления</label>
+        @Html.EnumDropDownListFor(m => m.Type, Model.Type)
+    </p>
+
+    <button type="submit" style="width:350px" value="Отправить">Отправить</button>
+}

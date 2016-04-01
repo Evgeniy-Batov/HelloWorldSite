@@ -1,0 +1,140 @@
+﻿@model WebSite.Common.Models.ViewModels.ScheduledPaymentVM
+
+@using WebSite.Common.Models.ViewModels
+@using WebSite.ViewModels
+@using WebSite.Common.Utils
+@using WebSite.Helpers
+
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/Site.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/Component.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/BigButton.css" />
+
+
+<link type=" text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.core.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.resizable.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.selectable.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.accordion.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.autocomplete.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.button.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.dialog.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.slider.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.tabs.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.datepicker.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.progressbar.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.theme.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.onlinechat.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/ui.jqgrid.css" />
+
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/admin.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/coursemanager.css" />
+
+<script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery-2.0.3.js"></script>
+<script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery-ui-1.10.3.js"></script>
+
+<script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery.jqGrid.min.js"></script>
+<script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/grid.locale-ru.js"></script>
+<script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/admin.js"></script>
+<script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery.validate.js"></script>
+<script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+<script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery.validate.unobtrusive.js"></script>
+<script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery.blockUI.js"></script>
+
+<h3>Редактирование запланированного платежа</h3>
+
+<h5 class="nav">
+    @Html.ActionLink("Общие настройки", "Index")
+    <span>::</span>
+    @Html.ActionLink("Отправка писем", "Emails")
+    <span>::</span>
+    @Html.ActionLink("Управление процессом обучения", "Manage")
+    <span>::</span>
+    @Html.ActionLink("Доходы", "Incomes")
+    <span>::</span>
+    @Html.ActionLink("Расходы", "Expenses")
+    <span>::</span>
+    @Html.ActionLink("План платежей", "PaymentsPlan")
+</h5>
+
+@using (Html.BeginForm("EditScheduledPayment", "manager",
+                                                                    new { ReturnUrl = ViewBag.ReturnUrl },
+                                                                    FormMethod.Post, new { @class = "edit-payment-form" }))
+{
+    @Html.ValidationSummary(true)
+
+    @Html.HiddenFor(m => m.Flow.FlowId)
+    @Html.HiddenFor(m => m.StudentId)
+    @Html.HiddenFor(m => m.PaymentId)
+    @Html.HiddenFor(m => m.NumberOfSentReminders)
+
+    <p>
+        @Html.LabelFor(m => m.DueDate)
+        @Html.EditorFor(m => m.DueDate, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.DueDate)
+    </p>
+    <p>
+        @Html.LabelFor(m => m.ScheduledAmountInHryvnas)
+        @Html.EditorFor(m => m.ScheduledAmountInHryvnas, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.ScheduledAmountInHryvnas)
+    </p>
+    if (Model.StudentId > 0)
+    {
+        <p>
+            @Html.LabelFor(m => m.StudentName)
+            @Html.ActionLink(Model.StudentName, "EditStudent", new { studentId = Model.StudentId })
+        </p>
+    }
+    if (Model.Flow != null)
+    {
+        <p>
+            @Html.LabelFor(m => m.Flow.CustomName)
+            @Html.ActionLink(Model.Flow.CustomName, "ManageCourse", new { flowId = Model.Flow.FlowId })
+        </p>
+    }
+    <p>
+        @Html.LabelFor(m => m.Status)
+        @Html.EnumDropDownListFor(m => m.Status, Model.Status)
+        @Html.ValidationMessageFor(m => m.Status)
+    </p>
+    <p>
+        @Html.LabelFor(m => m.IsReccurent)
+        @Html.EditorFor(m => m.IsReccurent, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.IsReccurent)
+    </p>
+    <p>
+        @Html.LabelFor(m => m.RecurrentType)
+        @Html.EnumDropDownListFor(m => m.RecurrentType, Model.RecurrentType)
+        @Html.ValidationMessageFor(m => m.RecurrentType)
+    </p>
+    <p>
+        @Html.LabelFor(m => m.IsExpense)
+        @Html.EditorFor(m => m.IsExpense, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.IsExpense)
+    </p>
+    <p>
+        @Html.LabelFor(m => m.Comment)
+        @Html.TextAreaFor(m => m.Comment, new { cols = "45", rows = "5" })
+        @Html.ValidationMessageFor(m => m.Comment)
+    </p>
+    <button type="submit">Обновить</button>
+}
+
+
+
+<script type="text/javascript">
+    $(function ()
+    {
+            //if (!Modernizr.inputtypes.date) {
+                $(function () {
+                    $("input[type='date']")
+                                .datepicker({ dateFormat: 'dd/mm/yy' });
+
+                    $("input[type='date']")
+                                .attr("type", "text");
+
+                    //$('input.timepicker').timepicker({ 'timeFormat': 'H:i' });
+
+                })
+            //}
+    });
+</script>
+

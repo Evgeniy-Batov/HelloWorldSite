@@ -1,0 +1,20 @@
+﻿<Placement>
+  <Place Parts_Course_Edit="Content:1" />
+  <Place Parts_Course="Content:0" />
+
+  <Place Parts_CourseInformation_Edit="Content:2" />
+
+  <Match DisplayType="Layout">
+    <Place Parts_CourseInformation="Content:1" />
+  </Match>
+
+  <Place Parts_Feedback="Content:1"/>
+  <Place Parts_Feedback_Edit="Content:1"/>
+
+  <Place Parts_StudentRegistration="Content:1"/>
+  <Place Parts_StudentRegistration_Edit="Content:1"/>
+  
+  <Place Parts_SessionData="Content:1"/>
+  <Place Parts_SessionData_Edit="Content:1"/>
+
+</Placement>

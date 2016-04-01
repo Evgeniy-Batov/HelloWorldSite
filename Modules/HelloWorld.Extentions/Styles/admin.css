@@ -1,0 +1,403 @@
+﻿div.ui-jqdialog-content td.form-view-data {
+    white-space: normal !important;
+    height: auto;
+    vertical-align: middle;
+    padding-top: 3px; padding-bottom: 3px
+}
+
+.ui-tabs-vertical:not(.filt) { width: 70em; }
+.ui-tabs-vertical .ui-tabs-nav:not(.filt) { padding: .2em .1em .2em .2em; float: left; width: 14em; }
+.ui-tabs-vertical .ui-tabs-nav li:not(.filt) { clear: left; width: 100%; border-bottom-width: 1px !important; border-right-width: 0 !important; margin: 0 -1px .2em 0; }
+.ui-tabs-vertical .ui-tabs-nav li a:not(.filt) { display:block; }
+.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-selected:not(.filt) { padding-bottom: 0; padding-right: 0em; border-right-width: 1px; border-right-width: 1px; }
+.ui-tabs-vertical .ui-tabs-panel:not(.filt) {padding: 1em;float: right;width: 52em;}
+
+
+/*.ui-tabs-vertical { width: 70em; }
+.ui-tabs-vertical .ui-tabs-nav { padding: .2em .1em .2em .2em; float: left; width: 14em; }
+.ui-tabs-vertical .ui-tabs-nav li { clear: left; width: 100%; border-bottom-width: 1px !important; border-right-width: 0 !important; margin: 0 -1px .2em 0; }
+.ui-tabs-vertical .ui-tabs-nav li a { display:block; }
+.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active { padding-bottom: 0; padding-right: .1em; border-right-width: 1px; border-right-width: 1px; }
+.ui-tabs-vertical .ui-tabs-panel { padding: 1em; float: left    ; width: 52em;}*/
+.ui-helper-clearfix:before, .ui-helper-clearfix:after {
+    padding-bottom:1px;
+}
+
+.subtabs{
+    height:100%;
+}
+
+
+div.sessionsList {
+    height:99%;
+    float:left;
+    width:140px;
+    border: 1px solid #AAAAAA;
+    color: #222222;
+}
+
+
+
+div.emptyTexDiv {
+    left: 500px;
+    position: absolute;
+    top: 35px;
+    color:#AFB5BF;
+    font-size:10px;
+}
+
+
+div.sessionsList p {
+    padding-left:10px;
+}
+
+div#onlinesupport {
+    overflow:hidden;
+    height:100%;
+}
+
+.emptyList {
+    color:#AFB5BF;
+    font-size:10px;
+    margin-left:-60px;
+}
+
+
+ul.chatlist {
+    list-style-image:url("themes/base/images/user-ico.jpg");
+}
+
+.noTitleStuff .ui-dialog-titlebar {display:none}
+
+/*div.chatPlaceHolder {
+    margin-left:150px;
+    width:100%;
+}*/
+
+div.chatPlaceHolder {
+    float: right;
+    height:98%;
+    width: 535px;
+}
+
+#tabs li .ui-icon-close {
+    float: left;
+    margin: 0.4em 0.2em 0 0;
+    cursor: pointer;
+}
+
+.editGroupForm p{
+    text-align:left;
+}
+
+
+#editmainpageitem input {
+    width:450px;
+}
+
+#editmainpageitem textarea {
+     width:450px;
+     height:150px;
+}
+
+#editmainpageitem  label{
+    width:140px;
+    display:inline-block;
+}
+
+#editmainpageitem label.error {
+    color:red;
+    padding-right:175px;
+    width:auto;
+}
+
+#editmainpageitem input[type=submit]{
+    width:150px;
+    float:right;
+    margin-right:15px;
+}
+
+
+
+
+#editPageLayoutForm
+{
+    height:550px;
+}
+
+#editPageLayoutForm input
+{
+    width:450px;
+}
+
+#editPageLayoutForm .localhtmleditortrigger
+{
+    height:25px;
+    width:25px;
+}
+
+#editPageLayoutForm textarea {
+     width:450px;
+     height:70px;
+}
+
+#editPageLayoutForm  label{
+    width:140px;
+    display:inline-block;
+}
+
+#editPageLayoutForm input[type=submit]{
+    width:150px;
+    float:right;
+    margin-right:80px;
+}
+
+
+
+.editGroupForm  label{
+    width:140px;
+    display:inline-block;
+}
+
+.editGroupForm input {
+    width: 450px;
+}
+
+.editGroupForm .short {
+    width: 420px;
+}
+
+.editGroupForm .multiline {
+    height:100px;
+     width:450px;
+}
+
+.edidPageHeadersForm input{
+    width:450px;
+}
+
+
+.editCourseForm input[type=submit]{
+    width:150px;
+    float:right;
+}
+
+.edidPageHeadersForm input[type=submit]{
+    width:150px;
+    float:right;
+    margin-top:6px;
+}
+
+
+
+.edidPageHeadersForm  label{
+    width:140px;
+    display:inline-block;
+}
+
+.editCourseInfoForm label{
+    width:140px;
+    display:inline-block;
+}
+
+.editCourseInfoForm input{
+    width:400px;
+    float:right;
+}
+
+.editCourseInfoForm  .htmleditortrigger
+{
+    width:32px;
+    height:32px;
+}
+
+.editCourseInfoForm input[type=checkbox] {
+    width: 10px;
+}
+
+.editCourseInfoForm input[type=submit] {
+    width: 100px;
+    float:right;
+    margin-right:20px;
+}
+
+
+.editCourseForm input{
+    width:340px;
+}
+
+.editCourseForm p.shortinput input{
+    width:90px;
+}
+
+.editCourseForm p.shortinput label{
+    width:auto;
+}
+
+.editCourseForm select{
+    width:345px;
+}
+
+
+
+
+.editCourseForm label{
+    width:180px;
+    display:inline-block;
+}
+
+.editCourseForm label.error {
+    color:red;
+    padding-right:85px;
+    /*margin-left:145px;*/
+    width:auto;
+}
+
+.editCourseForm  .htmleditortrigger
+{
+    width:32px;
+    height:32px;
+}
+
+.editGroupForm  .htmleditortrigger
+{
+    width:32px;
+    height:32px;
+}
+
+.editGroupForm label.error {
+    color:red;
+    margin-left:145px;
+    width:auto;
+}
+
+.editGroupForm input[type=submit] {
+    width: 200px;
+    float:right;
+}
+
+.editGroupForm p.shortp label{
+    width:auto;
+}
+
+.editFlowForm label
+{
+    float:left;
+}
+
+.editFlowForm input{
+    float:right;
+    width:270px;
+}
+
+.editFlowForm select {
+    float: right;
+     width:270px;
+}
+
+.editFlowForm p{
+    margin:25px;
+    padding:1px;
+}
+
+.editFlowForm input[type=button] {
+    margin-top:10px;
+    margin-right:20px;
+}
+
+
+.editGroupForm p.shortp input{
+    width:auto;
+}
+
+
+.editGroupForm .shortinput {
+    width: 75px;
+}
+
+div.mce-fullscreen {
+    margin-top:55px;
+}
+
+img#spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index:100;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+
+
+#footer {
+    border-top: none;
+}
+
+
+div#feedback-editor p
+{
+    text-align:left;
+}
+
+div#feedback-editor input[type=text]
+{
+    width:400px;
+    float:right;
+}
+
+div#feedback-editor select
+{
+    width:400px;
+    float:right;
+}
+
+div#feedback-editor textarea
+{
+    width:400px;
+    float:right;
+    height:230px;
+}
+
+div#feedback-editor input[type=button] {
+    margin:5px;
+    float:right;
+}
+
+.ui-dialog{
+    z-index:1010;
+}
+
+#tabs {
+    position: absolute;
+    top: 0;
+    bottom:50px;
+    left: 0;
+    right: 0;
+    margin-top:95px;
+}
+
+#global-tabs-12{
+    height: 100%;
+}
+
+#floweditpanel {
+    padding-left:20px;
+    padding-right:20px;
+}
+
+#registrationsPanel {
+    padding-left:20px;
+    padding-right:20px;
+}
+
+#global-tabs-4{
+    padding:20px;
+}
+
+#global-tabs-3{
+    padding:20px;
+}
+    
+select#courseSelector{
+    min-width:300px;
+}

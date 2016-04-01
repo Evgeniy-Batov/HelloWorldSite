@@ -1,0 +1,68 @@
+﻿@model WebSite.Common.Models.ViewModels.SignupApplicationData
+
+<script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery-2.0.3.js"></script>
+<script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery-ui-1.10.3.js"></script>
+<script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery.unobtrusive-ajax.js"></script>
+<script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery.validate.js"></script>
+<script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/jquery.validate.unobtrusive.js"></script>
+<script type="text/javascript" src="~/Modules/HelloWorld.Extentions/Scripts/applications.js"></script>
+<script type="text/javascript" src="~/Themes/HelloWorld/Scripts/jquery.amaran.js"></script>
+
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/Site.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/Component.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/BigButton.css" />
+
+<link type=" text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/application.css" />
+
+<link type=" text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.core.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.resizable.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.selectable.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.accordion.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.autocomplete.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.button.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.dialog.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.slider.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.tabs.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.datepicker.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.progressbar.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.theme.css" />
+<link type="text/css" rel="stylesheet" href="~/Modules/HelloWorld.Extentions/Styles/jquerytheme/jquery.ui.onlinechat.css" />
+
+<link type="text/css" rel="stylesheet" href="~/Themes/HelloWorld/Content/amaran/jquery.amaran.css" />
+<link type="text/css" rel="stylesheet" href="~/Themes/HelloWorld/Content/amaran/themes/all-themes.css" />
+
+<h1>Редактирование заявки на прохождение курса</h1>
+<p>
+    <label>Номер анекты:</label> №@Model.Application.MessageId<br />
+    <label>Cтатус анкеты:</label> <label class="appStatusLbl">@WebSite.Helpers.EnumHelper.ToText(Model.Application.Status)</label><br />
+    @if(@Model.Application.Status == WebSite.Common.Models.ViewModels.ApplicationStatus.Sent)
+    {
+        <label>Доступные действия:</label> <a class="confirmTrigger" href="#">Подтвердить регистрацию</a> <a class="removeTrigger" href="#">Отменить регистрацию</a>
+    }
+    else
+    {
+        <label>Доступные действия:</label> <a class="removeTrigger" href="#">Отменить регистрацию</a>
+    }
+</p>
+
+
+@using (Html.BeginForm("EditSignUp", "Contact", FormMethod.Post, new {autocomplete="off", @class="signupform"}))
+{
+     @Html.Partial("EditApplicationCtrl",Model)
+    <input class="submitApp" type="submit" value="Обновить анкету" />
+}
+
+<div class="models" style="display:none">
+    <div id="confirm-dialog-confirm" title="Подтверждение регистрации">
+      <p><span class="ui-icon ui-icon-alert" style="float:left;  margin:0 7px 20px 0;"></span>Вы действительно подтверждаете свою регистрацию на курс?</p>
+    </div>
+    <div id="confirm-complete-dialog" title="Регистрация успешно подтверждена">
+        <p>
+            <span class="ui-icon ui-icon-circle-check" style="float:left; margin:0 7px 50px 0;"></span>
+            Подтверждение Вашей регистрации прошло успешно. Мы отправили письмо с деталями Вам на почту.
+        </p>
+    </div>
+    <div id="cancel-dialog-confirm" title="Отмена регистрации">
+      <p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>Ваша анкета будет удалена безвозвратно. Вы дейстивтельно отменяете свою регистрацию?</p>
+    </div>
+</div>

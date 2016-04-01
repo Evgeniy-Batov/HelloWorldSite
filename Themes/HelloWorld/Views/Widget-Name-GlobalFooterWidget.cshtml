@@ -1,0 +1,65 @@
+﻿@using Orchard.ContentManagement;
+
+@{
+    Model.Metadata.Wrappers.Remove("Widget_Wrapper");
+
+    IContentManager contentManager = WorkContext.Resolve<IContentManager>();
+
+    var headerWidget = contentManager.List<ContentPart>(new string[] { "GlobalHeader" }).First();
+
+    var courses = contentManager.List<ContentPart>(new string[] { "CoursePage" });
+}
+
+<div class="block-inner footer-top">
+    <div class="footer-col footer-col1">
+        <div class="footer-title">@Model.ContentItem.GlobalFooterWidget.Column1Header.Value</div>
+        <ul id="menu" class="menu-main-nav-container">
+            @foreach (var course in courses)
+            {
+                <li><a href="/@(((dynamic)course.ContentItem).AutoroutePart.Path)">@(((dynamic)course).CoursePart.Name)</a></li>
+            }
+        </ul>
+    </div>
+    <div class="footer-col footer-col2">
+        <div class="footer-title">@Model.ContentItem.GlobalFooterWidget.Column2Header.Value</div>
+        @Html.Raw(Model.ContentItem.GlobalFooterWidget.Address.Value)
+        <div class="footer-contacts footer-phones">
+            <a href="tel:@(((dynamic)headerWidget.ContentItem).GlobalHeader.FullPhone1.Value)">@(((dynamic)headerWidget.ContentItem).GlobalHeader.Phone1.Value)</a><br>
+            <a href="tel:@(((dynamic)headerWidget.ContentItem).GlobalHeader.FullPhone2.Value)">@(((dynamic)headerWidget.ContentItem).GlobalHeader.Phone2.Value)</a>
+        </div>
+        <div class="footer-contacts footer-mail">
+            <a href="mailto:@(((dynamic)headerWidget.ContentItem).GlobalHeader.Email.Value)">@(((dynamic)headerWidget.ContentItem).GlobalHeader.Email.Value)</a>
+        </div>
+        <div class="footer-contacts footer-skype">
+            <a href="skype:@(((dynamic)headerWidget.ContentItem).GlobalHeader.Skype.Value)?call">@(((dynamic)headerWidget.ContentItem).GlobalHeader.Skype.Value)</a>
+        </div>
+    </div>
+    <div class="footer-col footer-col3">
+        <div class="footer-title">@Model.ContentItem.GlobalFooterWidget.Column3Header.Value</div>
+        @Html.Raw(Model.ContentItem.GlobalFooterWidget.Column3Text.Value)
+        <div class="social">
+            <a target="_blank" href="@Model.ContentItem.GlobalFooterWidget.VKLink.Value" rel="nofollow" class="vk"></a>
+            <a target="_blank" href="@Model.ContentItem.GlobalFooterWidget.FacebookLink.Value" rel="nofollow" class="fb"></a>
+            <a target="_blank" href="@Model.ContentItem.GlobalFooterWidget.GooglePlusLink.Value" rel="nofollow" class="g"></a>
+            <a target="_blank" href="@Model.ContentItem.GlobalFooterWidget.TwitterLink.Value" rel="nofollow" class="tw"></a>
+            <a target="_blank" href="@Model.ContentItem.GlobalFooterWidget.OKLink.Value" rel="nofollow" class="od"></a>
+        </div>
+    </div>
+    <div class="footer-col footer-col4">
+        <form id="footer-form" autocomplete="off" method="post" action="contact/LeaveMessage">
+            <p>
+                <input data-msg-required="Введите Имя" data-msg-minlength="Недопустимая минимальная длинна имени" minlength="3" required id="firstName" name="message.name" type="text" placeholder="@Model.ContentItem.GlobalFooterWidget.NamePlaceholderText.Value">
+                <input data-msg-required="Введите Email" data-msg-email="Неверный формат Email" required email id="e-mail" name="message.email" type="email" placeholder="@Model.ContentItem.GlobalFooterWidget.EmailPlaceholderText.Value">
+                <input type="hidden" name="message.phone" value="+3800000000000000" />
+                <input type="hidden" name="message.topic" value="Default topic" />
+            </p>
+            <textarea data-msg-required="Введите Вопрос" required id="message" name="message.Message" placeholder="@Model.ContentItem.GlobalFooterWidget.QuestionPlaceholderText.Value"></textarea>
+            <input type="submit" name="submit" class="submit" value="@Model.ContentItem.GlobalFooterWidget.SendButtonText.Value">
+        </form>
+    </div>
+</div>
+<div class="copywrite">
+    <div class="block-inner">
+        <span>@Model.ContentItem.GlobalFooterWidget.LastLine.Value</span>
+    </div>
+</div>

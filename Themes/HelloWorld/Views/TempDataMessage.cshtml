@@ -1,0 +1,46 @@
+﻿@{ 
+    WebSite.Common.Models.ViewModels.MessageViewVM vm = this.TempData["message"] as WebSite.Common.Models.ViewModels.MessageViewVM;
+
+    if (vm == null)
+    {
+        vm = WebSite.Common.Models.ViewModels.MessageViewVM.NoMessage;
+    }
+
+    if (Request.Params["appId"] != null && Request.Params["accessT"] != null && Request.Params["operation"] != null)
+    {
+        String command = Request.Params["operation"];
+
+        String token = Request.Params["accessT"];
+        String appId = Request.Params["appId"];
+
+        if (command != null && command.ToUpper() == "CONFIRM")
+        {
+            vm = new WebSite.Common.Models.ViewModels.MessageViewVM()
+            {
+                Message = String.Format(@"Нажите кнопку для подтверждения регистрации  
+                            <form method='post' action='contact/ConfirmRegistration' >
+                                <input type='hidden' name='appId' value='{0}'/>
+                                <input type='hidden' name='accessToken' value='{1}'/>
+                                <input type='hidden' name='' value=''/>
+                                 <input type='submit' value='Подтверждаю регистрацию'/>
+                            </form>", appId, token)
+            };
+        }
+        else if (command != null && command.ToUpper() == "CANCEL")
+        {
+            vm = new WebSite.Common.Models.ViewModels.MessageViewVM()
+            {
+                Message = String.Format(@"Нажите кнопку для отмены регистрации  
+                            <form method='post' action='contact/CancelRegistration'>
+                                <input type='hidden' name='appId' value='{0}'/>
+                                <input type='hidden' name='accessToken' value='{1}'/>
+                                <input type='hidden' name='' value=''/>
+                                 <input type='submit' value='Отмена регистрации'/>
+                            </form>", appId, token)
+            };
+        }
+    }
+}
+<div style="text-align:center;width:100%">
+    @Html.Raw(@vm.Message)
+</div>

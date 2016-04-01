@@ -1,0 +1,7 @@
+<RecipeJournal>
+  <Status>Failed</Status>
+  <Message>Executing step Feature.</Message>
+  <Message>Executing step Feature.</Message>
+  <Message>Executing step Feature.</Message>
+  <Message>Recipe execution with id 7a9c197a63fc41c29b758c69be16ab82 was cancelled because the "Feature" step failed to execute. The following exception was thrown: Could not enable feature WidgetAlternates because it was not found.. Refer to the error logs for more information.</Message>
+</RecipeJournal>

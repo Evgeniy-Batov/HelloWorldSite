@@ -1,0 +1,977 @@
+﻿html {
+    overflow-y: scroll;
+}
+
+body {
+    background-color: #F3F4F4;
+    color: #484848;
+    font-family: tahoma, arial, verdana, sans-serif, Lucida Sans;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+body h3 {
+    font-size:16px;
+}
+
+h5.nav {
+    margin-top:0px;
+}
+
+
+body a {
+    color: #AFB5BF;
+    outline: 0 none;
+    text-decoration: none;
+}
+
+body a:hover {
+    color: #0D0F11;
+}
+
+#header #menu li a:active {
+    color: #FFFFFF;
+    background-color:#484848;
+    padding-bottom:13px;
+}
+
+#content {
+    border-top: 1px solid #1B1E23;
+    padding-top: 43px;
+}
+
+
+#content .container {
+    /*margin-top: 40px;*/
+}
+
+
+.container {
+    margin: 0 auto;
+    text-align: left;
+    width: 850px;
+}
+
+
+#header {
+background-color: #0D0F11;
+border-bottom: 1px solid #000;
+height: 52px;
+position: fixed;
+z-index: 1000;
+width: 100%;
+}
+
+
+#header #logo {
+    display: block;
+    margin-top: 0;
+    padding-top: 7px;/*11px;*/
+    position: absolute;
+    width: 70px;
+}
+
+
+#header #logo img {
+    border: 0 none;
+}
+
+
+#header #menu {
+    float: right;
+    list-style-type: none;
+    margin: 0 -30px 0 0;
+}
+
+#header #menu li {
+    float: left;
+}
+
+#header #menu li a.active {
+    color: #FFFFFF;
+}
+
+#header #menu li a:hover {
+    color: #FFFFFF;
+}
+
+#header #menu li a {
+    display: block;
+    font-family: tahoma, arial, verdana, sans-serif, Lucida Sans;
+    font-size: 11px;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+.clear {
+clear: both;
+}
+
+#footer {
+border-top: 1px solid #3a3d3f;
+padding-top: 10px;
+font-size: 11px;
+color: #343d42;
+font-size: 10px;
+}
+
+#footer a {
+font-style: italic;
+color: #484848;
+padding: 4px;
+}
+
+#footer b, #footer a {
+    color: #728088;
+}
+
+
+#footer div {
+    float: right;
+}
+
+#sidebar {
+    float: left;
+    width: 180px;
+}
+#sidebar h4 {
+    color: #484848;
+    font-family: tahoma, arial, verdana, sans-serif, Lucida Sans;
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+#sidebar ul {
+    list-style: none outside none;
+    margin: 0 0 50px;
+    padding: 0 30px 0 0;
+}
+
+#sidebar ul.nested {
+    padding:0 0 0 30px;
+    margin:0px;
+}
+
+
+#sidebar ul.nested li a {
+    font-size:11px
+}
+
+#sidebar ul li a {
+    color: #484848;
+    display: block;
+    font-family: tahoma, arial, verdana, sans-serif, Lucida Sans;
+    font-size: 12px;
+    margin-left: -5px;
+    padding: 4px 0 4px 5px;
+}
+#sidebar ul li a:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+#sidebar ul li a.active {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+#sidebar ul li a:active {
+    padding-left: 7px;
+}
+#sidebar ul li#all a {
+    color: #484848;
+}
+#sidebar ul li#all a:hover {
+    color: #FFFFFF;
+}
+
+
+#brands, #projects, #services, #jobs {
+    float: right;
+    width: 670px;
+}
+#brands .brand, #brands .project, #projects .brand, #projects .project, #services .brand, #services .project, #jobs .brand, #jobs .project {
+    float: left;
+    margin-bottom: 40px;
+    margin-right: 40px;
+    width: 310px;
+}
+#brands .brand a.preview, #brands .project a.preview, #projects .brand a.preview, #projects .project a.preview, #services .brand a.preview, #services .project a.preview, #jobs .brand a.preview, #jobs .project a.preview {
+    display: block;
+    margin-bottom: 2px;
+    margin-top: 0;
+    position: relative;
+}
+#brands .brand a.preview .overlay, #brands .project a.preview .overlay, #projects .brand a.preview .overlay, #projects .project a.preview .overlay, #services .brand a.preview .overlay, #services .project a.preview .overlay, #jobs .brand a.preview .overlay, #jobs .project a.preview .overlay {
+    -moz-box-sizing:content-box !important;
+    box-sizing:content-box !important;
+    background-color: #FFFFFF;
+    bottom: -26px;
+    color: #484848;
+    left: 0;
+    padding: 14px 10px 10px;
+    position: absolute;
+    right: 0;
+    width: 290px;
+}
+#brands .brand a.preview .overlay b, #brands .project a.preview .overlay b, #projects .brand a.preview .overlay b, #projects .project a.preview .overlay b, #services .brand a.preview .overlay b, #services .project a.preview .overlay b, #jobs .brand a.preview .overlay b, #jobs .project a.preview .overlay b {
+    color: #484848;
+    font-size: 12px;
+}
+#brands .brand a.preview img, #brands .project a.preview img, #projects .brand a.preview img, #projects .project a.preview img, #services .brand a.preview img, #services .project a.preview img, #jobs .brand a.preview img, #jobs .project a.preview img {
+    border: medium none;
+}
+#brands .brand a.preview:hover .overlay, #brands .project a.preview:hover .overlay, #projects .brand a.preview:hover .overlay, #projects .project a.preview:hover .overlay, #services .brand a.preview:hover .overlay, #services .project a.preview:hover .overlay, #jobs .brand a.preview:hover .overlay, #jobs .project a.preview:hover .overlay {
+    display: block;
+}
+#brands .brand a.preview:active, #brands .project a.preview:active, #projects .brand a.preview:active, #projects .project a.preview:active, #services .brand a.preview:active, #services .project a.preview:active, #jobs .brand a.preview:active, #jobs .project a.preview:active {
+    margin-bottom: 0;
+    margin-top: 2px;
+}
+#brands .brand .brandMore, #brands .project .brandMore, #projects .brand .brandMore, #projects .project .brandMore, #services .brand .brandMore, #services .project .brandMore, #jobs .brand .brandMore, #jobs .project .brandMore {
+    background-color: #FFFFFF;
+    color: #000000;
+    display: block;
+    float: right;
+    font-size: 11px !important;
+    padding: 1px 5px 0;
+    position: absolute;
+    right: 9px;
+    top: 13px;
+}
+#brands .brand .brandMore:hover, #brands .project .brandMore:hover, #projects .brand .brandMore:hover, #projects .project .brandMore:hover, #services .brand .brandMore:hover, #services .project .brandMore:hover, #jobs .brand .brandMore:hover, #jobs .project .brandMore:hover {
+    background-color: #000000;
+    color: #FFFFFF !important;
+}
+#brands .last, #projects .last, #services .last, #jobs .last {
+    margin-right: 0;
+}
+#brands .brand {
+    margin-bottom: 40px;
+    width: 670px;
+}
+#brands .brand .overlay {
+    background-color: #FFFFFF;
+    color: #3B4246;
+    display: block;
+    margin-top: -2px;
+    padding: 12px 10px 10px 15px;
+    position: relative;
+    width: 645px;
+}
+#brands .brand .overlay a {
+    color: #484848;
+    font-size: 12px;
+}
+#brands .brand .overlay a:hover {
+    color: #000000;
+}
+#brands .brand .overlay a.cat {
+    color: #3B4246;
+    font-size: 11px;
+}
+#brands .brand .overlay a.cat:hover {
+    color: #7E838A;
+}
+.brand, .project, #services, #jobs, #blog {
+    position: relative;
+}
+.brand .navModule, .project .navModule, #services .navModule, #jobs .navModule, #blog .navModule {
+    position: absolute;
+    right: 0;
+    top: 7px;
+}
+.brand .navModule .pagination, .project .navModule .pagination, #services .navModule .pagination, #jobs .navModule .pagination, #blog .navModule .pagination {
+    background-color: #FFFFFF;
+    color: #ADADAD;
+    display: block;
+    float: left;
+    font-size: 10px;
+    height: 20px;
+    padding: 0;
+    text-transform: uppercase;
+}
+.brand .navModule .pagination i, .project .navModule .pagination i, #services .navModule .pagination i, #jobs .navModule .pagination i, #blog .navModule .pagination i {
+    border-left: 1px solid #ADADAD;
+    display: block;
+    float: left;
+    height: 13px;
+    margin: 3px 0;
+    width: 0;
+}
+.brand .navModule .pagination a, .project .navModule .pagination a, #services .navModule .pagination a, #jobs .navModule .pagination a, #blog .navModule .pagination a {
+    color: #353A3E;
+    display: block;
+    float: left;
+    height: 18px;
+    padding: 2px 8px 0;
+}
+.brand .navModule .pagination a.next, .project .navModule .pagination a.next, #services .navModule .pagination a.next, #jobs .navModule .pagination a.next, #blog .navModule .pagination a.next {
+    padding-right: 11px;
+}
+.brand .navModule .pagination a:hover, .project .navModule .pagination a:hover, #services .navModule .pagination a:hover, #jobs .navModule .pagination a:hover, #blog .navModule .pagination a:hover {
+    background-color: #0D0F11;
+    color: #FFFFFF;
+}
+.brand .navModule .pagination span, .project .navModule .pagination span, #services .navModule .pagination span, #jobs .navModule .pagination span, #blog .navModule .pagination span {
+    display: block;
+    float: left;
+    padding: 0 5px;
+}
+.brand .navModule .backBtn, .project .navModule .backBtn, #services .navModule .backBtn, #jobs .navModule .backBtn, #blog .navModule .backBtn {
+    -moz-box-sizing:content-box !important;
+    box-sizing:content-box !important;
+    background-color: #353A3E;
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    font-size: 10px;
+    height: 16px;
+    padding: 1px 5px 3px;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 999;
+}
+.brand .navModule .backBtn i, .project .navModule .backBtn i, #services .navModule .backBtn i, #jobs .navModule .backBtn i, #blog .navModule .backBtn i {
+    /*background-image: url("http://www.chilli.be/images/layout/arrow-grey-left.gif");*/
+    background-position: center top;
+    display: block;
+    height: 5px;
+    left: -3px;
+    position: absolute;
+    top: 7px;
+    width: 3px;
+}
+.brand .navModule .backBtn:hover, .project .navModule .backBtn:hover, #services .navModule .backBtn:hover, #jobs .navModule .backBtn:hover, #blog .navModule .backBtn:hover {
+    background-color: #0D0F11;
+    color: #FFFFFF;
+}
+.brand .navModule .backBtn:hover i, .project .navModule .backBtn:hover i, #services .navModule .backBtn:hover i, #jobs .navModule .backBtn:hover i, #blog .navModule .backBtn:hover i {
+    background-position: center bottom;
+}
+.brand .navModule .backBtn:active, .project .navModule .backBtn:active, #services .navModule .backBtn:active, #jobs .navModule .backBtn:active, #blog .navModule .backBtn:active {
+    margin-left: -2px;
+    margin-right: 2px;
+}
+/*.brand h5, .project h5, #services h5, #jobs h5, #blog h5 {
+    color: #474A4F;
+    margin: -18px 0 10px;
+}*/
+.brand h5 a, .project h5 a, #services h5 a, #jobs h5 a, #blog h5 a {
+    color: #7E838A;
+}
+.brand h5 a:hover, .project h5 a:hover, #services h5 a:hover, #jobs h5 a:hover, #blog h5 a:hover {
+    color: #FFFFFF;
+}
+
+h1 {
+    border-bottom: 1px solid #3A3D3F;
+    color: #484848;
+    font-size: 24px;
+    font-weight: normal;
+    margin: 25px 0 35px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+}
+
+
+.brand h2, .project h2, #services h2, #jobs h2, #blog h2 {
+    border-bottom: 1px solid #3A3D3F;
+    color: #484848;
+    font-size: 30px;
+    font-weight: normal;
+    margin: 10px 0 35px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+}
+.brand h3, .project h3, #services h3, #jobs h3, #blog h3 {
+    border-top: 1px solid #3A3D3F;
+    color: #3B4246;
+    margin: 45px 0 0;
+    padding-top: 45px;
+    text-transform: uppercase;
+}
+.brand .info, .project .info, #services .info, #jobs .info, #blog .info {
+    float: left;
+    padding-bottom: 30px;
+    width: 230px;
+}
+.brand .info p, .project .info p, #services .info p, #jobs .info p, #blog .info p {
+    margin: 0 0 20px;
+    padding-right: 20px;
+}
+.brand .info span, .project .info span, #services .info span, #jobs .info span, #blog .info span {
+    color: #343D42;
+    display: block;
+    text-transform: uppercase;
+}
+.brand .info .extra, .project .info .extra, #services .info .extra, #jobs .info .extra, #blog .info .extra {
+    padding-bottom: 30px;
+}
+.brand .info .more, .project .info .more, #services .info .more, #jobs .info .more, #blog .info .more {
+    margin-bottom: 30px;
+    margin-top: -20px;
+}
+.brand .info .more ul, .project .info .more ul, #services .info .more ul, #jobs .info .more ul, #blog .info .more ul {
+    margin-top: 0;
+    padding: 0;
+}
+.brand .info .more ul li, .project .info .more ul li, #services .info .more ul li, #jobs .info .more ul li, #blog .info .more ul li {
+    list-style: none outside none;
+}
+.brand .info p a, .project .info p a, #services .info p a, #jobs .info p a, #blog .info p a {
+    color: #484848 !important;
+    text-decoration: none;
+}
+.brand .info p a:hover, .project .info p a:hover, #services .info p a:hover, #jobs .info p a:hover, #blog .info p a:hover {
+    border-color: #FFFFFF;
+    color: #FFFFFF !important;
+}
+.brand .info a, .project .info a, #services .info a, #jobs .info a, #blog .info a {
+    background-color: #FFFFFF;
+    color: #484848;
+    padding: 4px;
+    text-decoration: none;
+}
+.brand .info a:hover, .project .info a:hover, #services .info a:hover, #jobs .info a:hover, #blog .info a:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+.brand .info a.moreBtn, .project .info a.moreBtn, #services .info a.moreBtn, #jobs .info a.moreBtn, #blog .info a.moreBtn {
+    background-color: #FFFFFF;
+    color: #484848;
+    display: block;
+    font-size: 11px;
+    height: 17px;
+    margin-bottom: 40px;
+    margin-top: 0;
+    padding: 2px 5px 3px;
+    position: relative;
+    width: 120px;
+}
+.brand .info a.moreBtn i, .project .info a.moreBtn i, #services .info a.moreBtn i, #jobs .info a.moreBtn i, #blog .info a.moreBtn i {
+    background-position: center top;
+    display: block;
+    height: 5px;
+    position: absolute;
+    right: -3px;
+    top: 8px;
+    width: 3px;
+}
+.brand .info a.moreBtn:hover, .project .info a.moreBtn:hover, #services .info a.moreBtn:hover, #jobs .info a.moreBtn:hover, #blog .info a.moreBtn:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+.brand .info a.moreBtn:hover i, .project .info a.moreBtn:hover i, #services .info a.moreBtn:hover i, #jobs .info a.moreBtn:hover i, #blog .info a.moreBtn:hover i {
+    background-position: center bottom;
+}
+.brand .info a.moreBtn:active, .project .info a.moreBtn:active, #services .info a.moreBtn:active, #jobs .info a.moreBtn:active, #blog .info a.moreBtn:active {
+    margin-left: 2px;
+}
+.brand .info a.social, .project .info a.social, #services .info a.social, #jobs .info a.social, #blog .info a.social {
+    background-color: #FFFFFF;
+    display: block;
+    float: left;
+    margin: 0 5px 0 0;
+    padding: 10px 15px;
+}
+.brand .info a.social:hover, .project .info a.social:hover, #services .info a.social:hover, #jobs .info a.social:hover, #blog .info a.social:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+.brand .info a.social:active, .project .info a.social:active, #services .info a.social:active, #jobs .info a.social:active, #blog .info a.social:active {
+    margin-top: 2px;
+}
+.brand #gallery, .project #gallery, #services #gallery, #jobs #gallery, #blog #gallery {
+    float: right;
+    width: 610px;
+}
+.brand #gallery .image, .project #gallery .image, #services #gallery .image, #jobs #gallery .image, #blog #gallery .image {
+    margin-bottom: 40px;
+}
+.brand #gallery .image .caption, .project #gallery .image .caption, #services #gallery .image .caption, #jobs #gallery .image .caption, #blog #gallery .image .caption {
+    background-color: #FFFFFF;
+    font-size: 11px;
+    height: 25px;
+    padding-top: 10px;
+    position: relative;
+    text-align: center;
+    z-index: 999;
+}   
+
+#home #brandBox {
+    position: relative;
+}
+#home #brandBox #next, #home #brandBox #prev {
+    background-position: center top;
+    display: block;
+    height: 13px;
+    position: absolute;
+    top: 137px;
+    width: 11px;
+    z-index: 999;
+}
+#home #brandBox #next:hover, #home #brandBox #prev:hover {
+    background-position: center bottom;
+    cursor: pointer;
+}
+#home #brandBox #next {
+    background-image: url("http://www.chilli.be/images/layout/arrow-right.png");
+    right: -25px;
+}
+#home #brandBox #next:active {
+    right: -27px;
+}
+#home #brandBox #prev {
+    background-image: url("http://www.chilli.be/images/layout/arrow-left.png");
+    left: -25px;
+}
+#home #brandBox #prev:active {
+    left: -27px;
+}
+#home #brandBox #panelHolder {
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    width: 850px;
+}
+#home #brandBox #panelHolder #panels {
+    height: 350px;
+    position: absolute;
+    width: 9000px;
+}
+#home #brandBox #panelHolder #panels .panel {
+    float: left;
+    height: 350px;
+    left: 850px;
+    margin-bottom: 50px;
+    position: absolute;
+    text-align: center;
+    width: 850px;
+}
+#home #brandBox #panelHolder #panels .panel a img {
+    border: 0 none;
+}
+#home #brandBox #panelHolder #panels .panel a.button {
+    background-color: #0D0F11;
+    bottom: 20px;
+    color: #FFFFFF;
+    font-size: 10px;
+    padding: 5px 3px 0;
+    position: absolute;
+    right: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#home #brandBox #panelHolder #panels .panel a.button:hover {
+    background-color: #FFFFFF;
+    color: #0D0F11;
+}
+#home #brandBox #panelHolder #panels #panel1 {
+    left: 0;
+}
+#home #brandBox ul {
+    list-style: none outside none;
+    margin: -10px auto 15px;
+    width: 50px;
+}
+#home #brandBox ul li {
+    display: inline;
+}
+#home #brandBox ul li span {
+    font-size: 18px;
+    padding: 0 2px;
+}
+#home #brandBox ul li span.active {
+    color: #E1214B;
+}
+#home #intro {
+    border-bottom: 1px solid #3A3D3F;
+    border-top: 1px solid #3A3D3F;
+    color: #484848;
+    font-family: tahoma, arial, verdana, sans-serif, Lucida Sans;
+    font-size: 14px;
+    line-height: 36px;
+    margin-top: 20px;
+    padding: 20px 0;
+    text-align: center;
+}
+#home #intro p {
+    margin: 0;
+    padding: 0;
+}
+#home #recent {
+    margin: 0 0 20px;
+    padding-bottom: 10px;
+    position: relative;
+}
+#home #recent .project {
+    float: left;
+    margin-top: 40px;
+    width: 412px;
+}
+#home #recent .project.one {
+    margin-right: 25px;
+}
+#home #recent .project.three {
+    margin-right: 25px;
+}
+#home #recent .project a.thumb {
+    color: #484848;
+    display: block;
+    font-family: tahoma, arial, verdana, sans-serif, Lucida Sans;
+    text-transform: uppercase;
+}
+#home #recent .project a.thumb img {
+    border: medium none;
+}
+#home #recent .project a.thumb div {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #484848;
+    padding: 10px 10px 8px 15px;
+    text-align: left;
+    width: 387px;
+}
+#home #recent .project a.thumb:hover div {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+#home #recent .project .info {
+    background-color: #FFFFFF;
+    color: #484848;
+    float: none;
+    font-family: tahoma, arial, verdana, sans-serif, Lucida Sans;
+    font-size: 12px;
+    min-height: 60px;
+    padding: 15px 10px 20px 15px;
+    text-align: left;
+    width: 387px;
+}
+#home #recent .project .info a {
+    font-style: italic;
+}
+#home #recent .project .info a:hover {
+    border-bottom: 1px solid #000000;
+    color: #FFFFFF !important;
+}
+#home #recent .project .info p {
+    margin: 0;
+    padding: 0;
+}
+#home #recent .project .info a.button {
+    background-color: #0D0F11;
+    color: #FFFFFF;
+    display: inline-block;
+    font-family: tahoma, arial, verdana, sans-serif, Lucida Sans;
+    font-size: 10px;
+    margin-top: 20px;
+    padding: 5px 4px 2px;
+    position: absolute;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#home #recent .project .info a.button:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.project .navModule {
+    top: 88px;
+}
+
+#mapHolder {
+    height: 330px;
+    overflow: hidden;
+    position: relative;
+    width: 850px;
+}
+#mapHolder #map {
+    height: 330px;
+    position: relative;
+    width: 850px;
+}
+#mapHolder a {
+    display: none !important;
+}
+#mapHolder a.showMap {
+    background-color: #FFFFFF;
+    bottom: 0;
+    color: #0D0F11;
+    display: block !important;
+    font-size: 11px;
+    padding: 1px 15px;
+    position: absolute;
+    right: 0;
+    text-transform: uppercase;
+    z-index: 999;
+}
+#mapHolder a.showMap:hover {
+    background-color: #0D0F11;
+    color: #FFFFFF;
+}
+#mapInfo {
+    background-color: #FFFFFF;
+    font-size: 11px;
+    padding: 15px 15px 11px 11px;
+}
+#mapInfo i {
+    color: #34383D;
+    float: right;
+    font-style: normal;
+}
+#mapInfo a {
+    color: #484848;
+    font-style: italic;
+}
+#mapInfo a:hover {
+    background-color: #FFFFFF;
+}
+#locationInfo {
+    font-size: 12px;
+    padding: 40px 0 5px;
+}
+#locationInfo p {
+    margin: 0;
+}
+#locationInfo img {
+    float: left;
+    margin: -10px 60px 0;
+}
+#locationInfo a {
+    background-color: #FFFFFF;
+    color: #484848;
+    padding: 4px;
+}
+#locationInfo a:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+form#contact {
+    margin-bottom: 50px;
+    padding: 10px 0 0;
+    position: relative;
+}
+form#contact #cSuc, form#contact #cError {
+    background-color: #000000;
+    color: #FFFFFF;
+    display: none;
+    font-size: 12px;
+    padding: 4px;
+    position: absolute;
+    text-indent: 5px;
+    top: 20px;
+    width: 100%;
+}
+form#contact #cSuc {
+    background-color: #0D0F11;
+    color: #FFFFFF;
+}
+form#contact .input {
+    margin-bottom: 11px;
+    position: relative;
+    width: 250px;
+}
+form#contact .input input[type="text"] {
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    color: #484848;
+    font-size: 11px;
+    height: 14px;
+    padding: 10px 15px;
+    width: 250px;
+}
+form#contact .input input[type="text"]:focus {
+    border-bottom-color: #323335;
+    outline: 0 none;
+}
+form#contact .input input.error[type="text"] {
+    border-bottom-color: #0D0F11 !important;
+}
+form#contact .input span {
+    color: #484848;
+    left: 15px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 10px;
+}
+form#contact textarea {
+    background-color: #FFFFFF;
+    border: 0 none;
+    color: #484848;
+    display: block;
+    float: right;
+    font-size: 11px;
+    height: 100px;
+    margin: 0;
+    overflow: auto;
+    padding: 15px;
+    width: 820px;
+}
+form#contact textarea:focus {
+    border-bottom: 1px solid #323335;
+    outline: 0 none !important;
+}
+form#contact textarea.error {
+    border-bottom: 1px solid #0D0F11 !important;
+}
+form#contact a {
+    background-color: #FFFFFF;
+    border: 0 none;
+    bottom: -140px;
+    color: #0D0F11;
+    display: block;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 10px;
+    padding: 1px 5px;
+    position: absolute;
+    right: 0;
+    text-transform: uppercase;
+    z-index: 999;
+}
+form#contact a:hover {
+    background-color: #0D0F11;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+div#contactBox{
+    position:relative;
+    left:0;
+    top:0;
+    font-size:16px;
+    font-weight:bold;
+    height:25px;
+    padding-top:25px;
+}
+
+div#contactBox img {
+    height:16px;
+    width:16px;
+    margin-right:3px;
+}
+
+.externalContent
+{
+    margin:  0px !important;
+    padding: 0px !important;
+    overflow: hidden !important;
+    height:400px;
+}
+
+.externalContentfb
+{
+    margin:  0px !important;
+    padding: 0px !important;
+    overflow: hidden !important;
+    height:470px;
+}
+
+.blackButtonsPanel {
+    margin-top:10px;
+}
+
+#onlinesupport .ui-tabs-panel {
+    padding-left:0px;
+    padding-right:0px;
+    padding-bottom:0px;
+    padding-top:15px;
+}
+
+div#info span {
+    display:inline !important;
+}
+
+span.price {
+    font-weight:bold;
+    text-transform: none !important;
+}
+
+.project h4 {
+    border-top: 1px solid #DDDDDD;
+    margin-bottom:-10px;
+}
+
+.thumb img {
+    border: 0;
+}
+
+.coursePrice {
+    float:right;
+    font-size:16px;
+    font-weight:bold;
+}
+
+.deal {
+    color:red !important;
+}
+
+.higherPrice {
+    font-size:11px;
+}
+
+.captchaholder {
+    position:relative;
+    left:300px;
+    top:-312px;
+    width:150px;
+}
+
+.captchaholder p {
+    line-height:20px;
+    font-size:14px;
+}
+
+
+.recaptchatable img {
+    width: auto;
+    height: auto;
+    }
+
+a#recaptcha_audio_play_again {
+    display:none; 
+}
+
+div.coursesShortList {
+    float:right;
+}
+
+div.coursesShortList a{
+    -moz-box-sizing: content-box !important;
+    background-color: #353A3E;
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    font-size: 10px;
+    height: 16px;
+    padding: 1px 5px 3px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+div.minPrice {
+    float:right;
+    margin-top:-30px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.constrastLink{
+    -moz-box-sizing: content-box !important;
+    background-color: #353A3E;
+    color: #FFFFFF;
+    font-size: 10px;
+    height: 16px;
+    padding: 1px 5px 3px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+span.smallPrice {
+    font-size:8px;
+}
+
+.newCourse{
+    background :url('../Images/newicon5.png') no-repeat 0px 0px;
+    padding-left: 35px !important;   
+}

@@ -1,0 +1,13 @@
+State: Running
+Themes: 
+Modules: 
+Name: Default
+DataProvider: SqlServer
+DataConnectionString: Data Source=.\SQLEXPRESS;Initial Catalog=OrchardDb;Persist Security Info=True;User ID=OrchardDev;Password=OrchardDev 
+DataTablePrefix: dbo
+RequestUrlHost: null
+RequestUrlPrefix: null
+EncryptionAlgorithm: AES
+EncryptionKey: 36561ED8D2B8A98CAC1E889BE58549AB987686BD3CF540B458474AF995AA38E8
+HashAlgorithm: HMACSHA256
+HashKey: 865F4F686F3F1B30AD3767DF9D61B5B2F568EE79893BDAEC58CA554E9BABDEBA76AD2DB377FEE72544A360ACFAB63A17173D8E6952AF77A099393BB12BAF80A0

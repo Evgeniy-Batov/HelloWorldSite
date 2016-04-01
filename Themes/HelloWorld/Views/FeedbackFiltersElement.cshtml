@@ -1,0 +1,47 @@
+﻿@using Orchard.ContentManagement;
+
+@{ 
+    IContentManager contentManager = WorkContext.Resolve<IContentManager>();
+
+    var courses          = contentManager.List<ContentPart>(new string[] { "CoursePage" });
+
+    String currentCourse = WorkContext.HttpContext.Request.Params["course"];
+
+    var url = WorkContext.HttpContext.Request.RawUrl;
+
+    if (url.Contains("?"))
+    {
+        url = url.Split('?')[0];
+    }
+}
+
+<div class="review-menu">
+
+    @if (String.IsNullOrEmpty(currentCourse))
+    {
+        <a href="@url" class="active">Все курсы</a>
+    }
+    else
+    {
+        <a href="@url">Все курсы</a>
+    }
+
+    @foreach (var course in courses)
+    {
+        String coursePath = ((dynamic)course.ContentItem).AutoroutePart.Path;
+
+        if (coursePath.Contains('/'))
+        {
+            coursePath = coursePath.Split('/').Last();
+        }
+
+        if (coursePath == currentCourse)
+        {
+            <a class="active" href="@url?course=@coursePath">@(((dynamic)course).CoursePart.Name)</a>
+        }
+        else
+        {
+            <a href="@url?course=@coursePath">@(((dynamic)course).CoursePart.Name)</a>
+        }
+    }
+</div>

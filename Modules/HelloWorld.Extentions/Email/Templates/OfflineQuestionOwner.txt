@@ -1,0 +1,11 @@
+﻿Пользователь @firstname. (тел: @phone email: @email)
+
+оставил вопрос на сайте:
+
+тема:
+	"@coursename"
+вопрос:
+	@additionalinfo
+
+
+
